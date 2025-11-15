@@ -143,7 +143,7 @@ export const images = {
     noel: {
       // Images à ajouter dans /images/creations/se-faire-plaisir/noel/
     },
-    valentin: {
+    saintValentin: {
       // Images à ajouter dans /images/creations/se-faire-plaisir/valentin/
     },
     mere: {

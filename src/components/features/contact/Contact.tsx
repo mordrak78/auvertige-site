@@ -277,66 +277,86 @@ const Contact = () => {
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-dancing text-sage-700 mb-6">Envoyez-nous un message</h3>
               
-              <form onSubmit={handleContactSubmit} className="space-y-6">
+              <form onSubmit={handleContactSubmit} className="space-y-6" noValidate>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sage-700 font-medium mb-2">Prénom *</label>
+                    <label htmlFor="firstName" className="block text-sage-700 font-medium mb-2">
+                      Prénom <span className="text-poppy-600" aria-label="requis">*</span>
+                    </label>
                     <input 
+                      id="firstName"
                       type="text" 
                       name="firstName"
                       value={contactFormData.firstName}
                       onChange={handleContactInputChange}
-                      className="w-full px-4 py-3 border border-sage-200 rounded-lg focus:ring-2 focus:ring-sage-300 focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 border border-sage-200 rounded-lg focus:ring-2 focus:ring-poppy-500 focus:border-poppy-500 transition-colors min-h-[44px]"
                       placeholder="Votre prénom"
                       required
+                      aria-required="true"
+                      aria-invalid={contactFormData.firstName === '' ? 'false' : undefined}
                     />
                   </div>
                   <div>
-                    <label className="block text-sage-700 font-medium mb-2">Nom *</label>
+                    <label htmlFor="lastName" className="block text-sage-700 font-medium mb-2">
+                      Nom <span className="text-poppy-600" aria-label="requis">*</span>
+                    </label>
                     <input 
+                      id="lastName"
                       type="text" 
                       name="lastName"
                       value={contactFormData.lastName}
                       onChange={handleContactInputChange}
-                      className="w-full px-4 py-3 border border-sage-200 rounded-lg focus:ring-2 focus:ring-sage-300 focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 border border-sage-200 rounded-lg focus:ring-2 focus:ring-poppy-500 focus:border-poppy-500 transition-colors min-h-[44px]"
                       placeholder="Votre nom"
                       required
+                      aria-required="true"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-sage-700 font-medium mb-2">Email *</label>
+                  <label htmlFor="email" className="block text-sage-700 font-medium mb-2">
+                    Email <span className="text-poppy-600" aria-label="requis">*</span>
+                  </label>
                   <input 
+                    id="email"
                     type="email" 
                     name="email"
                     value={contactFormData.email}
                     onChange={handleContactInputChange}
-                    className="w-full px-4 py-3 border border-sage-200 rounded-lg focus:ring-2 focus:ring-sage-300 focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 border border-sage-200 rounded-lg focus:ring-2 focus:ring-poppy-500 focus:border-poppy-500 transition-colors min-h-[44px]"
                     placeholder="votre@email.com"
                     required
+                    aria-required="true"
+                    aria-describedby="email-description"
                   />
+                  <p id="email-description" className="sr-only">Format attendu : exemple@domaine.com</p>
                 </div>
 
                 <div>
-                  <label className="block text-sage-700 font-medium mb-2">Téléphone</label>
+                  <label htmlFor="phone" className="block text-sage-700 font-medium mb-2">Téléphone</label>
                   <input 
+                    id="phone"
                     type="tel" 
                     name="phone"
                     value={contactFormData.phone}
                     onChange={handleContactInputChange}
-                    className="w-full px-4 py-3 border border-sage-200 rounded-lg focus:ring-2 focus:ring-sage-300 focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 border border-sage-200 rounded-lg focus:ring-2 focus:ring-poppy-500 focus:border-poppy-500 transition-colors min-h-[44px]"
                     placeholder="06 XX XX XX XX"
+                    aria-describedby="phone-description"
                   />
+                  <p id="phone-description" className="sr-only">Format attendu : 10 chiffres</p>
                 </div>
 
                 <div>
-                  <label className="block text-sage-700 font-medium mb-2">Type de demande</label>
+                  <label htmlFor="requestType" className="block text-sage-700 font-medium mb-2">Type de demande</label>
                   <select 
+                    id="requestType"
                     name="requestType"
                     value={contactFormData.requestType}
                     onChange={handleContactInputChange}
-                    className="w-full px-4 py-3 border border-sage-200 rounded-lg focus:ring-2 focus:ring-sage-300 focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 border border-sage-200 rounded-lg focus:ring-2 focus:ring-poppy-500 focus:border-poppy-500 transition-colors min-h-[44px]"
+                    aria-label="Type de demande"
                   >
                     <option value="">Choisir une option</option>
                     <option value="Mariage">Mariage</option>
@@ -348,16 +368,22 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label className="block text-sage-700 font-medium mb-2">Message *</label>
+                  <label htmlFor="message" className="block text-sage-700 font-medium mb-2">
+                    Message <span className="text-poppy-600" aria-label="requis">*</span>
+                  </label>
                   <textarea 
+                    id="message"
                     name="message"
                     value={contactFormData.message}
                     onChange={handleContactInputChange}
                     rows={5}
-                    className="w-full px-4 py-3 border border-sage-200 rounded-lg focus:ring-2 focus:ring-sage-300 focus:border-transparent transition-colors resize-none"
+                    className="w-full px-4 py-3 border border-sage-200 rounded-lg focus:ring-2 focus:ring-poppy-500 focus:border-poppy-500 transition-colors resize-none"
                     placeholder="Décrivez-nous votre projet ou votre demande..."
                     required
+                    aria-required="true"
+                    aria-describedby="message-description"
                   ></textarea>
+                  <p id="message-description" className="sr-only">Décrivez votre projet ou votre demande en détail</p>
                 </div>
 
                   <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
@@ -379,71 +405,95 @@ const Contact = () => {
         title="Prendre rendez-vous pour une commande spéciale"
         size="md"
       >
-            <form onSubmit={handleRdvSubmit} className="flex flex-col gap-4">
+            <form onSubmit={handleRdvSubmit} className="flex flex-col gap-4" noValidate>
               <div>
-                <label className="block text-sage-700 mb-1">Nom complet</label>
+                <label htmlFor="rdv-name" className="block text-sage-700 mb-1 font-medium">
+                  Nom complet <span className="text-poppy-600" aria-label="requis">*</span>
+                </label>
                 <input 
+                  id="rdv-name"
                   type="text" 
                   name="name"
                   value={rdvFormData.name}
                   onChange={handleRdvInputChange}
-                  className="w-full border border-sage-200 rounded-lg px-3 py-2" 
-                  required 
+                  className="w-full border border-sage-200 rounded-lg px-3 py-2 focus:ring-2 focus:ring-poppy-500 focus:border-poppy-500 transition-colors min-h-[44px]" 
+                  required
+                  aria-required="true"
                 />
               </div>
               <div>
-                <label className="block text-sage-700 mb-1">Téléphone</label>
+                <label htmlFor="rdv-phone" className="block text-sage-700 mb-1 font-medium">
+                  Téléphone <span className="text-poppy-600" aria-label="requis">*</span>
+                </label>
                 <input 
+                  id="rdv-phone"
                   type="tel" 
                   name="phone"
                   value={rdvFormData.phone}
                   onChange={handleRdvInputChange}
-                  className="w-full border border-sage-200 rounded-lg px-3 py-2" 
-                  required 
+                  className="w-full border border-sage-200 rounded-lg px-3 py-2 focus:ring-2 focus:ring-poppy-500 focus:border-poppy-500 transition-colors min-h-[44px]" 
+                  required
+                  aria-required="true"
                 />
               </div>
               <div>
-                <label className="block text-sage-700 mb-1">Email</label>
+                <label htmlFor="rdv-email" className="block text-sage-700 mb-1 font-medium">
+                  Email <span className="text-poppy-600" aria-label="requis">*</span>
+                </label>
                 <input 
+                  id="rdv-email"
                   type="email" 
                   name="email"
                   value={rdvFormData.email}
                   onChange={handleRdvInputChange}
-                  className="w-full border border-sage-200 rounded-lg px-3 py-2" 
-                  required 
+                  className="w-full border border-sage-200 rounded-lg px-3 py-2 focus:ring-2 focus:ring-poppy-500 focus:border-poppy-500 transition-colors min-h-[44px]" 
+                  required
+                  aria-required="true"
                 />
               </div>
               <div>
-                <label className="block text-sage-700 mb-1">Date souhaitée du rendez-vous</label>
+                <label htmlFor="rdv-date" className="block text-sage-700 mb-1 font-medium">
+                  Date souhaitée du rendez-vous <span className="text-poppy-600" aria-label="requis">*</span>
+                </label>
                 <input 
+                  id="rdv-date"
                   type="date" 
                   name="date"
                   value={rdvFormData.date}
                   onChange={handleRdvInputChange}
-                  className="w-full border border-sage-200 rounded-lg px-3 py-2" 
-                  required 
+                  className="w-full border border-sage-200 rounded-lg px-3 py-2 focus:ring-2 focus:ring-poppy-500 focus:border-poppy-500 transition-colors min-h-[44px]" 
+                  required
+                  aria-required="true"
                 />
               </div>
               <div>
-                <label className="block text-sage-700 mb-1">Heure souhaitée</label>
+                <label htmlFor="rdv-time" className="block text-sage-700 mb-1 font-medium">
+                  Heure souhaitée <span className="text-poppy-600" aria-label="requis">*</span>
+                </label>
                 <input 
+                  id="rdv-time"
                   type="time" 
                   name="time"
                   value={rdvFormData.time}
                   onChange={handleRdvInputChange}
-                  className="w-full border border-sage-200 rounded-lg px-3 py-2" 
-                  required 
+                  className="w-full border border-sage-200 rounded-lg px-3 py-2 focus:ring-2 focus:ring-poppy-500 focus:border-poppy-500 transition-colors min-h-[44px]" 
+                  required
+                  aria-required="true"
                 />
               </div>
               <div>
-                <label className="block text-sage-700 mb-1">Message</label>
+                <label htmlFor="rdv-message" className="block text-sage-700 mb-1 font-medium">
+                  Message <span className="text-poppy-600" aria-label="requis">*</span>
+                </label>
                 <textarea 
+                  id="rdv-message"
                   name="message"
                   value={rdvFormData.message}
                   onChange={handleRdvInputChange}
-                  className="w-full border border-sage-200 rounded-lg px-3 py-2" 
+                  className="w-full border border-sage-200 rounded-lg px-3 py-2 focus:ring-2 focus:ring-poppy-500 focus:border-poppy-500 transition-colors" 
                   rows={2} 
-                  required 
+                  required
+                  aria-required="true"
                 />
               </div>
               <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>

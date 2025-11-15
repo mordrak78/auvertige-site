@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Checkbox } from '@/components/ui/checkbox';
-import { Label } from '@/components/ui/label';
+import { Label } from '@/components/ui/Label';
 import { useSeasonalContent, SeasonalContentType } from '@/hooks/useSeasonalContent';
 import { Calendar, Heart, Flower, Leaf, RotateCcw, Save } from 'lucide-react';
 import { toast } from 'sonner';
