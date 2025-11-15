@@ -1,0 +1,109 @@
+/**
+ * Theme Name:  OXiane "usine 2_1.1.0" (child theme for "Make")
+ * Theme URI:   https://thethemefoundry.com/wordpress-themes/make/
+ * Author:      OXiane Studio
+ * Author URI:  http://www.oxiane.com/studio
+ * Description: Thème WordPress pour l’Usine à sites
+ * Version:     1.1.0
+ * License:     GNU General Public License v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Template: make
+ * Text Domain: make
+ * Domain Path: /languages/
+ * Tags:        black, blue, green, gray, orange, red, white, yellow, dark, light, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, fixed-layout, fluid-layout, responsive-layout, buddypress, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, photoblogging
+ */
+
+@import url( '../make/style.css' );
+
+/* Add your custom styles below. */
+
+.footer-credit { display: none; }
+.footer-text { float: left; }
+
+/* Menu dans la barre d'entête */
+.header-bar .menu {
+	margin: 11px 11px 22px;
+	margin: 1.1rem 1.1rem 2.2rem;
+}
+.header-bar .menu li {
+	padding-right: 0px;
+	padding-right: 0rem;
+}
+.social-links li.rss { display: none; }
+.site-branding { max-width: 20%; }
+#site-navigation { max-width: 80%; }
+.site-footer .footer-social-links { float: right; }
+
+/* Légende des entrées du carrousel */
+.slide-legende {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 10px 10px 20px;
+	color: #fff;
+	font-weight: normal;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+a:hover .slide-legende {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Actualités */
+.ox_actualites {
+
+}
+.ox_actualites_mode_full {
+
+}
+.ox_actualites_mode_liste {
+
+}
+.ox_actualites_titre {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.ox_actualite {
+	margin-bottom: 10px;
+}
+.ox_actualite_visuel {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+.ox_actualite_single .ox_actualite_visuel {
+	float: none;
+	margin: 0;
+}
+.ox_actualite_titre {
+	font-weight: bold;
+}
+.ox_actualite_titre .ox_actualite_lien:hover {
+	text-decoration: underline;
+}
+.ox_actualite_date {
+	font-size: 0.85em;
+	font-style: italic;
+}
+.ox_actualite_lien {
+	color: #000;
+}
+
+/* Largeur des colonnes */
+@media screen and (min-width: 800px) {
+	.builder-text-columns-2 .builder-text-column.oxb-column-width-1-3 {
+		width: 32.222223333333%;
+	}
+	.builder-text-columns-2 .builder-text-column.oxb-column-width-2-3 {
+		width: 64.444446666667%;
+	}
+	.builder-text-columns-2 .builder-text-column.oxb-column-width-1-4 {
+		width: 23.333335%;
+	}
+	.builder-text-columns-2 .builder-text-column.oxb-column-width-1-2 {
+		width: 46.66667%;
+	}
+	.builder-text-columns-2 .builder-text-column.oxb-column-width-3-4 {
+		width: 72.5000025%;
+	}
+}

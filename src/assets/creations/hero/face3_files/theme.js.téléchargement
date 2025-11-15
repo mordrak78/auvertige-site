@@ -1,0 +1,43 @@
+jQuery(document).ready(function() {    
+	(function($) {
+
+		// Fancybox
+		Fancybox.bind('a.fancybox', {
+			groupAttr: 'rel'
+		});
+
+		// Carrousel
+		var jSlider = $('#slider');
+		if (jSlider.length > 0) {
+			function sliderResize() {
+				jSlider.height(jSlider.width() * sliderMaxHeight / 960);
+			}
+			$(window).on('resize', sliderResize);
+			sliderResize();
+			// Gestion de l'animation
+			var sliderCurrentSlide = sliderNbSlides - 1;
+			var sliderStand = 3000;
+			var sliderTransition = 500;
+			$('.slide').css({'opacity': 0});
+			$('.slide').last().css({'opacity': 1});
+			function sliderChange() {
+				var sliderNextSlide = (sliderCurrentSlide == sliderNbSlides - 1) ? 0 : sliderCurrentSlide + 1;
+				$('.slide').eq(sliderCurrentSlide).animate({'opacity': 0}, sliderTransition, function() {
+					$(this).css({'display': 'none'});
+				});
+				$('.slide').eq(sliderNextSlide).css({'display': 'block'}).animate({'opacity': 1}, sliderTransition, function() {
+					sliderCurrentSlide = sliderNextSlide;
+				});
+			}
+			setInterval(sliderChange, sliderStand);
+		}
+
+		// Gestionn de la largeur des colonnes
+		$('.usine-column-width').each(function(idx, element) {
+			var elt = $(element);
+			var parentColumn = elt.closest('.builder-text-column');
+			parentColumn.addClass('oxb-column-width' + elt.attr('data-width'));
+		});
+
+	})(jQuery);
+});  

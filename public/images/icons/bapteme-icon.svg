@@ -1,0 +1,15 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="baptemeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#eff6ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="url(#baptemeGrad)" stroke="#2563eb" stroke-width="2"/>
+  <!-- Cercle avec croix -->
+  <circle cx="32" cy="32" r="12" fill="#2563eb"/>
+  <path d="M32 20v24m-12-12h24" stroke="white" stroke-width="3"/>
+  <!-- Petite fleur -->
+  <circle cx="32" cy="20" r="2" fill="#60a5fa"/>
+  <path d="M30 18h4m-2-2v4" stroke="#2563eb" stroke-width="1"/>
+</svg>
