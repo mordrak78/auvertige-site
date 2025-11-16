@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Instagram, ExternalLink, Loader2 } from 'lucide-react';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 
 interface InstagramPost {
   shortcode: string;

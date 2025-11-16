@@ -2,7 +2,7 @@ import * as React from 'react';
 import { ArrowRight, Heart, Cake, Sprout, Baby, Sparkles, Gift, ChevronLeft, ChevronRight, ChevronUp, ChevronDown, ZoomIn, ZoomOut, RotateCcw } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useState, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+// import { motion, AnimatePresence } from 'framer-motion';
 import { images } from '@/data/images';
 import { OptimizedImage } from '@/components/shared/OptimizedImage';
 import { Button } from '@/components/ui/button';

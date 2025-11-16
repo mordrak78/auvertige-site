@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 import { Heart, Leaf, Award, MapPin, Clock, Phone, Mail, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { ScrollToTopLink } from '@/components/shared/ScrollToTopLink';

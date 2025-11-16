@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 import { MapPin, Navigation, Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { ScrollToTopLink } from './ScrollToTopLink';

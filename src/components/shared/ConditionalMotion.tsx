@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { motion, HTMLMotionProps } from 'framer-motion';
+// import { motion, HTMLMotionProps } from 'framer-motion';
 import { useReducedMotion } from '@/hooks/useReducedMotion';
 
 interface ConditionalMotionProps extends HTMLMotionProps<'div'> {
