@@ -19,7 +19,7 @@ const MobileHeader = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src="/images/logo/logo9.png"
+              src="/images/logo/logo9.webp"
               alt="Au Vertige - Fleuriste Nantes" 
               className="h-16 w-16 object-contain"
             />

@@ -27,25 +27,62 @@ export default defineConfig(({ mode }) => ({
       compress: {
         drop_console: true,
         drop_debugger: true,
+        pure_funcs: ['console.log', 'console.info', 'console.debug'],
       },
     },
     rollupOptions: {
       output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom'],
-          router: ['react-router-dom'],
-          ui: ['@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu', '@radix-ui/react-tabs'],
-          icons: ['lucide-react'],
+        manualChunks: (id) => {
+          if (id.includes('node_modules')) {
+            // CRITIQUE: React et React-DOM DOIVENT être dans le chunk principal (index)
+            // pour être chargés en premier et éviter les erreurs createContext
+            // On ne les sépare PAS dans un chunk séparé
+            if (id.includes('react') || id.includes('react-dom')) {
+              // Ne pas créer de chunk séparé - laisser dans le chunk principal
+              return undefined;
+            }
+            // Séparer framer-motion dans son propre chunk (peut être lazy-loaded)
+            if (id.includes('framer-motion')) {
+              return 'framer-motion';
+            }
+            if (id.includes('react-router')) {
+              return 'vendor-router';
+            }
+            if (id.includes('@radix-ui')) {
+              return 'vendor-radix';
+            }
+            if (id.includes('lucide-react')) {
+              return 'vendor-icons';
+            }
+            // Autres dépendances
+            return 'vendor';
+          }
+        },
+        // Optimiser les noms de chunks
+        chunkFileNames: 'assets/js/[name]-[hash].js',
+        entryFileNames: 'assets/js/[name]-[hash].js',
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name?.endsWith('.css')) {
+            return 'assets/css/[name]-[hash][extname]';
+          }
+          if (/\.(png|jpe?g|svg|gif|webp)$/.test(assetInfo.name || '')) {
+            return 'assets/images/[name]-[hash][extname]';
+          }
+          return 'assets/[name]-[hash][extname]';
         },
       },
     },
     // Optimisation des assets
     assetsInlineLimit: 4096,
     chunkSizeWarningLimit: 1000,
+    // Code splitting agressif
+    cssCodeSplit: true,
+    sourcemap: false, // Désactiver en production pour réduire la taille
   },
   // Optimisations de développement
   optimizeDeps: {
     include: ['react', 'react-dom', 'react-router-dom'],
+    exclude: ['framer-motion'], // Exclure framer-motion du pre-bundling pour réduire le bundle initial
   },
   test: {
     environment: 'jsdom',

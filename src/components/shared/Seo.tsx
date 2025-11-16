@@ -63,7 +63,7 @@ interface SeoProps {
  *   title="Au Vertige - Fleuriste à Nantes"
  *   description="Découvrez nos créations florales uniques pour tous vos événements"
  *   canonical="https://auvertige.fr"
- *   image="https://auvertige.fr/og-image.jpg"
+ *   image="https://auvertige.fr/og-image.webp"
  * />
  * ```
  */
@@ -71,7 +71,7 @@ const Seo: React.FC<SeoProps> = ({
   title,
   description,
   canonical,
-  image = '/images/default-og.jpg',
+  image = '/images/default-og.webp',
   type = 'website',
   additionalMeta = {},
   product,

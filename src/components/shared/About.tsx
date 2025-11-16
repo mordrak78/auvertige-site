@@ -37,7 +37,7 @@ const About = () => {
             <div className="relative order-2 lg:order-1 flex justify-center lg:justify-start">
               <div className="relative z-10 w-80 h-80 lg:w-96 lg:h-96">
                 <img 
-                  src="/images/hero/facade1.jpg" 
+                  src="/images/hero/facade1.webp" 
                   alt="Sylvie ARCHAMBEAU, artisan fleuriste Nantes - Au Vertige, fleuriste à Nantes Sud" 
                   className="w-full h-full object-cover object-center rounded-full shadow-2xl border-4 border-white"
                 />

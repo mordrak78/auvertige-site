@@ -16,7 +16,7 @@ const HeroSection = () => {
       {/* Image de fond optimisée mobile */}
       <div className="absolute inset-0 opacity-30">
         <img 
-          src="/images/hero/facade1.jpg" 
+          src="/images/hero/facade1.webp" 
           alt="Fleuriste Au Vertige - Nantes" 
           className="w-full h-full object-cover object-center"
           loading="eager"

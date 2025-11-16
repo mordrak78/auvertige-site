@@ -15,6 +15,8 @@ interface OptimizedImageProps extends React.ImgHTMLAttributes<HTMLImageElement> 
  */
 export const OptimizedImage = React.forwardRef<HTMLImageElement, OptimizedImageProps>(
   ({ src, alt, className, priority = false, sizes, ...props }, ref) => {
+    // Pour l'instant, utiliser directement l'image sans conversion WebP automatique
+    // (car les fichiers WebP doivent être créés manuellement)
     return (
       <img
         ref={ref}
@@ -23,8 +25,8 @@ export const OptimizedImage = React.forwardRef<HTMLImageElement, OptimizedImageP
         className={cn('object-cover object-center', className)}
         loading={priority ? 'eager' : 'lazy'}
         fetchpriority={priority ? 'high' : 'auto'}
-        decoding="async"
-        sizes={sizes}
+        decoding={priority ? 'sync' : 'async'}
+        sizes={sizes || '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'}
         {...props}
       />
     );

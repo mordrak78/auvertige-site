@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; frame-src 'self' https://www.google.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.gpteng.co; img-src 'self' data: https:; connect-src 'self' https:;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; frame-src 'self' https://www.google.com https://vercel.live; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.gpteng.co https://vercel.live; img-src 'self' data: https:; connect-src 'self' https: wss: ws:;">
     
     <!-- SEO Meta Tags -->
     <title>Fleuriste à Nantes – Bouquets, Livraison & Retrait | Au Vertige</title>
@@ -23,8 +23,54 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
+    <!-- CSS Critique pour le Hero (améliore LCP) -->
+    <style>
+      /* Styles critiques pour le hero - inline pour améliorer LCP */
+      .hero-critical {
+        position: relative;
+        width: 100%;
+        min-height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 8rem;
+        padding-bottom: 2rem;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+      }
+      .hero-content {
+        max-width: 64rem;
+        margin-top: auto;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+      .hero-card {
+        background-color: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(8px);
+        border: 0;
+        padding: 2rem;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      }
+      .hero-title {
+        font-family: 'Dancing Script', cursive;
+        font-size: 2.25rem;
+        color: white;
+        margin-bottom: 1.5rem;
+      }
+      @media (min-width: 768px) {
+        .hero-title { font-size: 3.75rem; }
+        .hero-card { padding: 3rem; }
+      }
+      @media (min-width: 1024px) {
+        .hero-title { font-size: 4.5rem; }
+      }
+    </style>
+    
     <!-- Preload des ressources critiques -->
-    <link rel="preload" href="/images/logo/logo9.png" as="image" type="image/png" fetchpriority="high">
+    <!-- Logo préchargé seulement si utilisé immédiatement -->
     
     <!-- DNS Prefetch pour améliorer les performances -->
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
@@ -112,17 +158,16 @@
     <!-- <link rel="preload" href="https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2" as="font" type="font/woff2" crossorigin /> -->
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/jpeg" href="/favicon.jpg" />
+    <link rel="apple-touch-icon" href="/favicon.jpg" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#ffffff" />
   </head>
 
   <body>
     <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module" defer></script>
   </body>
 </html>

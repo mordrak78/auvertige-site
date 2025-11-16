@@ -26,21 +26,21 @@ export interface PageStructure {
  */
 const DEFAULT_PAGE_STRUCTURES: Record<string, Partial<PageStructure>> = {
   'index': {
-    heroImage: '/images/hero/facade1.jpg',
+    heroImage: '/images/hero/facade1.webp',
     elements: [
       { id: 'hero-title', type: 'h1', content: 'Votre artisan fleuriste à Nantes Sud', order: 1 },
       { id: 'hero-desc', type: 'p', content: 'Découvrez nos créations florales près de chez vous !\nDes émotions florales uniques avec des fleurs fraîches et un accueil chaleureux. Parce que l\'on a aussi le droit de se faire plaisir !', order: 2 },
     ],
   },
   'a-propos': {
-    heroImage: '/images/hero/facade1.jpg',
+    heroImage: '/images/hero/facade1.webp',
     elements: [
       { id: 'title', type: 'h1', content: 'Notre Histoire', order: 1 },
       { id: 'intro', type: 'p', content: 'Au Vertige est né de la passion pour l\'art floral et du désir de créer des émotions à travers les fleurs. Installés au cœur de Nantes, nous sommes un atelier artisanal qui privilégie la qualité et l\'originalité.', order: 2 },
     ],
   },
   'contact': {
-    heroImage: '/images/hero/facade1.jpg',
+    heroImage: '/images/hero/facade1.webp',
     elements: [
       { id: 'title', type: 'h1', content: 'Contactez votre fleuriste à Nantes Sud', order: 1 },
       { id: 'intro', type: 'p', content: 'Besoin d\'un bouquet, d\'une composition sur-mesure ou d\'un conseil ? Notre équipe vous accueille à Nantes Sud, quartier Saint-Jacques, à deux pas de Pirmil, Rezé et Saint-Sébastien-sur-Loire. Livraison rapide à l\'hôpital Saint-Jacques et dans toute la métropole nantaise.', order: 2 },

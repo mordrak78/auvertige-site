@@ -27,21 +27,21 @@ const Anniversaire = () => {
     {
       name: "Bouquet Anniversaire - Gaieté",
       description: "Un bouquet éclatant pour fêter un anniversaire avec joie.",
-      image: "/images/creations/anniversaire/anniv1-bonbonne.jpg",
+      image: "/images/creations/anniversaire/anniv1-bonbonne.webp",
       price: 60,
       sku: "ANNIV-001"
     },
     {
       name: "Bouquet Anniversaire - Surprise",
       description: "Des couleurs vives pour une surprise inoubliable.",
-      image: "/images/creations/anniversaire/anniv2-rhipsalis.jpg",
+      image: "/images/creations/anniversaire/anniv2-rhipsalis.webp",
       price: 70,
       sku: "ANNIV-002"
     },
     {
       name: "Bouquet Anniversaire - Douceur",
       description: "Une composition douce pour un anniversaire tout en tendresse.",
-      image: "/images/creations/anniversaire/anniv3-orchidee.jpg",
+      image: "/images/creations/anniversaire/anniv3-orchidee.webp",
       price: 65,
       sku: "ANNIV-003"
     }

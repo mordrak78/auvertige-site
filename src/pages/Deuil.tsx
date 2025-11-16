@@ -68,21 +68,21 @@ const Deuil = () => {
     {
       name: "Bouquet Deuil - Souvenir",
       description: "Un bouquet sobre et élégant pour rendre hommage.",
-      image: "/images/creations/deuil/deuil-bouquet-rond-01.jpg",
+      image: "/images/creations/deuil/deuil-bouquet-rond-01.webp",
       price: 70,
       sku: "DEUIL-001"
     },
     {
       name: "Bouquet Deuil - Paix",
       description: "Des fleurs blanches pour transmettre un message de paix.",
-      image: "/images/creations/deuil/deuil-bouquet-rond-02.jpg",
+      image: "/images/creations/deuil/deuil-bouquet-rond-02.webp",
       price: 80,
       sku: "DEUIL-002"
     },
     {
       name: "Bouquet Deuil - Espérance",
       description: "Une composition florale pour accompagner le souvenir.",
-      image: "/images/creations/deuil/deuil-gerbe-longue-01.jpg",
+      image: "/images/creations/deuil/deuil-gerbe-longue-01.webp",
       price: 75,
       sku: "DEUIL-003"
     }

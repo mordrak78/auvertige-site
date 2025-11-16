@@ -4,7 +4,7 @@
 export const defaultSeo = {
   title: "Au Vertige - Fleuriste à Nantes",
   description: "Découvrez nos créations florales uniques pour tous vos événements. Fleuriste à Nantes, nous créons des compositions sur mesure pour vos moments spéciaux.",
-  image: "/images/og-image.jpg",
+  image: "/images/og-image.webp",
   type: "website" as const,
   additionalMeta: {
     "keywords": "fleuriste, nantes, compositions florales, événements, mariage, naissance, deuil",

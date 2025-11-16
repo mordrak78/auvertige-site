@@ -91,8 +91,8 @@ export const performanceUtils = {
  * Configuration des preloads critiques
  */
 export const CRITICAL_RESOURCES = [
-  '/images/hero/facade1.jpg', // Image hero
-  '/images/logo/logo9.png', // Logo principal
+  '/images/hero/facade1.webp', // Image hero
+  '/images/logo/logo9.webp', // Logo principal
 ];
 
 /**

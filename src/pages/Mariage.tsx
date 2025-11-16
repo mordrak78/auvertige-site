@@ -58,11 +58,11 @@ const mariageFAQItems: FAQItem[] = [
 ];
 
 const imagesMariage = [
-  "bouquet-de-mariage-1024x683.jpg",
-  "mariage-bouquet-01.jpg", "mariage-bouquet-02.jpg", "mariage-bouquet-03.jpg", "mariage-bouquet-04.jpg", "mariage-bouquet-05.jpg",
-  "mariage-bouquet-06.jpg", "mariage-bouquet-07.jpg", "mariage-bouquet-08.jpg", "mariage-bouquet-09.jpg", "mariage-bouquet-10.jpg",
-  "mariage-bouquet-11.jpg", "mariage-bouquet-12.jpg", "mariage-bouquet-13.jpg", "mariage-bouquet-14.jpg", "mariage-bouquet-15.jpg",
-  "mariage-bouquet-16.jpg", "mariage-bouquet-17.jpg", "mariage-bouquet-18.jpg", "mariage-bouquet-19.jpg", "mariage-bouquet-20.jpg"
+  "bouquet-de-mariage-1024x683.webp",
+  "mariage-bouquet-01.webp", "mariage-bouquet-02.webp", "mariage-bouquet-03.webp", "mariage-bouquet-04.webp", "mariage-bouquet-05.webp",
+  "mariage-bouquet-06.webp", "mariage-bouquet-07.webp", "mariage-bouquet-08.webp", "mariage-bouquet-09.webp", "mariage-bouquet-10.webp",
+  "mariage-bouquet-11.webp", "mariage-bouquet-12.webp", "mariage-bouquet-13.webp", "mariage-bouquet-14.webp", "mariage-bouquet-15.webp",
+  "mariage-bouquet-16.webp", "mariage-bouquet-17.webp", "mariage-bouquet-18.webp", "mariage-bouquet-19.webp", "mariage-bouquet-20.webp"
 ].map(img => `/images/creations/mariage/${img}`);
 
 const Mariage = () => {

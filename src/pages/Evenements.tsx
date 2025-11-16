@@ -1,15 +1,19 @@
 import * as React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { Suspense, lazy } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Layout from '@/components/layout/layout/Layout';
 import Seo from '@/components/shared/Seo';
-import InstagramFeed from '@/components/shared/InstagramFeed';
 import FAQ, { FAQItem } from '@/components/shared/FAQ';
 import { useSeasonalContent, SeasonalContentType } from '@/hooks/useSeasonalContent';
+import { useReducedMotion } from '@/hooks/useReducedMotion';
 import { Instagram, ExternalLink, Heart, Gift, Baby, Flower, Calendar, Sparkles, Leaf } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '@/components/ui/carousel';
 import { images } from '@/data/images';
 import { useState, useEffect } from 'react';
+
+// Lazy load des composants lourds
+const InstagramFeed = lazy(() => import('@/components/shared/InstagramFeed'));
 
 const evenementsFAQItems: FAQItem[] = [
   {
@@ -133,6 +137,7 @@ const Evenements = () => {
   const { isSeasonActive } = useSeasonalContent();
   const location = useLocation();
   const [activeSection, setActiveSection] = useState<string>('mariage');
+  const { shouldAnimate } = useReducedMotion();
   
   // Séparer les saisons actives et inactives
   const activeSeasons = seasonalCards.filter(card => isSeasonActive(card.id));
@@ -186,7 +191,7 @@ const Evenements = () => {
       <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/creations/mariage/bouquet-de-mariage-1024x683.jpg"
+            src="/images/creations/mariage/bouquet-de-mariage-1024x683.webp"
             alt="Événements floraux"
             className="w-full h-full object-cover"
           />
@@ -212,40 +217,27 @@ const Evenements = () => {
               { id: 'deuil', label: 'Deuil', icon: Flower },
             ].map((item) => {
               const isActive = activeSection === item.id;
+              const ButtonComponent = shouldAnimate ? motion.button : 'button';
+              const buttonProps = shouldAnimate ? {
+                whileHover: { scale: 1.05 },
+                whileTap: { scale: 0.95 },
+                transition: { duration: 0.2 }
+              } : {};
+              
               return (
-                <motion.button
+                <ButtonComponent
                   key={item.id}
                   onClick={() => setActiveSection(item.id)}
-                  whileHover={{ scale: 1.05, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                  animate={{
-                    scale: isActive ? 1.05 : 1,
-                    y: isActive ? -2 : 0
-                  }}
-                  transition={{ 
-                    type: "spring",
-                    stiffness: 400,
-                    damping: 25
-                  }}
+                  {...buttonProps}
                   className={`flex items-center gap-2 px-5 py-2.5 rounded-full transition-all duration-300 shadow-sm text-sm font-medium whitespace-nowrap relative overflow-hidden ${
                     isActive
                       ? 'bg-gradient-to-r from-poppy-500 to-poppy-600 text-white shadow-lg'
                       : 'bg-white text-sage-700 hover:bg-poppy-50 hover:text-poppy-600 hover:shadow-md'
                   }`}
                 >
-                  <motion.div
-                    className="absolute inset-0 bg-gradient-to-r from-poppy-400 to-poppy-500 opacity-0"
-                    animate={{ opacity: isActive ? 0.1 : 0 }}
-                    transition={{ duration: 0.3 }}
-                  />
-                  <motion.div
-                    animate={{ rotate: isActive ? 360 : 0 }}
-                    transition={{ duration: 0.5 }}
-                  >
-                    <item.icon size={16} className="relative z-10" />
-                  </motion.div>
+                  <item.icon size={16} className="relative z-10" />
                   <span className="relative z-10">{item.label}</span>
-                </motion.button>
+                </ButtonComponent>
               );
             })}
           </div>
@@ -776,7 +768,13 @@ const Evenements = () => {
           </div>
 
           {/* Composant Instagram Feed */}
-          <InstagramFeed />
+          <Suspense fallback={
+            <div className="flex justify-center items-center h-64">
+              <div className="animate-pulse text-sage-600">Chargement Instagram...</div>
+            </div>
+          }>
+            <InstagramFeed />
+          </Suspense>
         </div>
         </div>
       </section>

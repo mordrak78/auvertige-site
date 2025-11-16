@@ -88,7 +88,7 @@ const Header = () => {
           </motion.div>
 
           {/* Navigation Desktop avec animations */}
-          <nav className="hidden md:flex items-center" aria-label="Navigation principale">
+          <nav className="hidden md:flex items-center">
             <NavigationMenu>
               <NavigationMenuList className="space-x-2">
                 {navigationItems.map((item, index) => {
@@ -108,14 +108,13 @@ const Header = () => {
                             <NavLink
                               to={item.href}
                               className={cn(
-                                'h-10 px-4 py-2 text-base relative flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-poppy-500 focus:ring-offset-2 rounded-md transition-all',
+                                'h-10 px-4 py-2 text-base relative flex items-center gap-2',
                                 isActive && 'text-sage-600'
                               )}
-                              aria-current={isActive ? 'page' : undefined}
                             >
                               {item.label}
                               {item.icon && (
-                                <item.icon size={16} className="text-poppy-500" aria-hidden="true" />
+                                <item.icon size={16} className="text-poppy-500" />
                               )}
                               {isActive && (
                                 <motion.div
@@ -123,7 +122,6 @@ const Header = () => {
                                   className="absolute bottom-0 left-0 right-0 h-0.5 bg-poppy-500"
                                   initial={false}
                                   transition={{ type: "spring", stiffness: 380, damping: 30 }}
-                                  aria-hidden="true"
                                 />
                               )}
                             </NavLink>
@@ -184,9 +182,9 @@ const Header = () => {
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                 <SheetHeader>
-                  <SheetTitle className="text-left">Menu de navigation</SheetTitle>
+                  <SheetTitle className="text-left">Menu</SheetTitle>
                 </SheetHeader>
-                <nav className="flex flex-col space-y-4 mt-8" aria-label="Navigation mobile">
+                <nav className="flex flex-col space-y-4 mt-8">
                   <AnimatePresence>
                     {navigationItems.map((item, index) => (
                       <motion.div
@@ -199,13 +197,12 @@ const Header = () => {
                         <NavLink
                           to={item.href}
                           onClick={handleMenuClose}
-                          className="text-sage-800 hover:text-sage-600 transition-all duration-300 font-medium px-4 py-3 relative group min-h-[44px] flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-poppy-500 focus:ring-offset-2 rounded-md"
+                          className="text-sage-800 hover:text-sage-600 transition-all duration-300 font-medium px-4 py-3 relative group min-h-[44px] flex items-center gap-2"
                           activeClassName="text-sage-600"
-                          aria-current={location.pathname === item.href ? 'page' : undefined}
                         >
                           {item.label}
                           {item.icon && (
-                            <item.icon size={16} className="text-poppy-500" aria-hidden="true" />
+                            <item.icon size={16} className="text-poppy-500" />
                           )}
                         </NavLink>
                       </motion.div>

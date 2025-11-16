@@ -26,21 +26,21 @@ const Bapteme = () => {
     {
       name: "Bouquet Baptême - Pureté",
       description: "Un bouquet blanc immaculé pour célébrer la pureté",
-      image: "/images/creations/bapteme/DSCN08111-e1518269397381.jpg",
+      image: "/images/creations/bapteme/DSCN08111-e1518269397381.webp",
       price: 65,
       sku: "BAP-001"
     },
     {
       name: "Bouquet Baptême - Douceur",
       description: "Des fleurs délicates pour un moment empreint de douceur",
-      image: "/images/creations/bapteme/DSCN12371.jpg",
+      image: "/images/creations/bapteme/DSCN12371.webp",
       price: 75,
       sku: "BAP-002"
     },
     {
       name: "Bouquet Baptême - Harmonie",
       description: "Une composition harmonieuse pour célébrer l'événement",
-      image: "/images/creations/bapteme/DSCN12401.jpg",
+      image: "/images/creations/bapteme/DSCN12401.webp",
       price: 85,
       sku: "BAP-003"
     }

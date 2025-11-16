@@ -16,7 +16,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-sage-800 text-white" role="contentinfo">
+    <footer className="bg-sage-800 text-white">
       {/* CTAs finaux */}
       <div className="bg-sage-700 py-8">
         <div className="container mx-auto px-4 text-center">
@@ -24,18 +24,16 @@ const Footer = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
             <Button
               onClick={handleCall}
-              className="bg-poppy-500 hover:bg-poppy-600 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 min-h-[44px] min-w-[120px] focus:outline-none focus:ring-2 focus:ring-poppy-300 focus:ring-offset-2"
-              aria-label="Appeler Au Vertige au 02 40 54 10 02"
+              className="bg-poppy-500 hover:bg-poppy-600 text-white px-6 py-3 rounded-full font-medium transition-all duration-300"
             >
-              <Phone size={18} className="mr-2" aria-hidden="true" />
+              <Phone size={18} className="mr-2" />
               <span>Appeler</span>
             </Button>
           </div>
           <div className="mt-2">
             <button
               onClick={scrollToOrder}
-              className="text-sage-100 underline hover:text-white text-sm transition-colors min-h-[44px] px-2 focus:outline-none focus:ring-2 focus:ring-poppy-300 focus:ring-offset-2 rounded"
-              aria-label="Aller au formulaire de commande"
+              className="text-sage-100 underline hover:text-white text-sm transition-colors"
             >
               Accéder au formulaire de commande
             </button>
@@ -72,27 +70,21 @@ const Footer = () => {
 
             {/* Contact rapide */}
             <div className="text-center">
-              <h3 className="text-lg font-semibold mb-4" id="contact-footer">Contact & Boutique</h3>
+              <h3 className="text-lg font-semibold mb-4">Contact & Boutique</h3>
               <div className="space-y-3 text-sage-200 text-sm">
                 <div className="flex items-center justify-center space-x-2">
-                  <MapPin size={16} aria-hidden="true" />
+                  <MapPin size={16} />
                   <span>38, boulevard Joliot Curie, 44200 Nantes</span>
                 </div>
                 <div className="flex items-center justify-center space-x-2">
-                  <Phone size={16} aria-hidden="true" />
-                  <button 
-                    onClick={handleCall} 
-                    className="hover:text-white transition-colors min-h-[44px] px-2 focus:outline-none focus:ring-2 focus:ring-poppy-300 focus:ring-offset-2 rounded"
-                    aria-label="Appeler Au Vertige au 02 40 54 10 02"
-                  >
+                  <Phone size={16} />
+                  <button onClick={handleCall} className="hover:text-white transition-colors">
                     02 40 54 10 02
                   </button>
                 </div>
                 <div className="flex items-center justify-center space-x-2">
-                  <Mail size={16} aria-hidden="true" />
-                  <a href="mailto:contact@auvertige-nantes.fr" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-poppy-300 focus:ring-offset-2 rounded px-2 min-h-[44px] flex items-center">
-                    contact@auvertige-nantes.fr
-                  </a>
+                  <Mail size={16} />
+                  <span>contact@auvertige-nantes.fr</span>
                 </div>
                 <p className="text-xs text-sage-300 mt-2">
                   Lun-Sam 9h-19h • Dim 9h-13h
@@ -102,7 +94,7 @@ const Footer = () => {
 
             {/* Nouvelle section : Notre boutique partenaire */}
             <div className="text-center">
-              <h3 className="text-lg font-semibold mb-4" id="partenaire-footer">Notre boutique partenaire</h3>
+              <h3 className="text-lg font-semibold mb-4">Notre boutique partenaire</h3>
               <a 
                 href="https://www.artisansfleuristesdefrance.com/"
                 target="_blank"
@@ -155,7 +147,7 @@ const Footer = () => {
 
             {/* Réseaux sociaux et navigation */}
             <div className="text-center">
-              <h3 className="text-lg font-semibold mb-4" id="reseaux-footer">Suivez-nous</h3>
+              <h3 className="text-lg font-semibold mb-4">Suivez-nous</h3>
               <div className="flex justify-center space-x-4 mb-6">
                 <a 
                   href="https://www.instagram.com/auvertigefleuriste_nantes/" 
@@ -186,8 +178,8 @@ const Footer = () => {
               
               {/* Navigation rapide - Tous les liens pour le SEO */}
               <div className="space-y-4">
-            <h4 className="text-sm font-semibold mb-3 text-sage-200" id="navigation-footer">Navigation</h4>
-            <nav className="grid grid-cols-1 gap-2 text-sm" aria-labelledby="navigation-footer">
+            <h4 className="text-sm font-semibold mb-3 text-sage-200">Navigation</h4>
+            <nav className="grid grid-cols-1 gap-2 text-sm">
               <Link to="/services" className="block hover:text-white transition-colors">Nos services</Link>
               <Link to="/creations-florales" className="block hover:text-white transition-colors">Créations florales</Link>
               <Link to="/fleuriste-saint-jacques" className="block hover:text-white transition-colors">Fleuriste Saint-Jacques</Link>

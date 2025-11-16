@@ -4,11 +4,11 @@ import { Sparkles } from 'lucide-react';
 const Gallery = () => {
   // Images de placeholder pour la galerie
   const galleryImages = [
-    { src: "/images/creations/offrir/roses-saint-valentin-03.jpg", alt: "Bouquet de roses", category: "Bouquets" },
-    { src: "/images/creations/deuil/deuil-bouquet-rond-01.jpg", alt: "Bouquet de deuil", category: "Bouquets" },
-    { src: "/images/creations/anniversaire/anniv1-bonbonne.jpg", alt: "Bouquet anniversaire", category: "Bouquets" },
+    { src: "/images/creations/offrir/roses-saint-valentin-03.webp", alt: "Bouquet de roses", category: "Bouquets" },
+    { src: "/images/creations/deuil/deuil-bouquet-rond-01.webp", alt: "Bouquet de deuil", category: "Bouquets" },
+    { src: "/images/creations/anniversaire/anniv1-bonbonne.webp", alt: "Bouquet anniversaire", category: "Bouquets" },
     { src: "/images/creations/se-faire-plaisir/fleurs2.webp", alt: "Plante verte d'intérieur", category: "Plantes" },
-    { src: "/images/creations/mariage/bouquet-de-mariage-1024x683.jpg", alt: "Composition mariage", category: "Compositions" }
+    { src: "/images/creations/mariage/bouquet-de-mariage-1024x683.webp", alt: "Composition mariage", category: "Compositions" }
   ];
 
   return (

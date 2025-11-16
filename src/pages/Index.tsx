@@ -1,18 +1,28 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
+import { Suspense, lazy } from 'react';
 import Layout from '@/components/layout/layout/Layout';
 import Hero from '@/components/shared/Hero';
-import EngagementCards from '@/components/shared/EngagementCards';
-import CreationsShowcase from '@/components/features/shop/CreationsShowcase';
-import ServicesPreview from '@/components/shared/ServicesPreview';
-import ReassuranceBanner from '@/components/shared/ReassuranceBanner';
-import OrderForm from '@/components/features/shop/OrderForm';
-import ReviewsSection from '@/components/shared/ReviewsSection';
 import Seo from '@/components/shared/Seo';
-import AboutAndInfoSection from '@/components/shared/AboutAndInfoSection';
-import ZonesDesserviesSection from '@/components/shared/ZonesDesserviesSection';
-import { FeaturedBouquets } from '@/components/shared/FeaturedBouquets';
 import { useEffect } from 'react';
+
+// Lazy load des composants non critiques (below the fold)
+const EngagementCards = lazy(() => import('@/components/shared/EngagementCards'));
+const CreationsShowcase = lazy(() => import('@/components/features/shop/CreationsShowcase'));
+const ServicesPreview = lazy(() => import('@/components/shared/ServicesPreview'));
+const ReassuranceBanner = lazy(() => import('@/components/shared/ReassuranceBanner'));
+const OrderForm = lazy(() => import('@/components/features/shop/OrderForm'));
+const ReviewsSection = lazy(() => import('@/components/shared/ReviewsSection'));
+const AboutAndInfoSection = lazy(() => import('@/components/shared/AboutAndInfoSection'));
+const ZonesDesserviesSection = lazy(() => import('@/components/shared/ZonesDesserviesSection'));
+const FeaturedBouquets = lazy(() => import('@/components/shared/FeaturedBouquets').then(m => ({ default: m.FeaturedBouquets })));
+
+// Composant de chargement minimal
+const LoadingFallback = () => (
+  <div className="min-h-[200px] flex items-center justify-center">
+    <div className="animate-pulse text-sage-600">Chargement...</div>
+  </div>
+);
 
 const zonesDesservies = ["Pirmil", "Saint-Sébastien-sur-Loire", "Rezé"];
 
@@ -63,15 +73,31 @@ const Index = () => {
         ]}
       />
       <Hero />
-      <FeaturedBouquets />
-      <CreationsShowcase />
-      <ServicesPreview />
-      <ZonesDesserviesSection />
-      <ReassuranceBanner />
-      <AboutAndInfoSection />
-      <ReviewsSection />
+      <Suspense fallback={<LoadingFallback />}>
+        <FeaturedBouquets />
+      </Suspense>
+      <Suspense fallback={<LoadingFallback />}>
+        <CreationsShowcase />
+      </Suspense>
+      <Suspense fallback={<LoadingFallback />}>
+        <ServicesPreview />
+      </Suspense>
+      <Suspense fallback={<LoadingFallback />}>
+        <ZonesDesserviesSection />
+      </Suspense>
+      <Suspense fallback={<LoadingFallback />}>
+        <ReassuranceBanner />
+      </Suspense>
+      <Suspense fallback={<LoadingFallback />}>
+        <AboutAndInfoSection />
+      </Suspense>
+      <Suspense fallback={<LoadingFallback />}>
+        <ReviewsSection />
+      </Suspense>
       <section id="commander" className="bg-cream-100 py-16 md:py-24">
-        <OrderForm />
+        <Suspense fallback={<LoadingFallback />}>
+          <OrderForm />
+        </Suspense>
       </section>
     </Layout>
   );

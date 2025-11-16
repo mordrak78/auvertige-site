@@ -28,7 +28,7 @@ const featuredProducts: FeaturedProduct[] = [
     id: 'produit-2',
     title: 'Plantes "Boul Ki Mous"',
     description: 'Nos plantes coup de cœur, sélectionnées avec soin pour leur beauté et leur facilité d\'entretien.',
-    image: '/images/creations/se-faire-plaisir/plante/anniv4-beaucarnea.jpg',
+    image: '/images/creations/se-faire-plaisir/plante/anniv4-beaucarnea.webp',
     link: '/services#plantes',
     category: 'Plantes'
   },

@@ -56,7 +56,7 @@ const AboutAndInfoSection = () => {
               <motion.img
                 whileHover={{ rotate: [0, -10, 10, -10, 0] }}
                 transition={{ duration: 0.5 }}
-                src="/images/logo/logo4.png"
+                src="/images/logo/logo4.webp"
                 alt="Logo Au Vertige - Artisan fleuriste Nantes"
                 className="h-16 w-16 object-contain rounded-full shadow-lg mr-4"
               />
@@ -121,7 +121,7 @@ const AboutAndInfoSection = () => {
                 <motion.img
                   whileHover={{ rotate: [0, -5, 5, 0] }}
                   transition={{ duration: 0.5 }}
-                  src="/images/logo/logo1.jpg"
+                  src="/images/logo/logo1.webp"
                   alt="Artisans Fleuristes de France"
                   className="h-12 w-auto"
                 />

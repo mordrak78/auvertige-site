@@ -13,7 +13,7 @@ const categories = [
   {
     key: 'deuil',
     title: 'Deuil',
-    image: '/images/creations/deuil/deuil-bouquet-rond-01.jpg',
+    image: '/images/creations/deuil/deuil-bouquet-rond-01.webp',
     description: 'Compositions respectueuses et élégantes pour honorer vos proches',
     icon: Heart,
     color: 'bg-gray-50 border-gray-200 text-gray-700'
@@ -21,7 +21,7 @@ const categories = [
   {
     key: 'mariage',
     title: 'Mariage',
-    image: '/images/creations/mariage/bouquet-de-mariage-1024x683.jpg',
+    image: '/images/creations/mariage/bouquet-de-mariage-1024x683.webp',
     description: 'Créations florales pour votre plus beau jour',
     icon: Heart,
     color: 'bg-pink-50 border-pink-200 text-pink-700'
@@ -29,7 +29,7 @@ const categories = [
   {
     key: 'anniversaire',
     title: 'Anniversaire',
-    image: '/images/creations/anniversaire/anniv1-bonbonne.jpg',
+    image: '/images/creations/anniversaire/anniv1-bonbonne.webp',
     description: 'Bouquets joyeux pour célébrer un anniversaire',
     icon: Gift,
     color: 'bg-yellow-50 border-yellow-200 text-yellow-700'
@@ -37,7 +37,7 @@ const categories = [
   {
     key: 'bapteme',
     title: 'Baptême',
-    image: '/images/creations/bapteme/DSCN08111-e1518269397381.jpg',
+    image: '/images/creations/bapteme/DSCN08111-e1518269397381.webp',
     description: 'Créations tendres pour célébrer un baptême',
     icon: Baby,
     color: 'bg-blue-50 border-blue-200 text-blue-700'
@@ -45,7 +45,7 @@ const categories = [
   {
     key: 'plaisirs-offrir',
     title: 'Plaisirs d\'offrir',
-    image: '/images/creations/offrir/roses-saint-valentin-03.jpg',
+    image: '/images/creations/offrir/roses-saint-valentin-03.webp',
     description: 'Bouquets pour faire plaisir à vos proches',
     icon: Sparkles,
     color: 'bg-purple-50 border-purple-200 text-purple-700'
@@ -86,7 +86,7 @@ const CreationsFlorales = () => {
           <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center">
             <div className="absolute inset-0 z-0">
               <img
-                src="/images/creations/mariage/bouquet-de-mariage-1024x683.jpg"
+                src="/images/creations/mariage/bouquet-de-mariage-1024x683.webp"
                 alt="Créations florales"
                 className="w-full h-full object-cover object-center"
               />

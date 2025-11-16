@@ -12,25 +12,25 @@ const produitsFleursDuMoment = [
   {
     nom: "L'ILOT SENTEUR Bouquet de saison camaïeu rose",
     prix: "À partir de 21,80 €",
-    image: "https://www.artisansfleuristesdefrance.com/12345-large_default/ilot-senteur-bouquet.jpg",
+    image: "https://www.artisansfleuristesdefrance.com/12345-large_default/ilot-senteur-bouquet.webp",
     url: "https://www.artisansfleuristesdefrance.com/produit/ilot-senteur-bouquet"
   },
   {
     nom: "L'évidence rose",
     prix: "À partir de 35,00 €",
-    image: "https://www.artisansfleuristesdefrance.com/23456-large_default/evidence-rose.jpg",
+    image: "https://www.artisansfleuristesdefrance.com/23456-large_default/evidence-rose.webp",
     url: "https://www.artisansfleuristesdefrance.com/produit/evidence-rose"
   },
   {
     nom: "UN ETE A LA CAMPAGNE 35300 L'évidence rose",
     prix: "À partir de 35,00 €",
-    image: "https://www.artisansfleuristesdefrance.com/34567-large_default/ete-campagne-rose.jpg",
+    image: "https://www.artisansfleuristesdefrance.com/34567-large_default/ete-campagne-rose.webp",
     url: "https://www.artisansfleuristesdefrance.com/produit/ete-campagne-rose"
   },
   {
     nom: "FLEURETTE L'évidence rose",
     prix: "À partir de 39,00 €",
-    image: "https://www.artisansfleuristesdefrance.com/45678-large_default/fleurette-rose.jpg",
+    image: "https://www.artisansfleuristesdefrance.com/45678-large_default/fleurette-rose.webp",
     url: "https://www.artisansfleuristesdefrance.com/produit/fleurette-rose"
   },
 ];
@@ -402,7 +402,7 @@ const OrderForm = () => {
                   <motion.img
                     whileHover={{ rotate: [0, -5, 5, 0] }}
                     transition={{ duration: 0.5 }}
-                    src="/images/logo/logo1.jpg"
+                    src="/images/logo/logo1.webp"
                     alt="Artisans Fleuristes de France"
                     className="h-12 w-auto"
                   />

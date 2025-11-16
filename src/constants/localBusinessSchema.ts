@@ -2,7 +2,7 @@ export const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "Florist",
   "name": "Au Vertige",
-  "image": "/lovable-uploads/12588a43-2d62-4e2b-8c52-f1169daf36d5.png",
+  "image": "/lovable-uploads/12588a43-2d62-4e2b-8c52-f1169daf36d5.webp",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "38, boulevard Joliot Curie",

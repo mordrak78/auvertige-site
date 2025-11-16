@@ -7,7 +7,7 @@ const services = [
   {
     key: 'bouquets',
     title: "Bouquets & fleurs fraîches",
-    image: "/images/creations/offrir/roses-saint-valentin-03.jpg",
+    image: "/images/creations/offrir/roses-saint-valentin-03.webp",
     description: "Bouquets sur-mesure, livraison à Nantes Sud (Saint-Jacques, Pirmil, Rezé, Saint-Sébastien-sur-Loire), abonnement floral, créations pour toutes les occasions.",
     tag: 'Populaire',
     isNew: false,
@@ -16,7 +16,7 @@ const services = [
   {
     key: 'plantes',
     title: "Plantes",
-    image: "/images/creations/anniversaire/anniv4-beaucarnea.jpg",
+    image: "/images/creations/anniversaire/anniv4-beaucarnea.webp",
     description: "Plantes vertes d'intérieur, plantes fleuries, cactus et succulentes. Mention spéciale pour les 'Boul Ki Mous' - nos plantes coup de cœur !",
     tag: 'Tendance',
     isNew: false,
@@ -25,7 +25,7 @@ const services = [
   {
     key: 'fleurissement-tombes',
     title: "Fleurissement de tombes",
-    image: "/images/creations/deuil/deuil-bouquet-rond-01.jpg",
+    image: "/images/creations/deuil/deuil-bouquet-rond-01.webp",
     description: "Compositions florales respectueuses pour honorer vos proches. Proximité du cimetière Saint-Jacques pour un service facilité.",
     tag: 'Service',
     isNew: false,
