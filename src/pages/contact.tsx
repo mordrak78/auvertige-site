@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-// import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { MapPin, Store, Star, Heart } from 'lucide-react';
 import Layout from '@/components/layout/layout/Layout';
 import Seo from '@/components/shared/Seo';
