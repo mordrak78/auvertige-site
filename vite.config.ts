@@ -18,6 +18,8 @@ export default defineConfig(({ mode }) => ({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
+    // AJOUT DE LA DÉDUPLICATION
+    dedupe: ['react', 'react-dom']
   },
   build: {
     // Optimisations Core Web Vitals
@@ -32,32 +34,8 @@ export default defineConfig(({ mode }) => ({
     },
     rollupOptions: {
       output: {
-        manualChunks: (id) => {
-          if (id.includes('node_modules')) {
-            // CRITIQUE: React et React-DOM DOIVENT être dans le chunk principal (index)
-            // pour être chargés en premier et éviter les erreurs createContext
-            // On ne les sépare PAS dans un chunk séparé
-            if (id.includes('react') || id.includes('react-dom')) {
-              // Ne pas créer de chunk séparé - laisser dans le chunk principal
-              return undefined;
-            }
-            // Séparer framer-motion dans son propre chunk (peut être lazy-loaded)
-            if (id.includes('framer-motion')) {
-              return 'framer-motion';
-            }
-            if (id.includes('react-router')) {
-              return 'vendor-router';
-            }
-            if (id.includes('@radix-ui')) {
-              return 'vendor-radix';
-            }
-            if (id.includes('lucide-react')) {
-              return 'vendor-icons';
-            }
-            // Autres dépendances
-            return 'vendor';
-          }
-        },
+        // SUPPRESSION DE 'manualChunks' - Laisser Vite gérer
+        
         // Optimiser les noms de chunks
         chunkFileNames: 'assets/js/[name]-[hash].js',
         entryFileNames: 'assets/js/[name]-[hash].js',
@@ -79,11 +57,7 @@ export default defineConfig(({ mode }) => ({
     cssCodeSplit: true,
     sourcemap: false, // Désactiver en production pour réduire la taille
   },
-  // Optimisations de développement
-  optimizeDeps: {
-    include: ['react', 'react-dom', 'react-router-dom'],
-    exclude: ['framer-motion'], // Exclure framer-motion du pre-bundling pour réduire le bundle initial
-  },
+  // SUPPRESSION DE 'optimizeDeps' - Laisser Vite gérer
   test: {
     environment: 'jsdom',
     setupFiles: './src/test/setup.ts',
