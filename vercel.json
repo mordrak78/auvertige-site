@@ -1,4 +1,7 @@
 {
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
   "headers": [
     {
       "source": "/site.webmanifest",
@@ -31,6 +34,10 @@
     {
       "source": "/site.webmanifest",
       "destination": "/site.webmanifest"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
