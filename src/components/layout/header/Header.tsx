@@ -78,7 +78,7 @@ const Header = () => {
               <Link to="/" aria-label="Retour à l'accueil">
                 <OptimizedImage
                   src={images.logos.logo9}
-                  alt="Au Vertige Logo"
+                  alt="au ver'tige Logo"
                   className="h-24 w-24 object-contain"
                   priority
                   width={96}
@@ -150,7 +150,7 @@ const Header = () => {
               <Button
                 onClick={handleCall}
                 className="bg-sage-600 hover:bg-sage-700 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:shadow-lg transition-all duration-300 min-h-[44px]"
-                aria-label="Appeler Au Vertige au 02 40 54 10 02"
+                aria-label="Appeler au ver'tige au 02 40 54 10 02"
               >
                 <Phone size={20} className="mr-2" />
                 <span className="text-lg">02 40 54 10 02</span>
@@ -224,7 +224,7 @@ const Header = () => {
                         handleMenuClose();
                       }}
                       className="bg-sage-600 hover:bg-sage-700 text-white px-4 py-3 rounded-full font-semibold transition-all duration-300 mt-4 shadow-md min-h-[44px] w-full"
-                      aria-label="Appeler Au Vertige au 02 40 54 10 02"
+                      aria-label="Appeler au ver'tige au 02 40 54 10 02"
                     >
                       <Phone size={18} className="mr-2" />
                       <span>02 40 54 10 02</span>

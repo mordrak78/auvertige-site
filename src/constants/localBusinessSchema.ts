@@ -1,7 +1,8 @@
 export const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "Florist",
-  "name": "Au Vertige",
+  "name": "au ver'tige",
+  "alternateName": "au ver'tige Fleuriste",
   "image": "/lovable-uploads/12588a43-2d62-4e2b-8c52-f1169daf36d5.webp",
   "address": {
     "@type": "PostalAddress",

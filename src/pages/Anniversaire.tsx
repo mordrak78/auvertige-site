@@ -50,8 +50,8 @@ const Anniversaire = () => {
   return (
     <Layout>
       <Seo
-        title="Bouquets d'anniversaire à Nantes Sud Saint-Jacques | Au Vertige"
-        description="Offrez un bouquet d'anniversaire unique à Nantes Sud (Saint-Jacques, Pirmil, Rezé, Saint-Sébastien-sur-Loire). Créations personnalisées, livraison rapide, conseils sur-mesure."
+        title="Fleuriste Anniversaire Nantes | Bouquet cadeau | au ver&apos;tige"
+        description="Offrez des fleurs pour un anniversaire à Nantes avec au ver'tige. Bouquets colorés, compositions festives et plantes cadeaux."
         type="website"
         breadcrumbs={[
           { name: "Accueil", url: "/" },
@@ -70,7 +70,7 @@ const Anniversaire = () => {
             "description": "Création de bouquets d'anniversaire personnalisés, livraison à Nantes Sud, Saint-Jacques, Pirmil, Rezé, Saint-Sébastien-sur-Loire.",
             "provider": {
               "@type": "LocalBusiness",
-              "name": "Au Vertige",
+              "name": "au ver'tige",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "38, boulevard Joliot Curie",
@@ -168,7 +168,7 @@ const Anniversaire = () => {
             </motion.div>
             <div className="flex justify-center mt-6">
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Button 
+                <Button
                   onClick={() => setShowRdvModal(true)}
                   className="bg-poppy-500 hover:bg-poppy-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition text-lg"
                 >
@@ -185,7 +185,7 @@ const Anniversaire = () => {
             transition={{ duration: 0.6, delay: 1.2 }}
             className="mt-16 max-w-2xl mx-auto bg-sage-50 rounded-2xl p-8 shadow-lg text-center"
           >
-            <h2 className="text-2xl md:text-3xl font-dancing text-sage-700 mb-4">Pourquoi choisir Au Vertige pour un anniversaire ?</h2>
+            <h2 className="text-2xl md:text-3xl font-dancing text-sage-700 mb-4">Pourquoi choisir au ver'tige pour un anniversaire ?</h2>
             <ul className="text-sage-700 text-lg space-y-3 mb-4">
               <li className="flex items-start gap-2">
                 <Leaf className="h-5 w-5 text-sage-600 mt-0.5 flex-shrink-0" />

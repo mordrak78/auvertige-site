@@ -36,7 +36,7 @@ const DEFAULT_PAGE_STRUCTURES: Record<string, Partial<PageStructure>> = {
     heroImage: '/images/hero/facade1.webp',
     elements: [
       { id: 'title', type: 'h1', content: 'Notre Histoire', order: 1 },
-      { id: 'intro', type: 'p', content: 'Au Vertige est né de la passion pour l\'art floral et du désir de créer des émotions à travers les fleurs. Installés au cœur de Nantes, nous sommes un atelier artisanal qui privilégie la qualité et l\'originalité.', order: 2 },
+      { id: 'intro', type: 'p', content: 'au ver\'tige est né de la passion pour l\'art floral et du désir de créer des émotions à travers les fleurs. Installés au cœur de Nantes, nous sommes un atelier artisanal qui privilégie la qualité et l\'originalité.', order: 2 },
     ],
   },
   'contact': {
@@ -92,10 +92,10 @@ const DEFAULT_PAGE_STRUCTURES: Record<string, Partial<PageStructure>> = {
 export const getPageStructure = (pageId: string): PageStructure => {
   // Récupérer les données éditées depuis localStorage
   const editedContent = getPageContentFromStorage(pageId);
-  
+
   // Structure par défaut
   const defaultStructure = DEFAULT_PAGE_STRUCTURES[pageId] || { elements: [] };
-  
+
   // Récupérer les éléments sauvegardés (structure complète)
   let savedElements: PageElement[] = [];
   if (editedContent?.structure) {
@@ -104,7 +104,7 @@ export const getPageStructure = (pageId: string): PageStructure => {
   } else {
     // Sinon, reconstruire depuis les données simples
     const elements: PageElement[] = [];
-    
+
     // Ajouter le titre H1
     if (editedContent?.title) {
       elements.push({
@@ -116,7 +116,7 @@ export const getPageStructure = (pageId: string): PageStructure => {
     } else if (defaultStructure.elements?.[0]?.type === 'h1') {
       elements.push(defaultStructure.elements[0]);
     }
-    
+
     // Ajouter les paragraphes
     if (editedContent?.paragraphs) {
       editedContent.paragraphs.forEach((p, i) => {
@@ -134,7 +134,7 @@ export const getPageStructure = (pageId: string): PageStructure => {
           elements.push({ ...e, order: 10 + i });
         });
     }
-    
+
     // Ajouter les images (sauf hero)
     if (editedContent?.images) {
       editedContent.images
@@ -150,13 +150,13 @@ export const getPageStructure = (pageId: string): PageStructure => {
           });
         });
     }
-    
+
     savedElements = elements;
   }
-  
+
   // Déterminer l'image hero
   const heroImage = editedContent?.images?.find(img => img.key === 'hero')?.url || defaultStructure.heroImage;
-  
+
   return {
     pageId,
     heroImage,

@@ -4,8 +4,8 @@ export const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "Florist",
   "@id": "https://auvertige-nantes.fr/#business",
-  "name": "Au Vertige",
-  "alternateName": "Au Vertige Fleuriste",
+  "name": "au ver'tige",
+  "alternateName": "au ver'tige Fleuriste",
   "description": "Artisan fleuriste à Nantes spécialisé dans les créations florales personnalisées et les fleurs locales",
   "url": "https://auvertige-nantes.fr",
   "telephone": "+33240541002",
@@ -140,7 +140,7 @@ export const productSchema = (product: {
     "availability": "https://schema.org/InStock",
     "seller": {
       "@type": "Organization",
-      "name": "Au Vertige"
+      "name": "au ver'tige"
     }
   }
 });
@@ -184,7 +184,7 @@ export const eventSchema = (event: {
   "endDate": event.endDate,
   "location": {
     "@type": "Place",
-    "name": "Au Vertige",
+    "name": "au ver'tige",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "38, boulevard Joliot Curie",
@@ -197,7 +197,7 @@ export const eventSchema = (event: {
   "image": event.image,
   "organizer": {
     "@type": "Organization",
-    "name": "Au Vertige",
+    "name": "au ver'tige",
     "url": "https://auvertige-nantes.fr"
   }
 });

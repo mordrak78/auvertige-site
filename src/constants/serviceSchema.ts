@@ -1,5 +1,5 @@
 /**
- * Schema Service pour les différents services proposés par Au Vertige
+ * Schema Service pour les différents services proposés par au ver'tige
  */
 
 export const bouquetServiceSchema = {
@@ -7,11 +7,11 @@ export const bouquetServiceSchema = {
   "@type": "Service",
   "@id": "https://auvertige.fr/#service-bouquets",
   "name": "Bouquet Nantes - Créations sur-mesure",
-  "description": "Bouquet Nantes : Au Vertige crée des bouquets sur-mesure et personnalisés pour toutes les occasions. Artisan fleuriste à Nantes Sud, quartier Saint-Jacques. Retrait en boutique.",
+  "description": "Bouquet Nantes : au ver'tige crée des bouquets sur-mesure et personnalisés pour toutes les occasions. Artisan fleuriste à Nantes Sud, quartier Saint-Jacques. Retrait en boutique.",
   "provider": {
     "@type": "LocalBusiness",
     "@id": "https://auvertige.fr/#business",
-    "name": "Au Vertige",
+    "name": "au ver'tige",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "38, boulevard Joliot Curie",
@@ -39,7 +39,7 @@ export const bouquetServiceSchema = {
     "serviceType": "Retrait en boutique",
     "serviceLocation": {
       "@type": "LocalBusiness",
-      "name": "Au Vertige",
+      "name": "au ver'tige",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "38, boulevard Joliot Curie",
@@ -55,11 +55,11 @@ export const mariageServiceSchema = {
   "@type": "Service",
   "@id": "https://auvertige.fr/#service-mariage",
   "name": "Fleuriste mariage Nantes - Bouquets et décorations",
-  "description": "Fleuriste mariage Nantes : Au Vertige crée vos bouquets de mariée et décorations florales sur-mesure à Nantes Sud. Artisan fleuriste spécialisé mariage. Retrait en boutique.",
+  "description": "Fleuriste mariage Nantes : au ver'tige crée vos bouquets de mariée et décorations florales sur-mesure à Nantes Sud. Artisan fleuriste spécialisé mariage. Retrait en boutique.",
   "provider": {
     "@type": "LocalBusiness",
     "@id": "https://auvertige.fr/#business",
-    "name": "Au Vertige"
+    "name": "au ver'tige"
   },
   "areaServed": [
     {
@@ -86,11 +86,11 @@ export const plantesServiceSchema = {
   "@type": "Service",
   "@id": "https://auvertige.fr/#service-plantes",
   "name": "Plantes d'intérieur Nantes",
-  "description": "Plantes d'intérieur Nantes : Au Vertige propose une sélection de plantes vertes, plantes fleuries, cactus et succulentes. Artisan fleuriste à Nantes Sud. Conseils personnalisés.",
+  "description": "Plantes d'intérieur Nantes : au ver'tige propose une sélection de plantes vertes, plantes fleuries, cactus et succulentes. Artisan fleuriste à Nantes Sud. Conseils personnalisés.",
   "provider": {
     "@type": "LocalBusiness",
     "@id": "https://auvertige.fr/#business",
-    "name": "Au Vertige"
+    "name": "au ver'tige"
   },
   "areaServed": [
     {
@@ -117,11 +117,11 @@ export const fleurissementServiceSchema = {
   "@type": "Service",
   "@id": "https://auvertige.fr/#service-fleurissement",
   "name": "Fleurissement de tombes Nantes",
-  "description": "Fleurissement de tombes Nantes : Au Vertige crée des compositions florales respectueuses pour honorer vos proches. Proximité du cimetière Saint-Jacques. Artisan fleuriste à Nantes Sud.",
+  "description": "Fleurissement de tombes Nantes : au ver'tige crée des compositions florales respectueuses pour honorer vos proches. Proximité du cimetière Saint-Jacques. Artisan fleuriste à Nantes Sud.",
   "provider": {
     "@type": "LocalBusiness",
     "@id": "https://auvertige.fr/#business",
-    "name": "Au Vertige"
+    "name": "au ver'tige"
   },
   "areaServed": [
     {
@@ -148,11 +148,11 @@ export const bougiesServiceSchema = {
   "@type": "Service",
   "@id": "https://auvertige.fr/#service-bougies",
   "name": "Bougies parfumées Nantes",
-  "description": "Bougies parfumées Nantes : Au Vertige propose une sélection de bougies artisanales et parfums d'ambiance Mathilde M. Artisan fleuriste à Nantes Sud. Idées cadeaux.",
+  "description": "Bougies parfumées Nantes : au ver'tige propose une sélection de bougies artisanales et parfums d'ambiance Mathilde M. Artisan fleuriste à Nantes Sud. Idées cadeaux.",
   "provider": {
     "@type": "LocalBusiness",
     "@id": "https://auvertige.fr/#business",
-    "name": "Au Vertige"
+    "name": "au ver'tige"
   },
   "areaServed": [
     {
@@ -179,11 +179,11 @@ export const decorationServiceSchema = {
   "@type": "Service",
   "@id": "https://auvertige.fr/#service-decoration",
   "name": "Décoration florale Nantes",
-  "description": "Décoration florale Nantes : Au Vertige propose fleurs séchées, cadres végétaux, vases et bougeoirs. Artisan fleuriste à Nantes Sud. Conseils sur-mesure pour sublimer votre intérieur.",
+  "description": "Décoration florale Nantes : au ver'tige propose fleurs séchées, cadres végétaux, vases et bougeoirs. Artisan fleuriste à Nantes Sud. Conseils sur-mesure pour sublimer votre intérieur.",
   "provider": {
     "@type": "LocalBusiness",
     "@id": "https://auvertige.fr/#business",
-    "name": "Au Vertige"
+    "name": "au ver'tige"
   },
   "areaServed": [
     {
@@ -210,11 +210,11 @@ export const professionnelsServiceSchema = {
   "@type": "Service",
   "@id": "https://auvertige.fr/#service-professionnels",
   "name": "Services professionnels fleuriste Nantes",
-  "description": "Services professionnels fleuriste Nantes : Au Vertige propose abonnements floraux pour entreprises, hôtels, restaurants. Décoration d'événements d'entreprise. Artisan fleuriste à Nantes Sud.",
+  "description": "Services professionnels fleuriste Nantes : au ver'tige propose abonnements floraux pour entreprises, hôtels, restaurants. Décoration d'événements d'entreprise. Artisan fleuriste à Nantes Sud.",
   "provider": {
     "@type": "LocalBusiness",
     "@id": "https://auvertige.fr/#business",
-    "name": "Au Vertige"
+    "name": "au ver'tige"
   },
   "areaServed": [
     {

@@ -17,7 +17,7 @@ const AboutSection = () => {
               <div className="relative rounded-3xl shadow-2xl overflow-hidden">
                 <OptimizedImage
                   src={images.pages.facade1}
-                  alt="Fleuriste Au Vertige - Artisan passionné à Nantes"
+                  alt="Fleuriste au ver'tige - Artisan passionné à Nantes"
                   className="w-full h-80 object-cover object-center"
                   width={800}
                   height={320}

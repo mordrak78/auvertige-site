@@ -117,7 +117,7 @@ export const DEFAULT_PAGE_TEXTS: Record<string, PageTexts> = {
       {
         id: 'mariage-h2-pourquoi',
         type: 'h2',
-        defaultContent: 'Pourquoi choisir Au Vertige pour votre mariage ?',
+        defaultContent: 'Pourquoi choisir au ver\'tige pour votre mariage ?',
         order: 14,
         location: 'Titre section pourquoi',
       },
@@ -403,7 +403,7 @@ export const DEFAULT_PAGE_TEXTS: Record<string, PageTexts> = {
       {
         id: 'anniversaire-h2-pourquoi',
         type: 'h2',
-        defaultContent: 'Pourquoi choisir Au Vertige pour un anniversaire ?',
+        defaultContent: 'Pourquoi choisir au ver\'tige pour un anniversaire ?',
         order: 12,
         location: 'Titre section pourquoi',
       },
@@ -431,7 +431,7 @@ export const DEFAULT_PAGE_TEXTS: Record<string, PageTexts> = {
       {
         id: 'anniversaire-li-pourquoi4',
         type: 'li',
-        defaultContent: '🎁 Livraison rapide à Nantes Sud, Saint-Jacques, Rezé, Saint-Sébastien-sur-Loire',
+        defaultContent: 'Livraison 7j/7 à Nantes et agglomération',
         order: 16,
         location: 'Raison 4',
       },
@@ -450,7 +450,7 @@ export const DEFAULT_PAGE_TEXTS: Record<string, PageTexts> = {
       {
         id: 'index-hero-h1',
         type: 'h1',
-        defaultContent: 'Votre artisan fleuriste à Nantes Sud',
+        defaultContent: "au ver'tige, votre artisan fleuriste à Nantes Sud",
         order: 1,
         location: 'Titre principal Hero',
       },
@@ -485,7 +485,7 @@ export const DEFAULT_PAGE_TEXTS: Record<string, PageTexts> = {
       {
         id: 'index-hero-zone-detail',
         type: 'p',
-        defaultContent: 'Nous sommes à deux pas de Pirmil, Saint-Sébastien-sur-Loire, Rezé. Venez choisir des compositions florales pensées pour vous, que ce soit pour une visite à l\'hôpital Saint-Jacques, un hommage au cimetière Saint-Jacques, ou simplement pour le plaisir d\'offrir.',
+        defaultContent: 'Nous sommes à deux pas de Pirmil, Saint-Sébastien-sur-Loire, Rezé. Venez choisir des compositions florales pensées pour vous ou simplement pour le plaisir d\'offrir.',
         order: 6,
         location: 'Détail zone de service',
       },
@@ -646,14 +646,14 @@ export const DEFAULT_PAGE_TEXTS: Record<string, PageTexts> = {
       {
         id: 'index-about-h2',
         type: 'h2',
-        defaultContent: 'À propos d\'Au Vertige',
+        defaultContent: 'À propos d\'au ver\'tige',
         order: 29,
         location: 'Titre section à propos',
       },
       {
         id: 'index-about-p1',
         type: 'p',
-        defaultContent: 'Au Vertige, nous sommes passionnés par l\'art floral et nous créons des compositions uniques pour toutes les occasions. Notre boutique est située au cœur de Nantes, où nous accueillons nos clients avec chaleur et professionnalisme.',
+        defaultContent: 'au ver\'tige, nous sommes passionnés par l\'art floral et nous créons des compositions uniques pour toutes les occasions. Notre boutique est située au cœur de Nantes, où nous accueillons nos clients avec chaleur et professionnalisme.',
         order: 30,
         location: 'Paragraphe 1 à propos',
       },
@@ -1331,7 +1331,7 @@ export const DEFAULT_PAGE_TEXTS: Record<string, PageTexts> = {
       {
         id: 'a-propos-intro',
         type: 'p',
-        defaultContent: '<strong className="text-sage-700">Au Vertige</strong> est né de la passion pour l\'art floral et du désir de créer des émotions à travers les fleurs. Installés au cœur de Nantes, nous sommes un atelier artisanal qui privilégie la qualité et l\'originalité.',
+        defaultContent: '<strong className="text-sage-700">au ver\'tige</strong> est né de la passion pour l\'art floral et du désir de créer des émotions à travers les fleurs. Installés au cœur de Nantes, nous sommes un atelier artisanal qui privilégie la qualité et l\'originalité.',
         order: 2,
         location: 'Paragraphe d\'introduction',
       },
@@ -1352,7 +1352,7 @@ export const DEFAULT_PAGE_TEXTS: Record<string, PageTexts> = {
       {
         id: 'a-propos-sylvie-p1',
         type: 'p',
-        defaultContent: '<strong className="text-sage-700">Sylvie ARCHAMBEAU</strong> a repris les rênes d\'Au Vertige en 2010 après avoir obtenu son CAP et BP horticulture, puis son CAP et BP fleuriste. Cette passionnée des créations florales a su transformer cette opportunité en une belle aventure entrepreneuriale.',
+        defaultContent: '<strong className="text-sage-700">Sylvie ARCHAMBEAU</strong> a repris les rênes d\'au ver\'tige en 2010 après avoir obtenu son CAP et BP horticulture, puis son CAP et BP fleuriste. Cette passionnée des créations florales a su transformer cette opportunité en une belle aventure entrepreneuriale.',
         order: 5,
         location: 'Paragraphe 1 Sylvie',
       },
@@ -1507,20 +1507,20 @@ export const getPageText = (elementId: string): string => {
       }
       return '';
     }
-    
+
     const contentData = JSON.parse(data);
     const editedTexts = contentData.pageTexts || {};
-    
+
     if (editedTexts[elementId]) {
       return editedTexts[elementId];
     }
-    
+
     // Retourner le texte par défaut
     for (const pageTexts of Object.values(DEFAULT_PAGE_TEXTS)) {
       const element = pageTexts.elements.find(e => e.id === elementId);
       if (element) return element.defaultContent;
     }
-    
+
     return '';
   } catch {
     return '';
@@ -1534,17 +1534,17 @@ export const savePageText = (elementId: string, content: string): boolean => {
   try {
     const data = localStorage.getItem('auvertige_content_data');
     let contentData: any = { pages: {}, featuredBouquets: [], pageTexts: {}, version: '1.0.0' };
-    
+
     if (data) {
       contentData = JSON.parse(data);
       if (!contentData.pageTexts) {
         contentData.pageTexts = {};
       }
     }
-    
+
     contentData.pageTexts[elementId] = content;
     localStorage.setItem('auvertige_content_data', JSON.stringify(contentData));
-    
+
     // Ajouter à l'historique
     if (typeof window !== 'undefined') {
       try {
@@ -1560,7 +1560,7 @@ export const savePageText = (elementId: string, content: string): boolean => {
         // Ignorer les erreurs d'import en mode SSR
       }
     }
-    
+
     return true;
   } catch (error) {
     console.error('Erreur lors de la sauvegarde du texte:', error);
@@ -1574,12 +1574,12 @@ export const savePageText = (elementId: string, content: string): boolean => {
 export const getPageTexts = (pageId: string): PageTextElement[] => {
   const pageTexts = DEFAULT_PAGE_TEXTS[pageId];
   if (!pageTexts) return [];
-  
+
   // Récupérer les textes édités
   try {
     const data = localStorage.getItem('auvertige_content_data');
     const editedTexts: Record<string, string> = data ? JSON.parse(data).pageTexts || {} : {};
-    
+
     return pageTexts.elements.map(element => ({
       ...element,
       currentContent: editedTexts[element.id] || element.defaultContent,

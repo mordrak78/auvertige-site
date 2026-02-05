@@ -19,14 +19,14 @@ const servicesFAQItems: FAQItem[] = [
   {
     question: "Quels services proposez-vous en tant que fleuriste à Nantes ?",
     answer:
-      "Fleuriste Nantes : Au Vertige propose des bouquets sur-mesure, plantes d'intérieur, composition deuil fleurs, bougies Mathilde M, décoration d'intérieur et services professionnels. Toutes nos créations florales artisanales sont faites main à Nantes Sud, quartier Saint-Jacques. Retrait en boutique uniquement.",
+      "Fleuriste Nantes : au ver'tige propose des bouquets sur-mesure, plantes d'intérieur, composition deuil fleurs, bougies Mathilde M, décoration d'intérieur et services professionnels. Toutes nos créations florales artisanales sont faites main à Nantes Sud, quartier Saint-Jacques. Retrait en boutique uniquement.",
   },
   {
     question: "Quels sont vos horaires et êtes-vous ouverts le dimanche ?",
     answer: (
       <>
-        Nous sommes ouverts du mardi au samedi de 9h à 19h, le lundi de 14h à 19h et le
-        dimanche de 10h à 13h. Retrouvez les horaires détaillés, conseils de retrait et
+        Nous sommes ouverts du mardi au samedi de 9h à 19h, le lundi de 9h à 19h et le
+        dimanche de 9h à 13h. Retrouvez les horaires détaillés, conseils de retrait et
         périodes spéciales sur la page{' '}
         <Link
           to="/fleuriste-ouvert-dimanche-nantes"
@@ -53,8 +53,7 @@ const servicesFAQItems: FAQItem[] = [
   },
   {
     question: "Utilisez-vous des fleurs locales pour vos créations ?",
-    answer:
-      "Oui, nous privilégions les fleurs locales et de saison issues du circuit court nantais. Nos créations florales artisanales Nantes sont réalisées avec des fleurs fraîches et de qualité, sélectionnées avec soin pour créer des compositions uniques et durables.",
+    answer: "Oui, nous privilégions les fleurs locales et de saison issues du circuit court nantais (selon les stocks et dans la mesure du possible). Nos créations florales artisanales Nantes sont réalisées avec des fleurs fraîches et de qualité, sélectionnées avec soin pour créer des compositions uniques et durables.",
   },
   {
     question: "Organisez-vous des ateliers floraux ?",
@@ -161,14 +160,14 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>Nos Services | Au Vertige - Fleuriste à Nantes Sud</title>
+        <title>Nos Services | au ver&apos;tige - Fleuriste à Nantes Sud</title>
         <meta name="description" content="Découvrez nos services de fleuriste à Nantes Sud : bouquets sur-mesure, plantes, fleurissement de tombes, bougies Mathilde M, décoration d'intérieur et services professionnels." />
       </Helmet>
 
       <Layout>
         <Seo
-          title="Fleuriste Nantes | Services fleuriste à Nantes Sud Saint-Jacques | Au Vertige"
-          description="Fleuriste Nantes : Découvrez tous les services d'Au Vertige à Nantes Sud (Saint-Jacques, Pirmil, Rezé, Saint-Sébastien-sur-Loire) : bouquets, plantes, composition deuil fleurs, bougies Mathilde M, décoration d'intérieur, services professionnels."
+          title="Fleuriste Nantes | Services fleuriste à Nantes Sud Saint-Jacques | au ver'tige"
+          description="Fleuriste Nantes : Découvrez tous les services d'au ver'tige à Nantes Sud (Saint-Jacques, Pirmil, Rezé, Saint-Sébastien-sur-Loire) : bouquets, plantes, composition deuil fleurs, bougies Mathilde M, décoration d'intérieur, services professionnels."
           type="website"
           breadcrumbs={[
             { name: "Accueil", url: "/" },
@@ -190,7 +189,7 @@ const Services = () => {
             <div className="absolute inset-0 z-0">
               <img
                 src="/images/hero/facade2.webp"
-                alt="Services fleuriste Nantes - Au Vertige, artisan fleuriste à Nantes Sud"
+                alt="Services fleuriste Nantes - au ver'tige, artisan fleuriste à Nantes Sud"
                 className="w-full h-full object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/50" />
@@ -228,7 +227,7 @@ const Services = () => {
                   Votre fleuriste à Nantes Sud
                 </h2>
                 <p className="text-lg text-sage-600 leading-relaxed">
-                  Au Vertige, nous sommes spécialisés dans les <strong className="text-sage-700">créations florales artisanales</strong>
+                  au ver&apos;tige, nous sommes spécialisés dans les <strong className="text-sage-700">créations florales artisanales</strong>{' '}
                   pour toutes vos occasions. Situés au <strong className="text-sage-700">38, boulevard Joliot Curie</strong> dans le quartier
                   Saint-Jacques, nous servons Nantes Sud, Pirmil, Rezé et Saint-Sébastien-sur-Loire.
                 </p>
@@ -242,7 +241,7 @@ const Services = () => {
                 >
                   <Leaf className="h-8 w-8 text-sage-600 mx-auto mb-3" />
                   <h3 className="font-semibold text-sage-700 mb-2">Fleurs locales</h3>
-                  <p className="text-sm text-sage-600">Circuit court et produits de saison</p>
+                  <p className="text-sm text-sage-600">Circuit court et produits de saison (dans la limite des stocks)</p>
                 </motion.div>
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -252,7 +251,7 @@ const Services = () => {
                 >
                   <Palette className="h-8 w-8 text-sage-600 mx-auto mb-3" />
                   <h3 className="font-semibold text-sage-700 mb-2">Créations uniques</h3>
-                  <p className="text-sm text-sage-600">Toutes nos compositions sont faites à la main</p>
+                  <p className="text-sm text-sage-600">Toutes nos compositions sont faites avec passion</p>
                 </motion.div>
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -392,12 +391,12 @@ const Services = () => {
                         ></motion.div>
                         <div className="relative z-10">
                           <p className="text-lg text-sage-700 leading-relaxed mb-6">
-                            Bouquet Nantes : Chez Au Vertige, artisan fleuriste à Nantes Sud, nous créons des <strong className="text-sage-600">bouquets sur-mesure</strong> pour toutes vos occasions :
+                            Chez au ver&apos;tige, artisan fleuriste à Nantes Sud, nous créons des <strong className="text-sage-600">bouquets sur-mesure</strong> pour toutes vos occasions :
                             anniversaires, naissances, déclarations d'amour, ou simplement pour faire plaisir. Nous prenons le temps d'échanger avec vous
                             pour comprendre vos envies et composer un bouquet qui vous ressemble vraiment.
                           </p>
                           <p className="text-lg text-sage-700 leading-relaxed mb-6">
-                            Ce qui nous anime ? Travailler avec des <strong className="text-sage-600">fleurs qui sortent de l'ordinaire</strong>. Nous aimons
+                            Ce qui nous anime ? Travailler avec des <strong className="text-sage-600">fleurs de saison qui sortent de l'ordinaire</strong>. Nous aimons
                             les variétés originales, les associations de couleurs inattendues, les textures surprenantes. Chaque bouquet est unique,
                             composé avec soin et passion pour vous offrir quelque chose de vraiment spécial.
                           </p>
@@ -514,10 +513,9 @@ const Services = () => {
                         ></motion.div>
                         <div className="relative z-10">
                           <p className="text-lg text-sage-700 leading-relaxed mb-6">
-                            Nous proposons une sélection de <strong className="text-sage-600">plantes d'intérieur et d'extérieur</strong> un peu différentes
-                            de ce qu'on trouve habituellement. Chez Au Vertige, on aime particulièrement les <strong className="text-sage-600">plantes originales</strong> :
+                            Nous proposons une sélection de <strong className="text-sage-600">plantes d'intérieur et d'extérieur</strong>. Chez au ver&apos;tige, on aime particulièrement les <strong className="text-sage-600">plantes originales</strong> :
                             cactus aux formes graphiques, succulentes surprenantes, plantes fleuries qui sortent de l'ordinaire.
-                            Venez découvrir notre collection en boutique.
+                            Venez découvrir en boutique.
                           </p>
                           <p className="text-lg text-sage-700 leading-relaxed mb-6">
                             Que vous ayez la main verte ou que vous débutiez, nous prenons le temps de vous conseiller sur l'entretien de chaque plante.
@@ -658,7 +656,7 @@ const Services = () => {
                               <Heart className="w-6 h-6 text-sage-600 mt-0.5 flex-shrink-0" />
                               <div>
                                 <h4 className="font-semibold text-sage-700 mb-1">Accompagnement</h4>
-                                <p className="text-sage-600 text-sm">Personnalisé et bienveillant</p>
+                                <p className="text-sage-600 text-sm">Dépôt ou retrait en boutique au choix</p>
                               </div>
                             </div>
                           </div>
@@ -726,9 +724,8 @@ const Services = () => {
                         ></motion.div>
                         <div className="relative z-10">
                           <p className="text-lg text-sage-700 leading-relaxed mb-6">
-                            Chez Au Vertige, on aime trouver des <strong className="text-sage-600">cadeaux originaux</strong> qui sortent de l'ordinaire.
-                            C'est pour ça qu'on vous propose une sélection de <strong className="text-sage-600">bougies parfumées et diffuseurs d'ambiance</strong>
-                            de qualité. Des créations qui sentent bon et qui créent une belle atmosphère chez vous.
+                            Chez au ver&apos;tige, on aime trouver des <strong className="text-sage-600">cadeaux originaux</strong> qui sortent de l&apos;ordinaire.
+                            C'est pour ça qu'on vous propose une sélection de <strong className="text-sage-600">bougies parfumées et diffuseurs d'ambiance de qualité</strong>.
                           </p>
                           <p className="text-lg text-sage-700 leading-relaxed mb-6">
                             Ces <strong className="text-sage-600">bougies artisanales</strong> sont parfaites pour se faire plaisir ou pour offrir.
@@ -839,11 +836,11 @@ const Services = () => {
                           <p className="text-lg text-sage-700 leading-relaxed mb-6">
                             En tant que <strong className="text-sage-600">décorateurs d'intérieur spécialisés dans le végétal</strong>, nous vous accompagnons
                             pour créer des ambiances qui vous ressemblent. On prend le temps d'échanger avec vous pour comprendre vos goûts,
-                            votre espace et vos envies. L'idée, c'est de créer quelque chose d'unique et de personnel.
+                            votre espace et vos envies, afin de créer quelque chose d'unique et de personnel.
                           </p>
                           <p className="text-lg text-sage-700 leading-relaxed mb-6">
                             Nous travaillons avec différents éléments : <strong className="text-sage-600">fleurs séchées</strong> pour des compositions durables,
-                            <strong className="text-sage-600"> cadres végétaux</strong> pour habiller vos murs, <strong className="text-sage-600">vases sur-mesure</strong>
+                            <strong className="text-sage-600"> cadres végétaux</strong> pour habiller vos murs, <strong className="text-sage-600">vases sur-mesure</strong>{' '}
                             pour mettre en valeur vos fleurs, et <strong className="text-sage-600">bougeoirs personnalisés</strong> pour créer des ambiances chaleureuses.
                             Chaque élément est choisi avec soin pour s'harmoniser avec votre intérieur.
                           </p>
@@ -945,35 +942,28 @@ const Services = () => {
                         <div className="absolute top-0 left-0 w-64 h-64 bg-sage-100 rounded-full -ml-32 -mt-32 opacity-20"></div>
                         <div className="relative z-10">
                           <p className="text-lg text-sage-700 leading-relaxed mb-6">
-                            Nous travaillons avec des <strong className="text-sage-600">entreprises, hôtels, restaurants, maisons de retraite et bureaux</strong>
-                            pour créer des ambiances florales accueillantes. L'idée, c'est d'apporter de la fraîcheur et de la vie dans vos espaces,
-                            avec des créations adaptées à votre environnement et à votre activité.
+                            Nous travaillons avec des <strong className="text-sage-600">entreprises (et bureaux pour créer des ambiances florales)</strong>.
+                            Nous vous apportons fraîcheur et vie dans vos espaces, avec des créations adaptées à votre environnement et à votre activité.
                           </p>
                           <p className="text-lg text-sage-700 leading-relaxed mb-6">
-                            Nos <strong className="text-sage-600">abonnements floraux</strong> vous simplifient la vie : nous créons vos compositions régulièrement,
-                            vous les récupérez en boutique selon vos besoins. Vous n'avez plus à y penser, et vos espaces restent toujours fleuris
-                            avec des compositions fraîches et de qualité. Un service qui s'adapte à vos horaires et vos besoins.
+                            Nos <strong className="text-sage-600">contrats floraux</strong> vous simplifient la vie : nous livrons vos compositions régulièrement.
+                            Vous n'avez plus à y penser, et vos espaces restent toujours fleuris avec des compositions fraîches et de qualité.
+                            Un service qui s'adapte à vos horaires et vos besoins.
                           </p>
                           <p className="text-lg text-sage-700 leading-relaxed mb-6">
                             Pour vos <strong className="text-sage-600">événements d'entreprise</strong> (séminaires, inaugurations, lancements de produits, conférences),
-                            nous créons des décors floraux qui marquent les esprits. On établit ensemble un <strong className="text-sage-600">devis sur-mesure</strong>,
-                            et nous nous occupons de l'installation. Des créations qui donnent du caractère à votre événement.
+                            nous proposons la livraison et l'entretien de fleurs à la fréquence de votre choix. On établit ensemble un <strong className="text-sage-600">devis sur-mesure</strong>.
+                            Des créations qui donnent du caractère à votre événement.
                           </p>
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 mb-8">
                             <div className="flex items-start gap-3">
                               <Calendar className="w-6 h-6 text-sage-600 mt-0.5 flex-shrink-0" />
                               <div>
-                                <h4 className="font-semibold text-sage-700 mb-1">Abonnements floraux</h4>
+                                <h4 className="font-semibold text-sage-700 mb-1">Contrats floraux</h4>
                                 <p className="text-sage-600 text-sm">Réguliers et personnalisés</p>
                               </div>
                             </div>
-                            <div className="flex items-start gap-3">
-                              <Building className="w-6 h-6 text-sage-600 mt-0.5 flex-shrink-0" />
-                              <div>
-                                <h4 className="font-semibold text-sage-700 mb-1">Établissements</h4>
-                                <p className="text-sage-600 text-sm">Maisons de retraite, restaurants, hôtels, bureaux</p>
-                              </div>
-                            </div>
+
                             <div className="flex items-start gap-3">
                               <SparklesIcon className="w-6 h-6 text-sage-600 mt-0.5 flex-shrink-0" />
                               <div>

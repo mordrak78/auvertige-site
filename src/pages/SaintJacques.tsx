@@ -14,8 +14,8 @@ const SaintJacques = () => {
   return (
     <Layout>
       <Seo
-        title="Fleuriste Saint-Jacques Nantes | Au Vertige - Quartier Saint-Jacques"
-        description="Fleuriste Saint-Jacques Nantes : Au Vertige, votre artisan fleuriste au cœur du quartier Saint-Jacques à Nantes Sud. Proche du cimetière et de l'hôpital. Bouquets sur-mesure, compositions florales. 02 40 54 10 02"
+        title="Fleuriste Nantes Saint-Jacques | au ver'tige"
+        description="Votre artisan fleuriste au ver'tige vous accueille à Nantes Sud. Découvrez notre univers floral unique et créatif."
         type="website"
         breadcrumbs={[
           { name: "Accueil", url: "/" },
@@ -29,7 +29,7 @@ const SaintJacques = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            "name": "Au Vertige - Fleuriste Saint-Jacques",
+            "name": "au ver'tige - Fleuriste Saint-Jacques",
             "description": "Fleuriste Saint-Jacques Nantes : Artisan fleuriste au cœur du quartier Saint-Jacques à Nantes Sud",
             "address": {
               "@type": "PostalAddress",
@@ -67,15 +67,15 @@ const SaintJacques = () => {
           >
             Fleuriste Saint-Jacques : Votre artisan fleuriste à Nantes Sud
           </motion.h1>
-          
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-lg text-sage-600 mb-8 text-center max-w-2xl mx-auto"
           >
-            Fleuriste Saint-Jacques Nantes : Au Vertige est votre artisan fleuriste au cœur du quartier Saint-Jacques à Nantes Sud. 
-            Situé au 38, boulevard Joliot Curie, nous sommes à deux pas du cimetière Saint-Jacques et de l'hôpital, 
+            Fleuriste Saint-Jacques Nantes : au ver'tige est votre artisan fleuriste au cœur du quartier Saint-Jacques à Nantes Sud.
+            Situé au 38, boulevard Joliot Curie, nous sommes à deux pas du cimetière Saint-Jacques et de l'hôpital,
             pour vous accompagner dans tous vos moments importants.
           </motion.p>
 
@@ -94,7 +94,7 @@ const SaintJacques = () => {
                 <h2 className="text-xl font-semibold text-sage-700">Proche du cimetière Saint-Jacques</h2>
               </div>
               <p className="text-sage-600">
-                Fleuriste Saint-Jacques : Notre proximité avec le cimetière Saint-Jacques nous permet de vous faciliter 
+                Fleuriste Saint-Jacques : Notre proximité avec le cimetière Saint-Jacques nous permet de vous faciliter
                 les choses pour vos compositions de deuil. Vous pouvez récupérer vos créations en boutique avant de vous rendre au cimetière.
               </p>
             </div>
@@ -107,7 +107,7 @@ const SaintJacques = () => {
                 <h2 className="text-xl font-semibold text-sage-700">Près de l'hôpital Saint-Jacques</h2>
               </div>
               <p className="text-sage-600">
-                Pour vos visites à l'hôpital Saint-Jacques, notre fleuriste Saint-Jacques vous propose des bouquets frais 
+                Pour vos visites à l'hôpital Saint-Jacques, notre fleuriste Saint-Jacques vous propose des bouquets frais
                 et élégants pour apporter du réconfort à vos proches.
               </p>
             </div>
@@ -190,9 +190,8 @@ const SaintJacques = () => {
                 <div>
                   <h3 className="font-semibold text-sage-700 mb-2">Horaires</h3>
                   <p className="text-sage-600">
-                    Mardi - Samedi : 9h - 19h<br />
-                    Lundi : 14h - 19h<br />
-                    Dimanche : 10h - 13h
+                    Lundi - Samedi : 9h - 19h<br />
+                    Dimanche : 9h - 13h
                   </p>
                 </div>
               </div>

@@ -3,9 +3,9 @@ import { Link, useLocation } from 'react-router-dom'
 import { useAuth } from '@/contexts/AuthContext'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { 
-  LayoutDashboard, 
-  FileText, 
+import {
+  LayoutDashboard,
+  FileText,
   Flower,
   Image,
   Calendar,
@@ -23,15 +23,15 @@ const AdminLayout: React.FC<AdminLayoutProps> = ({ children, activeSection = 'da
   const { user, signOut } = useAuth()
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const location = useLocation()
-  
+
   // Déterminer la section active basée sur l'URL actuelle
-  const currentSection = activeSection || 
+  const currentSection = activeSection ||
     (location.pathname === '/admin' ? 'dashboard' :
-     location.pathname === '/admin/articles' ? 'articles' :
-     location.pathname === '/admin/bouquets' ? 'bouquets' :
-     location.pathname === '/admin/gallery' ? 'gallery' :
-     location.pathname === '/admin/seasonal' ? 'seasonal' :
-     location.pathname.startsWith('/admin/') ? location.pathname.split('/')[2] : 'dashboard')
+      location.pathname === '/admin/articles' ? 'articles' :
+        location.pathname === '/admin/bouquets' ? 'bouquets' :
+          location.pathname === '/admin/gallery' ? 'gallery' :
+            location.pathname === '/admin/seasonal' ? 'seasonal' :
+              location.pathname.startsWith('/admin/') ? location.pathname.split('/')[2] : 'dashboard')
 
   const navigationItems = [
     { id: 'dashboard', label: 'Tableau de bord', icon: LayoutDashboard, href: '/admin' },
@@ -60,10 +60,10 @@ const AdminLayout: React.FC<AdminLayoutProps> = ({ children, activeSection = 'da
               {sidebarOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>
             <h1 className="text-xl font-dancing text-sage-700">
-              Administration Au Vertige
+              Administration au ver'tige
             </h1>
           </div>
-          
+
           <div className="flex items-center gap-3">
             <span className="text-sm text-gray-600 hidden sm:inline">
               Bonjour, {user?.email}
@@ -94,7 +94,7 @@ const AdminLayout: React.FC<AdminLayoutProps> = ({ children, activeSection = 'da
               {navigationItems.map((item) => {
                 const Icon = item.icon
                 const isActive = currentSection === item.id
-                
+
                 return (
                   <li key={item.id}>
                     <Link

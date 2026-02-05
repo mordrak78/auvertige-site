@@ -60,7 +60,7 @@ interface SeoProps {
  * @example
  * ```tsx
  * <Seo
- *   title="Au Vertige - Fleuriste à Nantes"
+ *   title="au ver'tige - Fleuriste à Nantes"
  *   description="Découvrez nos créations florales uniques pour tous vos événements"
  *   canonical="https://auvertige.fr"
  *   image="https://auvertige.fr/og-image.webp"
@@ -81,11 +81,12 @@ const Seo: React.FC<SeoProps> = ({
   faq,
   includePersonSchema = false,
 }) => {
+  const siteName = "au ver'tige";
   // Construction du titre complet
-  // Si le titre contient déjà "Au Vertige", on ne l'ajoute pas pour éviter la duplication
-  const fullTitle = title.includes('Au Vertige') 
-    ? title 
-    : `${title} | Au Vertige - Fleuriste à Nantes`;
+  // Si le titre contient déjà "au ver'tige", on ne l'ajoute pas pour éviter la duplication
+  const fullTitle = title.includes(siteName)
+    ? title
+    : `${title} | ${siteName} - Fleuriste à Nantes`;
 
   // Construction de l'URL canonique
   const canonicalUrl = canonical || typeof window !== 'undefined' ? window.location.href : '';
@@ -114,7 +115,7 @@ const Seo: React.FC<SeoProps> = ({
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
       <meta property="og:url" content={canonicalUrl} />
-      <meta property="og:site_name" content="Au Vertige" />
+      <meta property="og:site_name" content="au ver'tige" />
       <meta property="og:locale" content="fr_FR" />
 
       {/* Twitter */}

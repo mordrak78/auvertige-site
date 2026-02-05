@@ -14,8 +14,8 @@ const OuvertDimanche = () => {
   return (
     <Layout>
       <Seo
-        title="Fleuriste ouvert dimanche Nantes | Au Vertige - Ouvert 7j/7"
-        description="Fleuriste ouvert dimanche Nantes : Au Vertige vous accueille le dimanche de 10h à 13h à Nantes Sud, quartier Saint-Jacques. Bouquets frais, compositions sur-mesure. Ouvert également les jours fériés. 02 40 54 10 02"
+        title="Fleuriste Ouvert Dimanche Nantes | au ver'tige"
+        description="au ver'tige, fleuriste à Nantes Sud (Saint-Jacques), est ouvert le dimanche matin de 9h à 13h. Profitez de fleurs fraîches tout le week-end. Bouquets frais, compositions sur-mesure. Ouvert également les jours fériés. 02 40 54 10 02"
         type="website"
         breadcrumbs={[
           { name: "Accueil", url: "/" },
@@ -24,7 +24,7 @@ const OuvertDimanche = () => {
         faq={[
           {
             question: "Le fleuriste est-il ouvert le dimanche à Nantes ?",
-            answer: "Oui, Au Vertige, artisan fleuriste Nantes, est ouvert le dimanche de 10h à 13h ainsi que les jours fériés de 10h à 13h. Notre boutique est située au 38, boulevard Joliot Curie, dans le quartier Saint-Jacques à Nantes Sud. Vous pouvez venir récupérer vos créations florales le dimanche matin. Nous sommes également ouverts du mardi au samedi de 9h à 19h, et le lundi de 14h à 19h."
+            answer: "Oui, au ver'tige, artisan fleuriste Nantes, est ouvert le dimanche de 9h à 13h ainsi que les jours fériés de 9h à 13h. Notre boutique est située au 38, boulevard Joliot Curie, dans le quartier Saint-Jacques à Nantes Sud. Vous pouvez venir récupérer vos créations florales le dimanche matin. Nous sommes également ouverts du lundi au samedi de 9h à 19h."
           }
         ]}
       />
@@ -35,8 +35,8 @@ const OuvertDimanche = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            "name": "Au Vertige - Fleuriste ouvert dimanche Nantes",
-            "description": "Fleuriste ouvert dimanche Nantes : Au Vertige vous accueille le dimanche de 10h à 13h",
+            "name": "au ver'tige - Fleuriste ouvert dimanche Nantes",
+            "description": "Fleuriste ouvert dimanche Nantes : au ver'tige vous accueille le dimanche de 10h à 13h",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "38, boulevard Joliot Curie",
@@ -76,17 +76,17 @@ const OuvertDimanche = () => {
             transition={{ duration: 0.6 }}
             className="text-4xl md:text-5xl font-dancing text-sage-700 mb-8 text-center"
           >
-            Fleuriste ouvert dimanche Nantes : Au Vertige vous accueille le week-end
+            Fleuriste ouvert dimanche Nantes : au ver'tige vous accueille le week-end
           </motion.h1>
-          
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-lg text-sage-600 mb-8 text-center max-w-2xl mx-auto"
           >
-            Fleuriste ouvert dimanche Nantes : Au Vertige, votre artisan fleuriste à Nantes Sud, vous accueille le dimanche 
-            de 10h à 13h ainsi que les jours fériés. Situé au 38, boulevard Joliot Curie, dans le quartier Saint-Jacques, 
+            Fleuriste ouvert dimanche Nantes : au ver'tige, votre artisan fleuriste à Nantes Sud, vous accueille le dimanche
+            de 9h à 13h ainsi que les jours fériés. Situé au 38, boulevard Joliot Curie, dans le quartier Saint-Jacques,
             nous sommes là pour vous accompagner même le week-end.
           </motion.p>
 
@@ -99,8 +99,8 @@ const OuvertDimanche = () => {
           >
             <Calendar className="w-16 h-16 mx-auto mb-4" />
             <h2 className="text-3xl font-bold mb-2">Ouvert le dimanche</h2>
-            <p className="text-xl mb-4">Dimanche : 10h - 13h</p>
-            <p className="text-lg opacity-90">Jours fériés : 10h - 13h</p>
+            <p className="text-xl mb-4">Dimanche : 9h - 13h</p>
+            <p className="text-lg opacity-90">Jours fériés : 9h - 13h</p>
           </motion.div>
 
           {/* Horaires complets */}
@@ -117,30 +117,23 @@ const OuvertDimanche = () => {
               <div className="flex items-center justify-between p-4 bg-sage-50 rounded-lg">
                 <div className="flex items-center gap-3">
                   <Clock className="w-5 h-5 text-poppy-600" />
-                  <span className="font-semibold text-sage-700">Mardi - Samedi</span>
+                  <span className="font-semibold text-sage-700">Lundi - Samedi</span>
                 </div>
                 <span className="text-sage-600">9h - 19h</span>
-              </div>
-              <div className="flex items-center justify-between p-4 bg-sage-50 rounded-lg">
-                <div className="flex items-center gap-3">
-                  <Clock className="w-5 h-5 text-poppy-600" />
-                  <span className="font-semibold text-sage-700">Lundi</span>
-                </div>
-                <span className="text-sage-600">14h - 19h</span>
               </div>
               <div className="flex items-center justify-between p-4 bg-gradient-to-r from-poppy-50 to-poppy-100 rounded-lg border-2 border-poppy-300">
                 <div className="flex items-center gap-3">
                   <Calendar className="w-5 h-5 text-poppy-600" />
                   <span className="font-semibold text-poppy-700">Dimanche</span>
                 </div>
-                <span className="text-poppy-700 font-semibold">10h - 13h</span>
+                <span className="text-poppy-700 font-semibold">9h - 13h</span>
               </div>
               <div className="flex items-center justify-between p-4 bg-gradient-to-r from-poppy-50 to-poppy-100 rounded-lg border-2 border-poppy-300">
                 <div className="flex items-center gap-3">
                   <Calendar className="w-5 h-5 text-poppy-600" />
                   <span className="font-semibold text-poppy-700">Jours fériés</span>
                 </div>
-                <span className="text-poppy-700 font-semibold">10h - 13h</span>
+                <span className="text-poppy-700 font-semibold">9h - 13h</span>
               </div>
             </div>
           </motion.div>
@@ -160,7 +153,7 @@ const OuvertDimanche = () => {
                 <h3 className="text-xl font-semibold text-sage-700">Bouquets frais du week-end</h3>
               </div>
               <p className="text-sage-600">
-                Fleuriste ouvert dimanche Nantes : Profitez de nos créations fraîches pour vos événements du week-end, 
+                Fleuriste ouvert dimanche Nantes : Profitez de nos créations fraîches pour vos événements du week-end,
                 vos visites ou simplement pour vous faire plaisir.
               </p>
             </div>
@@ -173,7 +166,7 @@ const OuvertDimanche = () => {
                 <h3 className="text-xl font-semibold text-sage-700">Service d'urgence</h3>
               </div>
               <p className="text-sage-600">
-                Besoin d'un bouquet en urgence le dimanche ? Notre fleuriste ouvert dimanche Nantes vous accueille 
+                Besoin d'un bouquet en urgence le dimanche ? Notre fleuriste ouvert dimanche Nantes vous accueille
                 pour répondre à vos besoins immédiats.
               </p>
             </div>

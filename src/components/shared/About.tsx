@@ -10,7 +10,7 @@ const About = () => {
         <div className="text-center mb-16">
           <EditableTitle
             pageId="a-propos"
-            defaultTitle="Artisan fleuriste Nantes : L'histoire d'Au Vertige"
+            defaultTitle="Artisan fleuriste Nantes : L'histoire d'au ver'tige"
             className="text-5xl lg:text-6xl font-dancing text-sage-700 mb-6"
             as="h1"
           />
@@ -21,7 +21,7 @@ const About = () => {
           <EditableParagraphs
             pageId="a-propos"
             defaultParagraphs={[
-              '<strong className="text-sage-700">Au Vertige</strong> est né de la passion pour l\'art floral et du désir de créer des émotions à travers les fleurs. Installés au cœur de Nantes, nous sommes un atelier artisanal qui privilégie la qualité et l\'originalité.'
+              '<strong className="text-sage-700">au ver\'tige</strong> est né de la passion pour l\'art floral et du désir de créer des émotions à travers les fleurs. Installés au cœur de Nantes, nous sommes un atelier artisanal qui privilégie la qualité et l\'originalité.'
             ]}
             className="text-xl text-sage-600 max-w-3xl mx-auto leading-relaxed"
             renderParagraph={(text, index) => (
@@ -38,7 +38,7 @@ const About = () => {
               <div className="relative z-10 w-80 h-80 lg:w-96 lg:h-96">
                 <img
                   src="/images/hero/facade1.webp"
-                  alt="Sylvie ARCHAMBEAU, artisan fleuriste Nantes - Au Vertige, fleuriste à Nantes Sud"
+                  alt="Sylvie ARCHAMBEAU, artisan fleuriste Nantes - au ver'tige, fleuriste à Nantes Sud"
                   className="w-full h-full object-cover object-center rounded-full shadow-2xl border-4 border-white"
                 />
               </div>
@@ -58,7 +58,7 @@ const About = () => {
 
               <div className="space-y-6 text-sage-600 leading-relaxed">
                 <p className="text-lg">
-                  <strong className="text-sage-700">Artisan fleuriste Nantes</strong> : <strong className="text-sage-700">Sylvie ARCHAMBEAU</strong> a repris les rênes d'Au Vertige en 2010 après avoir obtenu son CAP et BP horticulture, puis son CAP et BP fleuriste.
+                  <strong className="text-sage-700">Artisan fleuriste Nantes</strong> : <strong className="text-sage-700">Sylvie ARCHAMBEAU</strong> a repris les rênes d'au ver'tige en 2010 après avoir obtenu son CAP et BP horticulture, puis son CAP et BP fleuriste.
                   Cette passionnée des créations florales a su transformer cette opportunité en une belle aventure entrepreneuriale.
                 </p>
 
@@ -160,7 +160,7 @@ const About = () => {
             <div className="relative">
               <img
                 src="/images/creations/se-faire-plaisir/fleurs2.webp"
-                alt="Équipe d'artisans fleuristes Au Vertige"
+                alt="Équipe d'artisans fleuristes au ver'tige"
                 className="w-full h-80 object-cover object-center rounded-2xl shadow-lg"
               />
               <div className="absolute -top-4 -right-4 w-20 h-20 bg-sage-200 rounded-full opacity-60 -z-10"></div>

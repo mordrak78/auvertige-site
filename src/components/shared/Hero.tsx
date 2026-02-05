@@ -16,14 +16,14 @@ const Hero = () => {
 
   // Récupérer le contenu éditable depuis localStorage
   const pageContent = usePageContentDisplay('index', {
-    title: 'Au Vertige - Votre artisan fleuriste à Nantes Sud',
+    title: 'au ver\'tige - Votre artisan fleuriste à Nantes Sud',
     paragraphs: [
       'Découvrez nos créations florales près de chez vous !',
       'Des émotions florales uniques avec des fleurs fraîches et un accueil chaleureux. Parce que l\'on a aussi le droit de se faire plaisir !'
     ],
   });
 
-  const heroTitle = pageContent?.title || 'Au Vertige - Votre artisan fleuriste à Nantes Sud';
+  const heroTitle = pageContent?.title || 'au ver\'tige - Votre artisan fleuriste à Nantes Sud';
   const heroDescription = pageContent?.paragraphs?.join('\n') || 'Découvrez nos créations florales près de chez vous !\nDes émotions florales uniques avec des fleurs fraîches et un accueil chaleureux. Parce que l\'on a aussi le droit de se faire plaisir !';
 
   const scrollToNextSection = () => {
@@ -45,7 +45,7 @@ const Hero = () => {
       {/* Image de préchargement pour améliorer le LCP */}
       <OptimizedImage
         src={images.pages.facade1}
-        alt="Fleuriste Nantes - Au Vertige, artisan fleuriste à Nantes Sud, quartier Saint-Jacques"
+        alt="Fleuriste Nantes - au ver'tige, artisan fleuriste à Nantes Sud, quartier Saint-Jacques"
         className="absolute inset-0 w-full h-full object-cover object-center opacity-0 pointer-events-none"
         priority
         width={1920}

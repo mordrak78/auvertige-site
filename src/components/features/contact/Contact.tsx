@@ -206,9 +206,8 @@ const Contact = () => {
                       <div>
                         <h4 className="font-semibold text-sage-700 mb-1">Horaires</h4>
                         <div className="text-sage-600 text-sm space-y-1">
-                          <p>Mardi - Vendredi : 9h00 - 19h00</p>
-                          <p>Samedi : 9h00 - 18h00</p>
-                          <p>Dimanche - Lundi : Fermé</p>
+                          <p>Lundi - Samedi : 9h00 - 19h00</p>
+                          <p>Dimanche : 9h00 - 13h00</p>
                         </div>
                       </div>
                     </motion.div>

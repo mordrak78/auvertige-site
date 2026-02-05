@@ -61,14 +61,14 @@ const EngagementCards = () => {
                   transition={{ delay: 0.5 }}
                   className="text-sage-600 mb-8 max-w-sm mx-auto leading-relaxed font-inter"
                 >
-                  Notez toutes les dates importantes de votre vie et Au Vertige se charge de vous les rappeler.
+                  Notez toutes les dates importantes de votre vie et au ver'tige se charge de vous les rappeler.
                 </motion.p>
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
                   <Link to="/contact">
-                    <Button 
+                    <Button
                       variant="outline"
                       className="border-poppy-500 text-poppy-500 hover:bg-poppy-500 hover:text-white rounded-full px-8 py-3 text-base font-medium transition-all duration-300 w-full sm:w-auto"
                     >
@@ -134,7 +134,7 @@ const EngagementCards = () => {
                   whileTap={{ scale: 0.95 }}
                 >
                   <Link to="/evenements#collection-du-mois">
-                    <Button 
+                    <Button
                       variant="outline"
                       className="border-sage-600 text-sage-700 shadow-lg hover:bg-cream-100 hover:text-sage-900 hover:border-sage-700 rounded-full px-8 py-3 text-base font-semibold transition-all duration-300 w-full sm:w-auto focus:ring-2 focus:ring-poppy-500"
                     >

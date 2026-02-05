@@ -91,8 +91,8 @@ const Deuil = () => {
   return (
     <Layout>
       <Seo
-        title="Fleuriste enterrement Nantes | Bouquet deuil, fleurs obsèques, couronne funéraire | Au Vertige"
-        description="Fleuriste enterrement Nantes : Au Vertige crée vos bouquets deuil, fleurs obsèques, couronnes funéraires et gerbes funéraires à Nantes Sud. Fleuriste funérailles proche du cimetière Saint-Jacques. Composition décès, fleurs hommage défunt. Retrait en boutique. 02 40 54 10 02"
+        title="Fleurs Deuil Nantes | Hommage floral | au ver'tige"
+        description="Accompagnement floral pour le deuil à Nantes. au ver'tige réalise vos compositions avec soin et sens du service (livraison possible sur lieux de cérémonie)."
         type="website"
         breadcrumbs={[
           { name: "Accueil", url: "/" },
@@ -108,11 +108,11 @@ const Deuil = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            "name": "Fleuriste enterrement Nantes - Bouquets deuil, fleurs obsèques, couronnes funéraires",
-            "description": "Fleuriste enterrement Nantes : Au Vertige crée vos bouquets deuil, fleurs obsèques, couronnes funéraires, gerbes funéraires et compositions décès à Nantes Sud. Fleuriste funérailles proche du cimetière Saint-Jacques. Retrait en boutique.",
+            "name": "Fleuriste Deuil Nantes | au ver'tige - Compositions et couronnes",
+            "description": "Fleurs deuil Nantes : au ver'tige vous accompagne avec discrétion et professionnalisme. Couronnes, raquettes, gerbes et bouquets hommage.",
             "provider": {
               "@type": "LocalBusiness",
-              "name": "Au Vertige",
+              "name": "au ver'tige",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "38, boulevard Joliot Curie",
@@ -172,7 +172,7 @@ const Deuil = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                       {imagesDeuil.slice(slideIdx * 4, slideIdx * 4 + 4).map((img, idx) => (
                         <div key={img} className="bg-white rounded-2xl shadow-md overflow-hidden">
-                          <img src={img} alt={`Composition florale pour deuil - Création ${slideIdx * 4 + idx + 1} - Au Vertige Nantes`} className="w-full aspect-[9/16] object-cover object-center" loading="lazy" />
+                          <img src={img} alt={`Composition florale pour deuil - Création ${slideIdx * 4 + idx + 1} - au ver'tige Nantes`} className="w-full aspect-[9/16] object-cover object-center" loading="lazy" />
                         </div>
                       ))}
                     </div>
@@ -210,7 +210,7 @@ const Deuil = () => {
             </motion.div>
             <div className="flex justify-center mt-6">
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Button 
+                <Button
                   onClick={() => setShowRdvModal(true)}
                   className="bg-poppy-500 hover:bg-poppy-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition text-lg"
                 >
@@ -227,7 +227,7 @@ const Deuil = () => {
             transition={{ duration: 0.6, delay: 1.2 }}
             className="mt-16 max-w-2xl mx-auto bg-sage-50 rounded-2xl p-8 shadow-lg text-center"
           >
-            <h2 className="text-2xl md:text-3xl font-dancing text-sage-700 mb-4">Pourquoi choisir Au Vertige ?</h2>
+            <h2 className="text-2xl md:text-3xl font-dancing text-sage-700 mb-4">Pourquoi choisir au ver'tige ?</h2>
             <ul className="text-sage-700 text-lg space-y-3 mb-4">
               <li className="flex items-start gap-2">
                 <Leaf className="h-5 w-5 text-sage-600 mt-0.5 flex-shrink-0" />
@@ -265,42 +265,42 @@ const Deuil = () => {
               <div className="bg-white rounded-xl p-6 shadow-lg">
                 <h3 className="text-xl font-semibold text-sage-700 mb-3">Bouquets</h3>
                 <p className="text-sage-600">
-                  Des compositions sobres et élégantes, créées avec des fleurs sélectionnées pour leur délicatesse. 
+                  Des compositions sobres et élégantes, créées avec des fleurs sélectionnées pour leur délicatesse.
                   Chaque bouquet est personnalisé selon vos souhaits et les préférences de la personne disparue.
                 </p>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-lg">
                 <h3 className="text-xl font-semibold text-sage-700 mb-3">Compositions pour obsèques</h3>
                 <p className="text-sage-600">
-                  Nous créons des compositions florales adaptées aux cérémonies, avec des fleurs blanches traditionnelles ou 
+                  Nous créons des compositions florales adaptées aux cérémonies, avec des fleurs blanches traditionnelles ou
                   des tons plus discrets selon vos préférences. Chaque création est pensée pour accompagner ce moment avec respect.
                 </p>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-lg">
                 <h3 className="text-xl font-semibold text-sage-700 mb-3">Couronnes</h3>
                 <p className="text-sage-600">
-                  Couronnes rondes ou en forme de cœur, réalisées avec soin et attention. 
+                  Couronnes rondes ou en forme de cœur, réalisées avec soin et attention.
                   Nous adaptons chaque création à vos besoins pour honorer la mémoire de vos proches.
                 </p>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-lg">
                 <h3 className="text-xl font-semibold text-sage-700 mb-3">Gerbes</h3>
                 <p className="text-sage-600">
-                  Disponibles en différentes tailles et formes selon vos besoins. 
+                  Disponibles en différentes tailles et formes selon vos besoins.
                   Chaque gerbe est créée sur-mesure pour votre cérémonie, avec des fleurs fraîches et de qualité.
                 </p>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-lg">
                 <h3 className="text-xl font-semibold text-sage-700 mb-3">Compositions pour hommage</h3>
                 <p className="text-sage-600">
-                  Des fleurs sélectionnées avec délicatesse pour transmettre vos émotions. 
+                  Des fleurs sélectionnées avec délicatesse pour transmettre vos émotions.
                   Réalisées avec des fleurs locales et de saison, créées avec respect et attention aux détails.
                 </p>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-lg">
                 <h3 className="text-xl font-semibold text-sage-700 mb-3">Créations pour le cimetière</h3>
                 <p className="text-sage-600">
-                  Situés à proximité du cimetière Saint-Jacques, nous créons des compositions résistantes et adaptées aux conditions extérieures, 
+                  Situés à proximité du cimetière Saint-Jacques, nous créons des compositions résistantes et adaptées aux conditions extérieures,
                   pour honorer durablement vos proches lors de vos visites.
                 </p>
               </div>

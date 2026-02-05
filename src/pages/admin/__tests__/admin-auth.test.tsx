@@ -25,7 +25,7 @@ describe('Auth Admin', () => {
 
   it('affiche le formulaire de connexion par défaut', () => {
     renderAdmin();
-    expect(screen.getByText(/Administration Au Vertige/i)).toBeInTheDocument();
+    expect(screen.getByText(/Administration au ver'tige/i)).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /Se connecter/i })).toBeInTheDocument();
   });
 

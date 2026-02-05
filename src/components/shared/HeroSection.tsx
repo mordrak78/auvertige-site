@@ -15,22 +15,22 @@ const HeroSection = () => {
     <section className="relative min-h-screen bg-gradient-to-br from-cream-50 to-sage-50 pt-16 overflow-hidden">
       {/* Image de fond optimisée mobile */}
       <div className="absolute inset-0 opacity-30">
-        <img 
-          src="/images/hero/facade1.webp" 
-          alt="Fleuriste Au Vertige - Nantes" 
+        <img
+          src="/images/hero/facade1.webp"
+          alt="Fleuriste au ver'tige - Nantes"
           className="w-full h-full object-cover object-center"
           loading="eager"
         />
       </div>
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col items-center text-center min-h-screen justify-center py-8">
-          
+
           {/* H1 SEO optimisé */}
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-dancing text-sage-700 mb-4 leading-tight">
             Fleuriste à Nantes
           </h1>
-          
+
           <div className="flex items-center justify-center mb-6">
             <div className="h-px bg-sage-300 w-8"></div>
             <Flower className="mx-3 text-poppy-500" size={20} />
@@ -47,15 +47,15 @@ const HeroSection = () => {
 
           {/* CTAs principaux */}
           <div className="flex flex-col sm:flex-row gap-4 w-full max-w-md">
-            <Button 
+            <Button
               onClick={handleCall}
               className="bg-poppy-500 hover:bg-poppy-600 text-white px-6 py-4 rounded-full font-medium transition-all duration-300 flex items-center justify-center space-x-2 text-base"
             >
               <Phone size={18} />
               <span>📞 Appeler</span>
             </Button>
-            
-            <button 
+
+            <button
               onClick={scrollToOrder}
               className="bg-sage-600 hover:bg-sage-700 text-white px-8 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 shadow-lg"
             >

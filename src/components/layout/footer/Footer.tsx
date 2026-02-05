@@ -53,7 +53,7 @@ const Footer = () => {
                 <div className="flex items-center justify-center md:justify-start">
                   <OptimizedImage
                     src={images.logos.logo9}
-                    alt="Logo Au Vertige"
+                    alt="Logo au ver'tige"
                     className="h-14 w-14 object-contain mr-3"
                     width={56}
                     height={56}
@@ -148,14 +148,14 @@ const Footer = () => {
 
             {/* Réseaux sociaux et navigation */}
             <div className="text-center">
-              <h3 className="text-lg font-semibold mb-4">Suivez-nous</h3>
+              <h3 className="text-xl font-dancing font-bold mb-4">au ver&apos;tige</h3>
               <div className="flex justify-center space-x-4 mb-6">
                 <a
                   href="https://www.instagram.com/auvertigefleuriste_nantes/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-sage-700 rounded-full flex items-center justify-center hover:bg-sage-600 transition-colors"
-                  aria-label="Instagram Au Vertige"
+                  aria-label="Instagram au ver'tige"
                 >
                   <Instagram size={18} />
                 </a>
@@ -164,14 +164,14 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-sage-700 rounded-full flex items-center justify-center hover:bg-sage-600 transition-colors"
-                  aria-label="Facebook Au Vertige"
+                  aria-label="Facebook au ver'tige"
                 >
                   <Facebook size={18} />
                 </a>
                 <a
                   href="mailto:contact@auvertige-nantes.fr"
                   className="w-10 h-10 bg-sage-700 rounded-full flex items-center justify-center hover:bg-sage-600 transition-colors"
-                  aria-label="Email Au Vertige"
+                  aria-label="Email au ver'tige"
                 >
                   <Mail size={18} />
                 </a>
@@ -198,7 +198,7 @@ const Footer = () => {
           <div className="pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center text-sage-300 text-sm space-y-4 md:space-y-0">
               <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
-                <p>© 2024 Au Vertige. Tous droits réservés.</p>
+                <p>&copy; {new Date().getFullYear()} au ver&apos;tige. Tous droits réservés.</p>
                 <div className="flex space-x-4">
                   <Link to="/mentions-legales" className="hover:text-white transition-colors">Mentions légales</Link>
                 </div>

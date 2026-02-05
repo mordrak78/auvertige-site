@@ -29,8 +29,8 @@ const SeFairePlaisir = () => {
   return (
     <Layout>
       <Seo
-        title="Se faire plaisir - Créations florales pour vous | Au Vertige"
-        description="Parce que vous le valez bien ! Des créations florales pour vous faire plaisir et embellir votre quotidien à Nantes Sud (Saint-Jacques, Pirmil, Rezé, Saint-Sébastien-sur-Loire)."
+        title="Se faire plaisir | au ver&apos;tige - Fleuriste Nantes"
+        description="Envie de fleurs ? au ver'tige vous propose des bouquets et plantes pour vous faire plaisir au quotidien. Retrait en boutique à Nantes Sud."
         type="website"
         breadcrumbs={[
           { name: "Accueil", url: "/" },
@@ -87,7 +87,7 @@ const SeFairePlaisir = () => {
             </motion.div>
             <div className="flex justify-center mt-6">
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Button 
+                <Button
                   onClick={() => setShowRdvModal(true)}
                   className="bg-poppy-500 hover:bg-poppy-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition text-lg"
                 >
@@ -99,7 +99,7 @@ const SeFairePlaisir = () => {
 
           {/* Bloc EEAT */}
           <div className="mt-16 max-w-2xl mx-auto bg-sage-50 rounded-2xl p-8 shadow-lg text-center">
-            <h2 className="text-2xl md:text-3xl font-dancing text-sage-700 mb-4">Pourquoi se faire plaisir avec Au Vertige ?</h2>
+            <h2 className="text-2xl md:text-3xl font-dancing text-sage-700 mb-4">Pourquoi se faire plaisir avec au ver'tige ?</h2>
             <ul className="text-sage-700 text-lg space-y-3 mb-4">
               <li className="flex items-start gap-2">
                 <Leaf className="h-5 w-5 text-sage-600 mt-0.5 flex-shrink-0" />

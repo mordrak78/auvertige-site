@@ -138,7 +138,7 @@ const Evenements = () => {
   const location = useLocation();
   const [activeSection, setActiveSection] = useState<string>('mariage');
   const { shouldAnimate } = useReducedMotion();
-  
+
   // Séparer les saisons actives et inactives
   const activeSeasons = seasonalCards.filter(card => isSeasonActive(card.id));
   const inactiveSeasons = seasonalCards.filter(card => !isSeasonActive(card.id));
@@ -147,7 +147,7 @@ const Evenements = () => {
   useEffect(() => {
     const hash = location.hash.replace('#', '');
     const validSections = ['mariage', 'anniversaire', 'bapteme', 'naissance', 'deuil', 'saint-valentin', 'fete-des-meres', 'toussaint', 'noel', 'fete-des-peres'];
-    
+
     if (hash && validSections.includes(hash)) {
       setActiveSection(hash);
     } else if (!hash) {
@@ -182,11 +182,11 @@ const Evenements = () => {
   return (
     <Layout>
       <Seo
-        title="Fleurs pour tous vos événements à Nantes | Au Vertige"
-        description="Mariage, anniversaire, baptême, naissance... Nous créons des bouquets personnalisés qui racontent votre histoire. Chaque composition est unique, entièrement faite main dans notre atelier à Nantes. 02 40 54 10 02"
+        title="Fleuriste Événementiel Nantes | Décoration florale | au ver'tige"
+        description="Confiez la décoration florale de vos événements à au ver'tige à Nantes. Créativité et professionnalisme pour vos réceptions privées et professionnelles."
         faq={evenementsFAQItems}
       />
-      
+
       {/* Hero Section */}
       <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
@@ -223,17 +223,16 @@ const Evenements = () => {
                 whileTap: { scale: 0.95 },
                 transition: { duration: 0.2 }
               } : {};
-              
+
               return (
                 <ButtonComponent
                   key={item.id}
                   onClick={() => setActiveSection(item.id)}
                   {...buttonProps}
-                  className={`flex items-center gap-2 px-5 py-2.5 rounded-full transition-all duration-300 shadow-sm text-sm font-medium whitespace-nowrap relative overflow-hidden ${
-                    isActive
+                  className={`flex items-center gap-2 px-5 py-2.5 rounded-full transition-all duration-300 shadow-sm text-sm font-medium whitespace-nowrap relative overflow-hidden ${isActive
                       ? 'bg-gradient-to-r from-poppy-500 to-poppy-600 text-white shadow-lg'
                       : 'bg-white text-sage-700 hover:bg-poppy-50 hover:text-poppy-600 hover:shadow-md'
-                  }`}
+                    }`}
                 >
                   <item.icon size={16} className="relative z-10" />
                   <span className="relative z-10">{item.label}</span>
@@ -258,7 +257,7 @@ const Evenements = () => {
               Des fleurs pour chaque moment de votre vie
             </h2>
             <p className="text-sage-600 text-lg max-w-3xl mx-auto">
-              Mariage, anniversaire, baptême ou naissance : nous créons des bouquets personnalisés qui racontent votre histoire. 
+              Mariage, anniversaire, baptême ou naissance : nous créons des bouquets personnalisés qui racontent votre histoire.
               Chaque composition est unique, entièrement faite main dans notre atelier à Nantes, avec des fleurs soigneusement sélectionnées.
             </p>
           </motion.div>
@@ -324,8 +323,8 @@ const Evenements = () => {
                       <li>Créations florales artisanales faites main</li>
                     </ul>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6 items-center">
-                      {[images.creations.anniversaire.bonbonne, images.creations.anniversaire.rhipsalis, 
-                        images.creations.anniversaire.orchidee, images.creations.anniversaire.beaucarnea].map((img, idx) => (
+                      {[images.creations.anniversaire.bonbonne, images.creations.anniversaire.rhipsalis,
+                      images.creations.anniversaire.orchidee, images.creations.anniversaire.beaucarnea].map((img, idx) => (
                         <img key={idx} src={img} alt={`Anniversaire ${idx + 1}`} className="w-full h-48 object-cover rounded-lg" />
                       ))}
                     </div>
@@ -363,8 +362,8 @@ const Evenements = () => {
                       <li>Conseils pour choisir les fleurs selon la saison</li>
                     </ul>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6 items-center">
-                      {[images.creations.bapteme.lys1, images.creations.bapteme.lys2, 
-                        images.creations.bapteme.lys3, images.creations.bapteme.lys4].map((img, idx) => (
+                      {[images.creations.bapteme.lys1, images.creations.bapteme.lys2,
+                      images.creations.bapteme.lys3, images.creations.bapteme.lys4].map((img, idx) => (
                         <img key={idx} src={img} alt={`Baptême ${idx + 1}`} className="w-full h-48 object-cover rounded-lg" />
                       ))}
                     </div>
@@ -597,7 +596,7 @@ const Evenements = () => {
               Au rythme des saisons et des fêtes
             </h2>
             <p className="text-sage-600 text-lg max-w-3xl mx-auto">
-              Chaque saison apporte son lot de couleurs et d'émotions. Nous suivons le calendrier des fêtes pour vous proposer 
+              Chaque saison apporte son lot de couleurs et d'émotions. Nous suivons le calendrier des fêtes pour vous proposer
               des créations qui célèbrent ces moments spéciaux : Saint-Valentin, Fête des Mères, Toussaint, Noël...
             </p>
           </motion.div>
@@ -657,7 +656,7 @@ const Evenements = () => {
                         </h4>
                       </div>
                       <p className="text-xs text-sage-500 mb-2">{season.description.substring(0, 80)}...</p>
-                      <Link 
+                      <Link
                         to={`/evenements#${season.id}`}
                         onClick={(e) => {
                           e.preventDefault();
@@ -739,10 +738,10 @@ const Evenements = () => {
               Suivez-nous sur Instagram
             </h2>
             <p className="text-sage-600 text-lg max-w-2xl mx-auto mb-8">
-              Découvrez nos dernières créations florales, nos événements et nos coups de cœur du moment. 
+              Découvrez nos dernières créations florales, nos événements et nos coups de cœur du moment.
               Une source d'inspiration quotidienne pour vos compositions florales.
             </p>
-            
+
             {/* Bouton Instagram */}
             <a
               href="https://www.instagram.com/auvertigefleuriste_nantes/"
@@ -756,26 +755,26 @@ const Evenements = () => {
             </a>
           </div>
 
-        {/* Actus du mois */}
-        <div className="max-w-4xl mx-auto mb-16">
-          <div className="text-center mb-8">
-            <h4 className="text-3xl font-dancing text-sage-700 mb-4">
-              Découvrez nos actus du mois
-            </h4>
-            <p className="text-sage-600 text-lg">
-              Nos dernières créations et actualités en temps réel
-            </p>
-          </div>
-
-          {/* Composant Instagram Feed */}
-          <Suspense fallback={
-            <div className="flex justify-center items-center h-64">
-              <div className="animate-pulse text-sage-600">Chargement Instagram...</div>
+          {/* Actus du mois */}
+          <div className="max-w-4xl mx-auto mb-16">
+            <div className="text-center mb-8">
+              <h4 className="text-3xl font-dancing text-sage-700 mb-4">
+                Découvrez nos actus du mois
+              </h4>
+              <p className="text-sage-600 text-lg">
+                Nos dernières créations et actualités en temps réel
+              </p>
             </div>
-          }>
-            <InstagramFeed />
-          </Suspense>
-        </div>
+
+            {/* Composant Instagram Feed */}
+            <Suspense fallback={
+              <div className="flex justify-center items-center h-64">
+                <div className="animate-pulse text-sage-600">Chargement Instagram...</div>
+              </div>
+            }>
+              <InstagramFeed />
+            </Suspense>
+          </div>
         </div>
       </section>
 

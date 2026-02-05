@@ -57,7 +57,7 @@ const OrderForm = () => {
     await new Promise(resolve => setTimeout(resolve, 1000));
 
     console.log('Commande envoyée:', formData);
-    alert('Votre commande a été envoyée ! Nous vous recontactons rapidement.');
+    alert('Nous vous recontactons pour confirmer votre commande et le prix.');
 
     setIsSubmitting(false);
     // Reset form
@@ -112,8 +112,8 @@ const OrderForm = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className={`relative px-6 py-3 rounded-full font-medium transition-all duration-300 ${activeTab === 'formulaire'
-                  ? 'bg-gradient-to-r from-sage-600 to-sage-700 text-white shadow-md'
-                  : 'text-sage-700 hover:bg-sage-50'
+                ? 'bg-gradient-to-r from-sage-600 to-sage-700 text-white shadow-md'
+                : 'text-sage-700 hover:bg-sage-50'
                 }`}
               onClick={() => setActiveTab('formulaire')}
             >
@@ -133,8 +133,8 @@ const OrderForm = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className={`relative px-6 py-3 rounded-full font-medium transition-all duration-300 ${activeTab === 'boutique'
-                  ? 'bg-gradient-to-r from-sage-600 to-sage-700 text-white shadow-md'
-                  : 'text-sage-700 hover:bg-sage-50'
+                ? 'bg-gradient-to-r from-sage-600 to-sage-700 text-white shadow-md'
+                : 'text-sage-700 hover:bg-sage-50'
                 }`}
               onClick={() => setActiveTab('boutique')}
             >
@@ -204,8 +204,8 @@ const OrderForm = () => {
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
                       className={`flex items-center bg-cream-100 rounded-full px-4 py-3 cursor-pointer border-2 transition-all duration-200 ${formData.deliveryType === 'retrait'
-                          ? 'border-sage-500 bg-sage-50'
-                          : 'border-sage-200 hover:border-sage-300'
+                        ? 'border-sage-500 bg-sage-50'
+                        : 'border-sage-200 hover:border-sage-300'
                         }`}
                     >
                       <input

@@ -1,4 +1,4 @@
-// Mapping des images pour Au Vertige
+// Mapping des images pour au ver'tige
 // Structure organisée selon la nouvelle arborescence : /images/
 // Les chemins sont relatifs au dossier public
 

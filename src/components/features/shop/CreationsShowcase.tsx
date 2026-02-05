@@ -10,24 +10,22 @@ import { ScrollToTopLink } from '@/components/shared/ScrollToTopLink';
 
 const eventThemes = [
   {
-    key: 'mariage',
-    title: 'Mariage',
-    icon: Heart,
-    color: 'text-rose-600',
-    bgColor: 'bg-rose-50',
-    description: 'Créations florales romantiques et élégantes pour votre plus beau jour. Bouquets de mariée sur-mesure, décorations de salle et compositions raffinées qui subliment votre union.',
-    cta: 'Voir nos créations Mariage',
-    ctaLink: '/mariage',
-    mainImage: images.creations.mariage.bouquetLarge,
+    key: 'plaisir-offrir',
+    title: 'Plaisir d\'offrir',
+    icon: Gift,
+    color: 'text-gold-600',
+    bgColor: 'bg-gold-50',
+    description: 'Des bouquets et compositions pour toutes les occasions de faire plaisir à vos proches. Des créations qui expriment vos sentiments sans raison particulière. Idéal aussi pour les baptêmes.',
+    cta: 'Voir nos créations Offrir',
+    ctaLink: '/plaisirs-offrir',
+    mainImage: images.creations.plaisirOffrir.coeurValentin,
     gallery: [
-      images.creations.mariage.bouquet1,
-      images.creations.mariage.bouquet2,
-      images.creations.mariage.bouquet3,
-      images.creations.mariage.bouquet4,
-      images.creations.mariage.bouquet5,
-      images.creations.mariage.bouquet6,
-      images.creations.mariage.bouquet7,
-      images.creations.mariage.bouquet8,
+      images.creations.plaisirOffrir.carreRose,
+      images.creations.plaisirOffrir.coeurValentin,
+      images.creations.plaisirOffrir.roses1,
+      images.creations.plaisirOffrir.roses2,
+      images.creations.plaisirOffrir.bouquet1,
+      images.creations.plaisirOffrir.bouquet2,
     ]
   },
   {
@@ -49,62 +47,6 @@ const eventThemes = [
     ]
   },
   {
-    key: 'deuil',
-    title: 'Deuil',
-    icon: Sprout,
-    color: 'text-gray-500',
-    bgColor: 'bg-gray-50',
-    description: 'Compositions florales respectueuses et apaisantes pour accompagner dans les moments difficiles. Des créations sobres et élégantes qui honorent la mémoire avec dignité.',
-    cta: 'Voir nos créations Deuil',
-    ctaLink: '/deuil',
-    mainImage: images.creations.deuil.bouquetRond1,
-    gallery: [
-      images.creations.deuil.bouquetRond1,
-      images.creations.deuil.couronneCoeur1,
-      images.creations.deuil.gerbeHaute,
-      images.creations.deuil.gerbeCarree,
-      images.creations.deuil.gerbeCroix,
-      images.creations.deuil.couronneRonde1,
-    ]
-  },
-  {
-    key: 'bapteme',
-    title: 'Baptême',
-    icon: Baby,
-    color: 'text-blue-600',
-    bgColor: 'bg-blue-50',
-    description: 'Créations florales tendres et délicates pour célébrer un baptême. Des compositions qui apportent douceur et pureté à cet événement spirituel et familial.',
-    cta: 'Voir nos créations Baptême',
-    ctaLink: '/bapteme',
-    mainImage: images.creations.bapteme.lys1,
-    gallery: [
-      images.creations.bapteme.lys1,
-      images.creations.bapteme.lys2,
-      images.creations.bapteme.lys3,
-      images.creations.bapteme.lys4,
-      images.creations.bapteme.lysSmall,
-    ]
-  },
-  {
-    key: 'plaisir-offrir',
-    title: 'Plaisir d\'offrir',
-    icon: Gift,
-    color: 'text-gold-600',
-    bgColor: 'bg-gold-50',
-    description: 'Des bouquets et compositions pour toutes les occasions de faire plaisir à vos proches. Des créations qui expriment vos sentiments sans raison particulière.',
-    cta: 'Voir nos créations Offrir',
-    ctaLink: '/plaisirs-offrir',
-    mainImage: images.creations.plaisirOffrir.coeurValentin,
-    gallery: [
-      images.creations.plaisirOffrir.carreRose,
-      images.creations.plaisirOffrir.coeurValentin,
-      images.creations.plaisirOffrir.roses1,
-      images.creations.plaisirOffrir.roses2,
-      images.creations.plaisirOffrir.bouquet1,
-      images.creations.plaisirOffrir.bouquet2,
-    ]
-  },
-  {
     key: 'se-faire-plaisir',
     title: 'Se faire plaisir',
     icon: Sparkles,
@@ -123,11 +65,51 @@ const eventThemes = [
       images.creations.seFairePlaisir.fleurs4,
       images.creations.seFairePlaisir.fleurs5,
     ]
+  },
+  {
+    key: 'mariage',
+    title: 'Mariage',
+    icon: Heart,
+    color: 'text-rose-600',
+    bgColor: 'bg-rose-50',
+    description: 'Créations florales romantiques et élégantes pour votre plus beau jour. Bouquets de mariée sur-mesure, décorations de salle et compositions raffinées qui subliment votre union.',
+    cta: 'Voir nos créations Mariage',
+    ctaLink: '/mariage',
+    mainImage: images.creations.mariage.bouquetLarge,
+    gallery: [
+      images.creations.mariage.bouquet1,
+      images.creations.mariage.bouquet2,
+      images.creations.mariage.bouquet3,
+      images.creations.mariage.bouquet4,
+      images.creations.mariage.bouquet5,
+      images.creations.mariage.bouquet6,
+      images.creations.mariage.bouquet7,
+      images.creations.mariage.bouquet8,
+    ]
+  },
+  {
+    key: 'deuil',
+    title: 'Deuil',
+    icon: Sprout,
+    color: 'text-gray-500',
+    bgColor: 'bg-gray-50',
+    description: 'Compositions florales respectueuses et apaisantes pour accompagner dans les moments difficiles. Des créations sobres et élégantes qui honorent la mémoire avec dignité.',
+    cta: 'Voir nos créations Deuil',
+    ctaLink: '/deuil',
+    mainImage: images.creations.deuil.bouquetRond1,
+    gallery: [
+      images.creations.deuil.bouquetRond1,
+      images.creations.deuil.couronneCoeur1,
+      images.creations.deuil.gerbeHaute,
+      images.creations.deuil.gerbeCarree,
+      images.creations.deuil.gerbeCroix,
+      images.creations.deuil.couronneRonde1,
+    ]
   }
 ];
 
 const CreationsShowcase = () => {
-  const [activeTheme, setActiveTheme] = useState('mariage');
+  const [activeTheme, setActiveTheme] = useState('plaisir-offrir');
   const [mainImage, setMainImage] = useState('');
   const [showRdvModal, setShowRdvModal] = useState(false);
   const [zoomLevel, setZoomLevel] = useState(110); // Zoom par défaut à 110%
@@ -161,7 +143,7 @@ const CreationsShowcase = () => {
       message: ''
     });
   };
-  
+
   // Réinitialiser l'image principale et le zoom quand on change de thème
   React.useEffect(() => {
     // Utiliser la première image de la galerie par défaut
@@ -177,7 +159,7 @@ const CreationsShowcase = () => {
   const selectImage = (imageSrc: string) => {
     setMainImage(imageSrc);
     setZoomLevel(110); // Réinitialiser le zoom lors du changement d'image
-    
+
     // Auto-scroll vers la miniature sélectionnée
     setTimeout(() => {
       if (thumbnailScrollRef.current) {
@@ -199,12 +181,12 @@ const CreationsShowcase = () => {
     if (thumbnailScrollRef.current) {
       const scrollAmount = 120; // Hauteur/largeur d'une miniature + gap
       const isMobile = window.innerWidth < 768; // md breakpoint
-      
+
       if (isMobile) {
         // Scroll horizontal sur mobile
         const currentScroll = thumbnailScrollRef.current.scrollLeft;
-        const newScroll = direction === 'up' 
-          ? currentScroll - scrollAmount 
+        const newScroll = direction === 'up'
+          ? currentScroll - scrollAmount
           : currentScroll + scrollAmount;
         thumbnailScrollRef.current.scrollTo({
           left: newScroll,
@@ -213,8 +195,8 @@ const CreationsShowcase = () => {
       } else {
         // Scroll vertical sur desktop
         const currentScroll = thumbnailScrollRef.current.scrollTop;
-        const newScroll = direction === 'up' 
-          ? currentScroll - scrollAmount 
+        const newScroll = direction === 'up'
+          ? currentScroll - scrollAmount
           : currentScroll + scrollAmount;
         thumbnailScrollRef.current.scrollTo({
           top: newScroll,
@@ -406,16 +388,15 @@ const CreationsShowcase = () => {
                         <OptimizedImage
                           src={mainImage || (currentTheme.gallery && currentTheme.gallery[0]) || currentTheme.mainImage}
                           alt={currentTheme.title}
-                          className={`w-full h-full transition-transform duration-500 ease-out ${
-                            zoomLevel < 100 ? 'object-contain' : 'object-cover'
-                          } object-center`}
+                          className={`w-full h-full transition-transform duration-500 ease-out ${zoomLevel < 100 ? 'object-contain' : 'object-cover'
+                            } object-center`}
                           style={{ transform: `scale(${zoomLevel / 100})` }}
                           width={400}
                           height={711}
                         />
                       </motion.div>
                       <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent pointer-events-none rounded-2xl"></div>
-                      
+
                       {/* Contrôles de zoom améliorés */}
                       <div className="absolute bottom-5 right-5 flex flex-col gap-2 z-10">
                         <motion.button
@@ -451,7 +432,7 @@ const CreationsShowcase = () => {
                           <ZoomIn className={`w-5 h-5 transition-colors ${zoomLevel >= 200 ? 'text-gray-400' : 'text-sage-700 group-hover:text-poppy-600'}`} />
                         </motion.button>
                       </div>
-                      
+
                       {/* Indicateur de zoom amélioré */}
                       <motion.div
                         initial={{ opacity: 0, scale: 0.8 }}
@@ -464,7 +445,7 @@ const CreationsShowcase = () => {
                           <span className="text-sm font-bold text-sage-700">{zoomLevel}%</span>
                         </div>
                       </motion.div>
-                      
+
                       {/* Compteur d'images */}
                       <div className="absolute top-5 left-5 bg-white/95 backdrop-blur-md rounded-full px-4 py-2 shadow-xl z-10 border border-sage-200">
                         <span className="text-sm font-medium text-sage-700">
@@ -504,9 +485,9 @@ const CreationsShowcase = () => {
                       </motion.button>
                     </>
                   )}
-                  
+
                   {/* Carrousel de miniatures vertical (desktop) / horizontal (mobile) */}
-                  <div 
+                  <div
                     ref={thumbnailScrollRef}
                     className="flex flex-row md:flex-col gap-4 overflow-x-auto md:overflow-y-auto overflow-y-visible scrollbar-hide scroll-smooth max-h-none md:max-h-[650px] pb-3 md:pb-0 px-1 md:px-0"
                     style={{ scrollPadding: '0 50px', scrollPaddingTop: '50px', scrollPaddingBottom: '50px' }}
@@ -517,19 +498,18 @@ const CreationsShowcase = () => {
                         <motion.div
                           key={index}
                           initial={{ opacity: 0, scale: 0.8 }}
-                          animate={{ 
-                            opacity: 1, 
+                          animate={{
+                            opacity: 1,
                             scale: isSelected ? 1.05 : 1,
                             y: isSelected ? -4 : 0
                           }}
                           transition={{ duration: 0.3, delay: index * 0.03 }}
                           whileHover={{ scale: isSelected ? 1.08 : 1.05, y: isSelected ? -6 : -2 }}
                           whileTap={{ scale: 0.95 }}
-                          className={`flex-shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-2xl overflow-hidden cursor-pointer relative group transition-all duration-300 ${
-                            isSelected 
-                              ? 'shadow-2xl ring-3 ring-poppy-500 ring-offset-4 ring-offset-white' 
-                              : 'shadow-md hover:shadow-xl border-2 border-transparent hover:border-sage-200'
-                          }`}
+                          className={`flex-shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-2xl overflow-hidden cursor-pointer relative group transition-all duration-300 ${isSelected
+                            ? 'shadow-2xl ring-3 ring-poppy-500 ring-offset-4 ring-offset-white'
+                            : 'shadow-md hover:shadow-xl border-2 border-transparent hover:border-sage-200'
+                            }`}
                           onClick={() => selectImage(image)}
                           role="button"
                           tabIndex={0}
@@ -591,7 +571,7 @@ const CreationsShowcase = () => {
                       );
                     })}
                   </div>
-                  
+
                   {/* Bouton navigation bas (desktop) / droite (mobile) */}
                   {currentTheme.gallery.length > 4 && (
                     <>
@@ -632,7 +612,7 @@ const CreationsShowcase = () => {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <div className="bg-gradient-to-r from-poppy-50 to-sage-50 rounded-3xl p-8 border border-poppy-200">
+          <div className="bg-gradient-to-r from-sage-50 to-cream-50 rounded-3xl p-8 border border-sage-200">
             <motion.h3
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -661,7 +641,7 @@ const CreationsShowcase = () => {
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Button
                   onClick={() => setShowRdvModal(true)}
-                  className="bg-poppy-500 hover:bg-poppy-600 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 text-lg shadow-lg hover:shadow-xl"
+                  className="bg-sage-600 hover:bg-sage-700 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 text-lg shadow-lg hover:shadow-xl"
                 >
                   Prendre rendez-vous
                 </Button>
@@ -703,100 +683,100 @@ const CreationsShowcase = () => {
               <motion.button
                 whileHover={{ scale: 1.1, rotate: 90 }}
                 whileTap={{ scale: 0.9 }}
-                onClick={() => setShowRdvModal(false)} 
+                onClick={() => setShowRdvModal(false)}
                 className="absolute top-4 right-4 text-sage-500 hover:text-poppy-500 text-2xl font-bold w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100 transition-colors"
                 aria-label="Fermer"
               >
                 &times;
               </motion.button>
-            <h2 className="text-2xl font-bold text-sage-700 mb-2 text-center">Prendre rendez-vous</h2>
-            <p className="text-sage-600 text-sm mb-6 text-center">
-              Remplissez le formulaire ci-dessous et nous vous recontacterons rapidement pour convenir d'un rendez-vous.
-            </p>
-            <form onSubmit={handleRdvSubmit} className="flex flex-col gap-4">
-              <div>
-                <label className="block text-sage-700 mb-1 text-sm font-medium">Nom complet *</label>
-                <input 
-                  type="text" 
-                  name="name"
-                  value={rdvFormData.name}
-                  onChange={handleRdvInputChange}
-                  className="w-full border border-sage-200 rounded-lg px-3 py-2 focus:ring-2 focus:ring-sage-300 focus:border-transparent" 
-                  required 
-                />
-              </div>
-              <div>
-                <label className="block text-sage-700 mb-1 text-sm font-medium">Téléphone *</label>
-                <input 
-                  type="tel" 
-                  name="phone"
-                  value={rdvFormData.phone}
-                  onChange={handleRdvInputChange}
-                  className="w-full border border-sage-200 rounded-lg px-3 py-2 focus:ring-2 focus:ring-sage-300 focus:border-transparent" 
-                  required 
-                />
-              </div>
-              <div>
-                <label className="block text-sage-700 mb-1 text-sm font-medium">Email *</label>
-                <input 
-                  type="email" 
-                  name="email"
-                  value={rdvFormData.email}
-                  onChange={handleRdvInputChange}
-                  className="w-full border border-sage-200 rounded-lg px-3 py-2 focus:ring-2 focus:ring-sage-300 focus:border-transparent" 
-                  required 
-                />
-              </div>
-              <div>
-                <label className="block text-sage-700 mb-1 text-sm font-medium">Date souhaitée *</label>
-                <input 
-                  type="date" 
-                  name="date"
-                  value={rdvFormData.date}
-                  onChange={handleRdvInputChange}
-                  className="w-full border border-sage-200 rounded-lg px-3 py-2 focus:ring-2 focus:ring-sage-300 focus:border-transparent" 
-                  required 
-                />
-              </div>
-              <div>
-                <label className="block text-sage-700 mb-1 text-sm font-medium">Heure souhaitée *</label>
-                <input 
-                  type="time" 
-                  name="time"
-                  value={rdvFormData.time}
-                  onChange={handleRdvInputChange}
-                  className="w-full border border-sage-200 rounded-lg px-3 py-2 focus:ring-2 focus:ring-sage-300 focus:border-transparent" 
-                  required 
-                />
-              </div>
-              <div>
-                <label className="block text-sage-700 mb-1 text-sm font-medium">Message</label>
-                <textarea 
-                  name="message"
-                  value={rdvFormData.message}
-                  onChange={handleRdvInputChange}
-                  className="w-full border border-sage-200 rounded-lg px-3 py-2 focus:ring-2 focus:ring-sage-300 focus:border-transparent resize-none" 
-                  rows={3}
-                  placeholder="Décrivez votre projet ou votre demande..."
-                />
-              </div>
-              <div className="flex gap-3 mt-2">
-                <Button 
-                  type="button"
-                  variant="outline"
-                  onClick={() => setShowRdvModal(false)}
-                  className="flex-1 border-sage-300 text-sage-700 hover:bg-sage-50"
-                >
-                  Annuler
-                </Button>
-                <Button 
-                  type="submit" 
-                  className="flex-1 bg-poppy-500 hover:bg-poppy-600 text-white"
-                >
-                  Envoyer
-                </Button>
-              </div>
-            </form>
+              <h2 className="text-2xl font-bold text-sage-700 mb-2 text-center">Prendre rendez-vous</h2>
+              <p className="text-sage-600 text-sm mb-6 text-center">
+                Remplissez le formulaire ci-dessous et nous vous recontacterons rapidement pour convenir d'un rendez-vous.
+              </p>
+              <form onSubmit={handleRdvSubmit} className="flex flex-col gap-4">
+                <div>
+                  <label className="block text-sage-700 mb-1 text-sm font-medium">Nom complet *</label>
+                  <input
+                    type="text"
+                    name="name"
+                    value={rdvFormData.name}
+                    onChange={handleRdvInputChange}
+                    className="w-full border border-sage-200 rounded-lg px-3 py-2 focus:ring-2 focus:ring-sage-300 focus:border-transparent"
+                    required
+                  />
+                </div>
+                <div>
+                  <label className="block text-sage-700 mb-1 text-sm font-medium">Téléphone *</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    value={rdvFormData.phone}
+                    onChange={handleRdvInputChange}
+                    className="w-full border border-sage-200 rounded-lg px-3 py-2 focus:ring-2 focus:ring-sage-300 focus:border-transparent"
+                    required
+                  />
+                </div>
+                <div>
+                  <label className="block text-sage-700 mb-1 text-sm font-medium">Email *</label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={rdvFormData.email}
+                    onChange={handleRdvInputChange}
+                    className="w-full border border-sage-200 rounded-lg px-3 py-2 focus:ring-2 focus:ring-sage-300 focus:border-transparent"
+                    required
+                  />
+                </div>
+                <div>
+                  <label className="block text-sage-700 mb-1 text-sm font-medium">Date souhaitée *</label>
+                  <input
+                    type="date"
+                    name="date"
+                    value={rdvFormData.date}
+                    onChange={handleRdvInputChange}
+                    className="w-full border border-sage-200 rounded-lg px-3 py-2 focus:ring-2 focus:ring-sage-300 focus:border-transparent"
+                    required
+                  />
+                </div>
+                <div>
+                  <label className="block text-sage-700 mb-1 text-sm font-medium">Heure souhaitée *</label>
+                  <input
+                    type="time"
+                    name="time"
+                    value={rdvFormData.time}
+                    onChange={handleRdvInputChange}
+                    className="w-full border border-sage-200 rounded-lg px-3 py-2 focus:ring-2 focus:ring-sage-300 focus:border-transparent"
+                    required
+                  />
+                </div>
+                <div>
+                  <label className="block text-sage-700 mb-1 text-sm font-medium">Message</label>
+                  <textarea
+                    name="message"
+                    value={rdvFormData.message}
+                    onChange={handleRdvInputChange}
+                    className="w-full border border-sage-200 rounded-lg px-3 py-2 focus:ring-2 focus:ring-sage-300 focus:border-transparent resize-none"
+                    rows={3}
+                    placeholder="Décrivez votre projet ou votre demande..."
+                  />
+                </div>
+                <div className="flex gap-3 mt-2">
+                  <Button
+                    type="button"
+                    variant="outline"
+                    onClick={() => setShowRdvModal(false)}
+                    className="flex-1 border-sage-300 text-sage-700 hover:bg-sage-50"
+                  >
+                    Annuler
+                  </Button>
+                  <Button
+                    type="submit"
+                    className="flex-1 bg-poppy-500 hover:bg-poppy-600 text-white"
+                  >
+                    Envoyer
+                  </Button>
+                </div>
+              </form>
             </motion.div>
           </motion.div>
         )}

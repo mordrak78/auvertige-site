@@ -109,7 +109,7 @@
 /* Styles floraux et arrondis personnalisés */
 @layer utilities {
   .flower-shadow {
-    box-shadow: 0 10px 25px -5px rgba(220, 38, 38, 0.1), 0 10px 10px -5px rgba(220, 38, 38, 0.04);
+    box-shadow: 0 10px 25px -5px rgba(84, 106, 91, 0.1), 0 10px 10px -5px rgba(84, 106, 91, 0.04);
   }
   
   .organic-border {

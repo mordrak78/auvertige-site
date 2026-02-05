@@ -34,7 +34,7 @@ export const ColorPalette = () => {
 
   return (
     <div className="p-lg bg-white rounded-xl shadow-lg">
-      <h2 className="text-2xl font-dancing text-sage-800 mb-lg">Palette de couleurs Au Vertige</h2>
+      <h2 className="text-2xl font-dancing text-sage-800 mb-lg">Palette de couleurs au ver'tige</h2>
       <div className="space-y-lg">
         {colorGroups.map((group) => (
           <div key={group.name}>
@@ -109,7 +109,7 @@ export const BorderRadiusTokens = () => {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-md">
         {radiusTokens.map((token) => (
           <div key={token.name} className="text-center">
-            <div 
+            <div
               className={`w-16 h-16 bg-sage-200 mx-auto mb-xs`}
               style={{ borderRadius: token.value }}
             ></div>
@@ -134,7 +134,7 @@ export const DesignSystemShowcase = () => {
   return (
     <div className="fixed top-20 right-4 w-96 max-h-[80vh] overflow-y-auto bg-white border border-gray-200 rounded-xl shadow-2xl z-50 p-lg">
       <div className="space-y-lg">
-        <h1 className="text-2xl font-dancing text-sage-800">Design System Au Vertige</h1>
+        <h1 className="text-2xl font-dancing text-sage-800">Design System au ver'tige</h1>
         <ColorPalette />
         <SpacingTokens />
         <BorderRadiusTokens />

@@ -109,7 +109,7 @@ const defaultFAQItems: FAQItem[] = [
     question: "Le fleuriste est-il ouvert le dimanche à Nantes ?",
     answer: (
       <>
-        Oui, Au Vertige est ouvert le dimanche de 10h à 13h ainsi que les jours fériés de 10h à
+        Oui, au ver'tige est ouvert le dimanche de 10h à 13h ainsi que les jours fériés de 10h à
         13h. Retrouvez toutes les informations pratiques et conseils de retrait sur notre page{' '}
         <Link
           to="/fleuriste-ouvert-dimanche-nantes"

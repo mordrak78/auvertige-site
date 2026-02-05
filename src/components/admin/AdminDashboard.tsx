@@ -1,8 +1,8 @@
 import React from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  FileText, 
-  Image, 
+import {
+  FileText,
+  Image,
   Calendar,
   Flower,
   Edit,
@@ -50,7 +50,7 @@ const AdminDashboard: React.FC = () => {
       <div>
         <h1 className="text-3xl font-bold text-gray-900">Tableau de bord</h1>
         <p className="text-gray-600 mt-2">
-          Vue d'ensemble de votre site Au Vertige
+          Vue d'ensemble de votre site au ver'tige
         </p>
       </div>
 

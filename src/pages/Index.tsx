@@ -14,6 +14,7 @@ const ReassuranceBanner = lazy(() => import('@/components/shared/ReassuranceBann
 const OrderForm = lazy(() => import('@/components/features/shop/OrderForm'));
 const ReviewsSection = lazy(() => import('@/components/shared/ReviewsSection'));
 const AboutAndInfoSection = lazy(() => import('@/components/shared/AboutAndInfoSection'));
+const FloralSubscriptionsSection = lazy(() => import('@/components/shared/FloralSubscriptionsSection'));
 const ZonesDesserviesSection = lazy(() => import('@/components/shared/ZonesDesserviesSection'));
 const FeaturedBouquets = lazy(() => import('@/components/shared/FeaturedBouquets').then(m => ({ default: m.FeaturedBouquets })));
 
@@ -41,8 +42,8 @@ const Index = () => {
   return (
     <Layout>
       <Seo
-        title="Fleuriste Nantes | Au Vertige - Artisan fleuriste à Nantes Sud, quartier Saint-Jacques"
-        description="Fleuriste Nantes : Au Vertige, votre artisan fleuriste à Nantes Sud (quartier Saint-Jacques). Bouquets sur-mesure, fleurs locales. Retrait en boutique. Ouvert 7j/7. 02 40 54 10 02"
+        title="Fleuriste Nantes - au ver'tige : Créations florales uniques & de saison"
+        description="au ver'tige, artisan fleuriste à Nantes Sud (Saint-Jacques). Bouquets sur-mesure, fleurs locales, plantes et décoration. Livraison et retrait boutique. Ouvert 7j/7. 02 40 54 10 02"
         type="website"
         breadcrumbs={[{ name: "Accueil", url: "/" }]}
         reviews={[
@@ -90,6 +91,9 @@ const Index = () => {
       </Suspense>
       <Suspense fallback={<LoadingFallback />}>
         <AboutAndInfoSection />
+      </Suspense>
+      <Suspense fallback={<LoadingFallback />}>
+        <FloralSubscriptionsSection />
       </Suspense>
       <Suspense fallback={<LoadingFallback />}>
         <ReviewsSection />

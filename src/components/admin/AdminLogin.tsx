@@ -27,7 +27,7 @@ const AdminLogin: React.FC<AdminLoginProps> = ({ onSuccess }) => {
     const VALID_PWD = 'Proximind44300-auvertigeadmin'
 
     if (email.trim() === VALID_ID && password.trim() === VALID_PWD) {
-      try { 
+      try {
         await signIn(email, password)
         localStorage.setItem('auvertige_admin_flag', 'true')
         onSuccess?.()
@@ -62,9 +62,9 @@ const AdminLogin: React.FC<AdminLoginProps> = ({ onSuccess }) => {
               <Lock className="h-6 w-6 text-sage-600" />
             </div>
           </div>
-          <CardTitle className="text-2xl font-dancing text-sage-700">
-            Administration Au Vertige
-          </CardTitle>
+          <h2 className="text-3xl font-dancing text-sage-800 text-center mb-8">
+            Administration au ver'tige
+          </h2>
           <p className="text-sage-600">
             Connectez-vous pour accéder à l'interface d'administration
           </p>
@@ -76,7 +76,7 @@ const AdminLogin: React.FC<AdminLoginProps> = ({ onSuccess }) => {
                 <AlertDescription>{error}</AlertDescription>
               </Alert>
             )}
-            
+
             <div className="space-y-2">
               <Label htmlFor="email">Identifiant</Label>
               <Input

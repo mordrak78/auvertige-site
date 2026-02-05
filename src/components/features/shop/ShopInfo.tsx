@@ -22,7 +22,7 @@ const ShopInfo = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-14">
             <h2 className="text-4xl md:text-5xl font-dancing text-sage-700 mb-4">
-              Votre fleuriste Au Vertige à Nantes Sud
+              Votre fleuriste au ver'tige à Nantes Sud
             </h2>
             <p className="text-sage-600 text-lg">
               Retrouvez-nous à Nantes Sud, quartier Saint-Jacques, à deux pas de Pirmil, Rezé et Saint-Sébastien-sur-Loire. Conseils personnalisés et accueil chaleureux en boutique.
@@ -55,10 +55,8 @@ const ShopInfo = () => {
                     <div>
                       <p className="font-medium text-sage-700">Horaires d'ouverture</p>
                       <div className="text-sage-600 text-base">
-                        <p>Lundi - Vendredi : 9h - 19h</p>
-                        <p>Samedi : 9h - 18h</p>
-                        <p>Dimanche : 9h - 13h</p>
-                        <p className="text-poppy-500 font-medium mt-1">Fermé le lundi matin</p>
+                        <p>Lundi - Samedi : 9h - 19h</p>
+                        <p>Dimanche et jours fériés : 9h - 13h</p>
                       </div>
                     </div>
                   </div>
@@ -106,7 +104,7 @@ const ShopInfo = () => {
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Localisation Au Vertige - Fleuriste Nantes"
+                    title="Localisation au ver'tige - Fleuriste Nantes"
                     onError={() => setIframeError(true)}
                   ></iframe>
                 )}
@@ -130,7 +128,7 @@ const ShopInfo = () => {
                 <p className="text-base text-sage-600 text-center mb-4">
                   Découvrez une plus large sélection et faites livrer vos fleurs partout en France grâce à notre réseau partenaire.
                 </p>
-                <a 
+                <a
                   href="https://www.artisansfleuristesdefrance.com/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -139,7 +137,7 @@ const ShopInfo = () => {
                   Visiter Artisans Fleuristes de France
                 </a>
               </div>
-               <p className="text-xs text-sage-500 mt-4 pt-4 border-t border-sage-200 w-full text-center">
+              <p className="text-xs text-sage-500 mt-4 pt-4 border-t border-sage-200 w-full text-center">
                 Artisans sélectionnés • Qualité garantie • Service national
               </p>
             </div>

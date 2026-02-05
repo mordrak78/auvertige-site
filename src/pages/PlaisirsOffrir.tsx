@@ -35,8 +35,8 @@ const PlaisirsOffrir = () => {
   return (
     <Layout>
       <Seo
-        title="Plaisir d'offrir - Bouquets pour faire plaisir | Au Vertige"
-        description="Des bouquets et compositions pour toutes les occasions de faire plaisir à vos proches à Nantes Sud (Saint-Jacques, Pirmil, Rezé, Saint-Sébastien-sur-Loire). Créations personnalisées, livraison rapide."
+        title="Plaisir d&apos;offrir | au ver&apos;tige - Fleuriste Nantes"
+        description="Offrez des fleurs avec au ver'tige à Nantes. Bouquets cadeaux, plantes et compositions pour toutes les occasions."
         type="website"
         breadcrumbs={[
           { name: "Accueil", url: "/" },
@@ -93,7 +93,7 @@ const PlaisirsOffrir = () => {
             </motion.div>
             <div className="flex justify-center mt-6">
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Button 
+                <Button
                   onClick={() => setShowRdvModal(true)}
                   className="bg-poppy-500 hover:bg-poppy-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition text-lg"
                 >
@@ -105,7 +105,7 @@ const PlaisirsOffrir = () => {
 
           {/* Bloc EEAT */}
           <div className="mt-16 max-w-2xl mx-auto bg-sage-50 rounded-2xl p-8 shadow-lg text-center">
-            <h2 className="text-2xl md:text-3xl font-dancing text-sage-700 mb-4">Pourquoi choisir Au Vertige pour faire plaisir ?</h2>
+            <h2 className="text-2xl md:text-3xl font-dancing text-sage-700 mb-4">Pourquoi choisir au ver'tige pour faire plaisir ?</h2>
             <ul className="text-sage-700 text-lg space-y-3 mb-4">
               <li className="flex items-start gap-2">
                 <Leaf className="h-5 w-5 text-sage-600 mt-0.5 flex-shrink-0" />

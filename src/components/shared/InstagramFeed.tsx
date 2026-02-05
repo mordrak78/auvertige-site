@@ -48,7 +48,7 @@ const InstagramFeed: React.FC = () => {
         setError(null);
 
         const username = 'auvertigefleuriste_nantes';
-        
+
         // Essayer d'abord la méthode automatique (profil complet)
         let data = null;
         const proxies = [
@@ -81,7 +81,7 @@ const InstagramFeed: React.FC = () => {
           // Méthode automatique réussie
           const user = data.graphql.user;
           setProfilePic(user.profile_pic_url_hd || user.profile_pic_url || '');
-          
+
           const media = user.edge_owner_to_timeline_media?.edges || [];
           const postsData = media.slice(0, 6).map((edge: any) => {
             const node = edge.node;
@@ -97,7 +97,7 @@ const InstagramFeed: React.FC = () => {
         } else if (MANUAL_POSTS.length > 0) {
           // Méthode manuelle : créer les posts avec les shortcodes
           console.log('📸 Utilisation de la configuration manuelle avec', MANUAL_POSTS.length, 'posts');
-          
+
           // Pour chaque shortcode, créer un post avec l'URL de l'image Instagram
           const postsData: InstagramPost[] = MANUAL_POSTS.map(post => ({
             shortcode: post.shortcode,
@@ -108,14 +108,14 @@ const InstagramFeed: React.FC = () => {
           }));
 
           setPosts(postsData);
-          
+
           // Essayer de récupérer la photo de profil
           try {
             const profileProxies = [
               `https://api.allorigins.win/raw?url=`,
               `https://corsproxy.io/?`,
             ];
-            
+
             for (const proxy of profileProxies) {
               try {
                 const profileUrl = `https://www.instagram.com/${username}/?__a=1&__d=dis`;
@@ -182,7 +182,7 @@ const InstagramFeed: React.FC = () => {
               </div>
             </motion.div>
             <div className="flex-1">
-              <h3 className="text-xl font-bold text-gray-900">Au Vertige</h3>
+              <h3 className="text-xl font-bold text-gray-900">au ver'tige</h3>
               <p className="text-gray-600 text-sm">@auvertigefleuriste_nantes</p>
             </div>
             <a
@@ -230,7 +230,7 @@ const InstagramFeed: React.FC = () => {
             >
               <img
                 src={profilePic}
-                alt="Au Vertige"
+                alt="au ver'tige"
                 className="w-16 h-16 rounded-full object-cover ring-2 ring-poppy-200 shadow-md"
                 onError={(e) => {
                   (e.target as HTMLImageElement).style.display = 'none';
@@ -257,7 +257,7 @@ const InstagramFeed: React.FC = () => {
             </motion.div>
           )}
           <div className="flex-1">
-            <h3 className="text-xl font-bold text-gray-900">Au Vertige</h3>
+            <h3 className="text-xl font-bold text-gray-900">au ver'tige</h3>
             <p className="text-gray-600 text-sm">@auvertigefleuriste_nantes</p>
           </div>
           <a
@@ -296,7 +296,7 @@ const InstagramFeed: React.FC = () => {
                   target.src = `https://via.placeholder.com/400x400/f3f4f6/9ca3af?text=Instagram+Post+${index + 1}`;
                 }}
               />
-              
+
               {/* Overlay au survol */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-3">
                 <div className="flex items-center gap-2 text-white">

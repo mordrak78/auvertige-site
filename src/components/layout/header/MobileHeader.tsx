@@ -21,7 +21,7 @@ const MobileHeader = () => {
           <div className="flex items-center">
             <img
               src="/images/logo/logo9.webp"
-              alt="Au Vertige - Fleuriste Nantes"
+              alt="au ver'tige - Fleuriste Nantes"
               className="h-16 w-16 object-contain"
             />
             <BrandName className="ml-2 text-lg text-sage-700 hidden sm:flex" />
@@ -61,6 +61,7 @@ const MobileHeader = () => {
             <button
               onClick={toggleMenu}
               className="md:hidden text-sage-700 hover:text-sage-500 transition-colors ml-2"
+              aria-label="Appeler au ver'tige au 02 40 54 10 02"
             >
               {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
             </button>

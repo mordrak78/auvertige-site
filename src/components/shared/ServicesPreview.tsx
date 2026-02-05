@@ -35,16 +35,16 @@ const services = [
     key: 'bougies',
     title: "Bougies & parfums d'ambiance",
     image: "/images/creations/se-faire-plaisir/fleurs2.webp",
-    description: "Sélection de bougies artisanales et parfums d'ambiance de la marque Mathilde M. Idées cadeaux parfaites à Nantes Sud.",
+    description: "Sélection de bougies artisanales et parfums d'ambiance de la marque Mathilde M. Idées cadeaux parfaites pour la maison.",
     tag: 'Cadeau',
-    isNew: true,
+    isNew: false,
     link: '/services#bougies'
   },
   {
     key: 'decoration',
     title: "Décoration d'intérieur",
     image: "/images/creations/se-faire-plaisir/fleurs3.webp",
-    description: "Fleurs séchées, cadres végétaux, vases, bougeoirs personnalisés. Conseils sur-mesure pour sublimer votre intérieur à Nantes Sud.",
+    description: "Fleurs séchées, cadres végétaux, vases, bougeoirs personnalisés. Conseils sur-mesure pour sublimer votre intérieur.",
     tag: 'Décoration',
     isNew: false,
     link: '/services#decoration'
@@ -53,7 +53,7 @@ const services = [
     key: 'professionnels',
     title: "Services pour professionnels",
     image: "/images/creations/se-faire-plaisir/fleurs4.webp",
-    description: "Abonnements floraux pour maisons de retraite, restaurants, hôtels, bureaux. Événements d'entreprise avec devis sur-mesure à Nantes Sud.",
+    description: "Abonnements floraux pour maisons de retraite, restaurants, hôtels, bureaux. Événements d'entreprise avec devis sur-mesure.",
     tag: 'Pro',
     isNew: false,
     link: '/services#professionnels'
@@ -132,7 +132,7 @@ const ServicesPreview = () => {
                       {' '}Nouveau
                     </motion.div>
                   )}
-                  
+
                   {/* Tag de catégorie */}
                   <motion.div
                     initial={{ opacity: 0, x: -20 }}
@@ -142,12 +142,12 @@ const ServicesPreview = () => {
                   >
                     {service.tag}
                   </motion.div>
-                  
+
                   {/* Image avec effet de zoom */}
                   <div className="w-full h-64 overflow-hidden rounded-t-3xl relative">
                     <motion.img
                       src={service.image}
-                      alt={`${service.title} - Fleuriste Nantes, Au Vertige à Nantes Sud`}
+                      alt={`${service.title} - Fleuriste Nantes, au ver'tige à Nantes Sud`}
                       className="w-full h-full object-cover object-center"
                       loading="lazy"
                       whileHover={{ scale: 1.1 }}
@@ -155,16 +155,16 @@ const ServicesPreview = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>
-                  
+
                   {/* Contenu */}
                   <div className="p-6 text-center flex flex-col flex-grow">
-                    <h3 className="text-xl font-bold text-sage-700 font-inter mb-3 group-hover:text-poppy-600 transition-colors">
+                    <h3 className="text-xl font-bold text-sage-700 font-inter mb-3 group-hover:text-sage-900 transition-colors">
                       {service.title}
                     </h3>
                     <p className="text-sage-600 text-sm font-inter line-clamp-3 mb-6 flex-grow leading-relaxed">
                       {service.description}
                     </p>
-                    
+
                     {/* Bouton CTA avec animation */}
                     <div className="mt-auto">
                       <motion.div

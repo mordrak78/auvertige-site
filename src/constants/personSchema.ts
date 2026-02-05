@@ -1,6 +1,6 @@
 /**
  * Schema Person pour Sylvie ARCHAMBEAU
- * Lié au LocalBusiness Au Vertige
+ * Lié au LocalBusiness au ver'tige
  */
 export const sylviePersonSchema = {
   "@context": "https://schema.org",
@@ -12,7 +12,7 @@ export const sylviePersonSchema = {
   "worksFor": {
     "@type": "LocalBusiness",
     "@id": "https://auvertige.fr/#business",
-    "name": "Au Vertige"
+    "name": "au ver'tige"
   },
   "knowsAbout": [
     "Art floral",

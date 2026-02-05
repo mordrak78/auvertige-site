@@ -11,20 +11,12 @@ import { ScrollToTopLink } from '@/components/shared/ScrollToTopLink';
 
 const categories = [
   {
-    key: 'deuil',
-    title: 'Deuil',
-    image: '/images/creations/deuil/deuil-bouquet-rond-01.webp',
-    description: 'Compositions respectueuses et élégantes pour honorer vos proches',
-    icon: Heart,
-    color: 'bg-gray-50 border-gray-200 text-gray-700'
-  },
-  {
-    key: 'mariage',
-    title: 'Mariage',
-    image: '/images/creations/mariage/bouquet-de-mariage-1024x683.webp',
-    description: 'Créations florales pour votre plus beau jour',
-    icon: Heart,
-    color: 'bg-pink-50 border-pink-200 text-pink-700'
+    key: 'plaisirs-offrir',
+    title: 'Plaisirs d\'offrir',
+    image: '/images/creations/offrir/roses-saint-valentin-03.webp',
+    description: 'Bouquets pour faire plaisir à vos proches (et pour les baptêmes)',
+    icon: Sparkles,
+    color: 'bg-purple-50 border-purple-200 text-purple-700'
   },
   {
     key: 'anniversaire',
@@ -35,52 +27,52 @@ const categories = [
     color: 'bg-yellow-50 border-yellow-200 text-yellow-700'
   },
   {
-    key: 'bapteme',
-    title: 'Baptême',
-    image: '/images/creations/bapteme/DSCN08111-e1518269397381.webp',
-    description: 'Créations tendres pour célébrer un baptême',
-    icon: Baby,
-    color: 'bg-blue-50 border-blue-200 text-blue-700'
-  },
-  {
-    key: 'plaisirs-offrir',
-    title: 'Plaisirs d\'offrir',
-    image: '/images/creations/offrir/roses-saint-valentin-03.webp',
-    description: 'Bouquets pour faire plaisir à vos proches',
-    icon: Sparkles,
-    color: 'bg-purple-50 border-purple-200 text-purple-700'
-  },
-  {
     key: 'se-faire-plaisir',
     title: 'Se faire plaisir',
     image: '/images/creations/se-faire-plaisir/fleurs1.webp',
     description: 'Créations florales pour vous faire plaisir',
     icon: Flower,
     color: 'bg-green-50 border-green-200 text-green-700'
+  },
+  {
+    key: 'mariage',
+    title: 'Mariage',
+    image: '/images/creations/mariage/bouquet-de-mariage-1024x683.webp',
+    description: 'Créations florales pour votre plus beau jour',
+    icon: Heart,
+    color: 'bg-pink-50 border-pink-200 text-pink-700'
+  },
+  {
+    key: 'deuil',
+    title: 'Deuil',
+    image: '/images/creations/deuil/deuil-bouquet-rond-01.webp',
+    description: 'Compositions respectueuses et élégantes pour honorer vos proches',
+    icon: Heart,
+    color: 'bg-gray-50 border-gray-200 text-gray-700'
   }
 ];
 
 const CreationsFlorales = () => {
   useScrollToTop();
-  
+
   return (
     <>
       <Helmet>
-        <title>Créations Florales | Au Vertige - Fleuriste à Nantes</title>
-        <meta name="description" content="Découvrez nos créations florales par catégorie : deuil, mariage, anniversaire, baptême, plaisirs d'offrir et se faire plaisir. Fleuriste Au Vertige à Nantes." />
+        <title>Créations Florales Nantes | au ver&apos;tige - Artisan Fleuriste</title>
+        <meta name="description" content="Découvrez les créations florales d'au ver'tige à Nantes. Bouquets uniques, compositions originales et plantes d'exception." />
       </Helmet>
 
       <Layout>
         <Seo
-          title="Créations Florales par Catégorie | Au Vertige - Fleuriste à Nantes"
-          description="Explorez nos créations florales organisées par catégorie : deuil, mariage, anniversaire, baptême, plaisirs d'offrir et se faire plaisir. Chaque création est unique et réalisée avec passion."
+          title="Galerie Créations Florales | au ver'tige Nantes"
+          description="Portfolio de nos réalisations : bouquets ronds, champêtres, structurés. Le savoir-faire d'au ver'tige en images."
           type="website"
           breadcrumbs={[
             { name: "Accueil", url: "/" },
             { name: "Créations florales", url: "/creations-florales" }
           ]}
         />
-        
+
         <main>
           {/* Hero Section */}
           <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center">
@@ -111,12 +103,12 @@ const CreationsFlorales = () => {
                   Des créations artisanales pour chaque moment de vie
                 </h2>
                 <p className="text-lg text-sage-600 leading-relaxed">
-                  Chez Au Vertige, nous créons des <strong className="text-sage-700">compositions florales uniques</strong> pour toutes vos occasions. 
-                  Que ce soit pour un <Link to="/mariage" className="text-poppy-600 hover:text-poppy-700 font-medium underline">mariage</Link>, 
-                  {' '}<Link to="/evenements#anniversaire" className="text-poppy-600 hover:text-poppy-700 font-medium underline">anniversaire</Link>, 
-                  {' '}<Link to="/evenements#bapteme" className="text-poppy-600 hover:text-poppy-700 font-medium underline">baptême</Link> ou 
-                  {' '}<Link to="/deuil" className="text-poppy-600 hover:text-poppy-700 font-medium underline">hommage</Link>, 
-                  chaque création est <strong className="text-poppy-600">faite à la main</strong> avec passion et attention aux détails.
+                  Chez au ver'tige, nous créons des <strong className="text-sage-700">compositions florales uniques</strong> pour toutes vos occasions.
+                  Que ce soit pour un <Link to="/mariage" className="text-sage-700 hover:text-sage-900 font-medium underline">mariage</Link>,
+                  {' '}<Link to="/evenements#anniversaire" className="text-sage-700 hover:text-sage-900 font-medium underline">anniversaire</Link>,
+                  {' '}<Link to="/evenements#bapteme" className="text-sage-700 hover:text-sage-900 font-medium underline">baptême</Link> ou
+                  {' '}<Link to="/deuil" className="text-sage-700 hover:text-sage-900 font-medium underline">hommage</Link>,
+                  chaque création est <strong className="text-sage-700">faite avec passion</strong> et attention aux détails.
                 </p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
@@ -155,8 +147,8 @@ const CreationsFlorales = () => {
                 {categories.map((category) => {
                   const IconComponent = category.icon;
                   return (
-                    <Link 
-                      key={category.key} 
+                    <Link
+                      key={category.key}
                       to={`/${category.key}`}
                       className="group block"
                     >

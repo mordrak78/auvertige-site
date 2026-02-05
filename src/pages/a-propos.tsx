@@ -34,8 +34,8 @@ const APropos = () => {
   return (
     <Layout>
       <Seo
-        title="Artisan fleuriste Nantes : L'histoire d'Au Vertige | Au Vertige"
-        description="Artisan fleuriste Nantes : Découvrez l'histoire, les valeurs et l'équipe d'Au Vertige à Nantes Sud. Sylvie ARCHAMBEAU, 14 ans d'expérience, créations artisanales et fleurs locales."
+        title="À propos | au ver&apos;tige - Fleuriste Artisan à Nantes"
+        description="Découvrez l'histoire d'au ver'tige, fleuriste artisan à Nantes Sud. Une passion pour les fleurs locales et la création unique depuis 10 ans."
         type="website"
         breadcrumbs={[
           { name: "Accueil", url: "/" },

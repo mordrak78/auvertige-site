@@ -32,13 +32,13 @@ const ZonesDesserviesSection = () => {
             className="text-center mb-12"
           >
             <div className="flex items-center justify-center gap-3 mb-4">
-              <Navigation className="w-8 h-8 text-poppy-600" />
+              <Navigation className="w-8 h-8 text-sage-600" />
               <h2 className="text-3xl md:text-4xl font-dancing text-sage-700">
-                Fleuriste Nantes : Nos zones desservies
+                Nos zones desservies
               </h2>
             </div>
             <p className="text-lg text-sage-600 max-w-2xl mx-auto">
-              Fleuriste Nantes : Au Vertige est votre artisan fleuriste à Nantes Sud, quartier Saint-Jacques. 
+              Fleuriste Nantes : au ver'tige est votre artisan fleuriste à Nantes Sud, quartier Saint-Jacques.
               Nous accueillons les clients de Nantes centre, Pirmil, Rezé, Saint-Sébastien-sur-Loire et toute la région nantaise.
             </p>
           </motion.div>
@@ -54,12 +54,12 @@ const ZonesDesserviesSection = () => {
                 className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow"
               >
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-poppy-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-poppy-600" />
+                  <div className="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-6 h-6 text-sage-600" />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold text-sage-700 mb-2">
-                      Fleuriste {zone.name}
+                      {zone.name}
                     </h3>
                     <p className="text-sage-600 text-sm mb-3">
                       {zone.description}
@@ -67,7 +67,7 @@ const ZonesDesserviesSection = () => {
                     {zone.link === '/fleuriste-saint-jacques' && (
                       <Link
                         to={zone.link}
-                        className="text-poppy-600 hover:text-poppy-700 font-medium text-sm inline-flex items-center gap-1"
+                        className="text-sage-600 hover:text-sage-700 font-medium text-sm inline-flex items-center gap-1"
                       >
                         En savoir plus →
                       </Link>
@@ -85,17 +85,17 @@ const ZonesDesserviesSection = () => {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="bg-white rounded-xl p-8 shadow-lg text-center"
           >
-            <Heart className="w-12 h-12 text-poppy-600 mx-auto mb-4" />
+            <Heart className="w-12 h-12 text-sage-600 mx-auto mb-4" />
             <h3 className="text-2xl font-dancing text-sage-700 mb-4">
-              Fleuriste Nantes : Retrait en boutique uniquement
+              Retrait en boutique uniquement
             </h3>
             <p className="text-sage-600 mb-4">
-              Toutes nos créations sont à retirer directement en boutique au <strong className="text-sage-700">38, boulevard Joliot Curie, 44200 Nantes</strong>, 
-              dans le quartier Saint-Jacques. Cela nous permet de garantir la fraîcheur et la qualité de nos compositions, 
+              Toutes nos créations sont à retirer directement en boutique au <strong className="text-sage-700">38, boulevard Joliot Curie, 44200 Nantes</strong>,
+              dans le quartier Saint-Jacques. Cela nous permet de garantir la fraîcheur et la qualité de nos compositions,
               et de vous conseiller personnellement.
             </p>
             <p className="text-sage-600">
-              <strong className="text-sage-700">Fleuriste Nantes</strong> : Parking disponible à proximité, 
+              <strong className="text-sage-700">Fleuriste Nantes</strong> : Parking disponible à proximité,
               facilement accessible depuis toutes les zones mentionnées.
             </p>
           </motion.div>

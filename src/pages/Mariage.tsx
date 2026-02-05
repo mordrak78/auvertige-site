@@ -69,14 +69,14 @@ const Mariage = () => {
   const [showDevisModal, setShowDevisModal] = useState(false);
   const [selectedRealisation, setSelectedRealisation] = useState(null);
   const [showRdvModal, setShowRdvModal] = useState(false);
-  
+
   useScrollToTop();
 
   return (
     <Layout>
       <Seo
-        title="Fleuriste mariage Nantes | Bouquets mariée & Décoration sur-mesure | Au Vertige"
-        description="Fleuriste mariage Nantes : Au Vertige crée vos bouquets de mariée et décorations florales sur-mesure à Nantes Sud. Devis gratuit, retrait en boutique. 02 40 54 10 02"
+        title="Fleuriste Mariage Nantes | au ver&apos;tige - Créations sur-mesure"
+        description="Fleurissez votre mariage avec au ver'tige à Nantes. Bouquet de mariée, décoration de salle, église, voiture. Créations uniques pour votre plus beau jour."
         type="website"
         breadcrumbs={[
           { name: "Accueil", url: "/" },
@@ -96,7 +96,7 @@ const Mariage = () => {
             "description": "Création de bouquets de mariée, décorations florales, accompagnement personnalisé à Nantes Sud, Saint-Jacques, Pirmil, Rezé, Saint-Sébastien-sur-Loire.",
             "provider": {
               "@type": "LocalBusiness",
-              "name": "Au Vertige",
+              "name": "au ver'tige",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "38, boulevard Joliot Curie",
@@ -127,7 +127,7 @@ const Mariage = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-lg text-sage-600 mb-8 text-center max-w-2xl mx-auto"
           >
-            Fleuriste mariage Nantes : Au Vertige crée vos bouquets de mariée et décorations florales sur-mesure à Nantes Sud, quartier Saint-Jacques. Accompagnement personnalisé, conseils, retrait en boutique au 38, boulevard Joliot Curie.
+            Fleuriste mariage Nantes : au ver'tige crée vos bouquets de mariée et décorations florales sur-mesure à Nantes Sud, quartier Saint-Jacques. Accompagnement personnalisé, conseils, retrait en boutique au 38, boulevard Joliot Curie.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -191,7 +191,7 @@ const Mariage = () => {
             </motion.div>
             <div className="flex justify-center mt-6">
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Button 
+                <Button
                   onClick={() => setShowRdvModal(true)}
                   className="bg-poppy-500 hover:bg-poppy-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition text-lg"
                 >
@@ -208,7 +208,7 @@ const Mariage = () => {
             transition={{ duration: 0.6 }}
             className="mt-16 max-w-2xl mx-auto bg-sage-50 rounded-2xl p-8 shadow-lg text-center"
           >
-            <h2 className="text-2xl md:text-3xl font-dancing text-sage-700 mb-4">Pourquoi choisir Au Vertige pour votre mariage ?</h2>
+            <h2 className="text-2xl md:text-3xl font-dancing text-sage-700 mb-4">Pourquoi choisir au ver'tige pour votre mariage ?</h2>
             <ul className="text-sage-700 text-lg space-y-3 mb-4">
               <motion.li initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="flex items-start gap-2">
                 <Leaf className="h-5 w-5 text-sage-600 mt-0.5 flex-shrink-0" />
@@ -315,37 +315,37 @@ const Mariage = () => {
         title="Prendre rendez-vous pour un devis mariage"
         size="md"
       >
-            <form className="flex flex-col gap-4">
-              <div>
-                <label className="block text-sage-700 mb-1">Nom complet</label>
-                <input type="text" className="w-full border border-sage-200 rounded-lg px-3 py-2" required />
-              </div>
-              <div>
-                <label className="block text-sage-700 mb-1">Téléphone</label>
-                <input type="tel" className="w-full border border-sage-200 rounded-lg px-3 py-2" required />
-              </div>
-              <div>
-                <label className="block text-sage-700 mb-1">Email</label>
-                <input type="email" className="w-full border border-sage-200 rounded-lg px-3 py-2" required />
-              </div>
-              <div>
-                <label className="block text-sage-700 mb-1">Date souhaitée du rendez-vous</label>
-                <input type="date" className="w-full border border-sage-200 rounded-lg px-3 py-2" required />
-              </div>
-              <div>
-                <label className="block text-sage-700 mb-1">Heure souhaitée</label>
-                <input type="time" className="w-full border border-sage-200 rounded-lg px-3 py-2" required />
-              </div>
-              <div>
-                <label className="block text-sage-700 mb-1">Message</label>
-                <textarea className="w-full border border-sage-200 rounded-lg px-3 py-2" rows={2} required />
-              </div>
-              <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-                <Button type="submit" className="w-full bg-poppy-500 hover:bg-poppy-600 text-white font-bold py-3 px-6 rounded-full shadow transition mt-2">
-                  Valider le rendez-vous
-                </Button>
-              </motion.div>
-            </form>
+        <form className="flex flex-col gap-4">
+          <div>
+            <label className="block text-sage-700 mb-1">Nom complet</label>
+            <input type="text" className="w-full border border-sage-200 rounded-lg px-3 py-2" required />
+          </div>
+          <div>
+            <label className="block text-sage-700 mb-1">Téléphone</label>
+            <input type="tel" className="w-full border border-sage-200 rounded-lg px-3 py-2" required />
+          </div>
+          <div>
+            <label className="block text-sage-700 mb-1">Email</label>
+            <input type="email" className="w-full border border-sage-200 rounded-lg px-3 py-2" required />
+          </div>
+          <div>
+            <label className="block text-sage-700 mb-1">Date souhaitée du rendez-vous</label>
+            <input type="date" className="w-full border border-sage-200 rounded-lg px-3 py-2" required />
+          </div>
+          <div>
+            <label className="block text-sage-700 mb-1">Heure souhaitée</label>
+            <input type="time" className="w-full border border-sage-200 rounded-lg px-3 py-2" required />
+          </div>
+          <div>
+            <label className="block text-sage-700 mb-1">Message</label>
+            <textarea className="w-full border border-sage-200 rounded-lg px-3 py-2" rows={2} required />
+          </div>
+          <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+            <Button type="submit" className="w-full bg-poppy-500 hover:bg-poppy-600 text-white font-bold py-3 px-6 rounded-full shadow transition mt-2">
+              Valider le rendez-vous
+            </Button>
+          </motion.div>
+        </form>
       </AnimatedModal>
 
       {/* Modal micro-formulaire devis pour le carrousel */}
@@ -355,33 +355,33 @@ const Mariage = () => {
         title="Demander un devis"
         size="md"
       >
-            <form className="flex flex-col gap-4">
-              <div>
-                <label className="block text-sage-700 mb-1">Nom complet</label>
-                <input type="text" className="w-full border border-sage-200 rounded-lg px-3 py-2" required />
-              </div>
-              <div>
-                <label className="block text-sage-700 mb-1">Téléphone</label>
-                <input type="tel" className="w-full border border-sage-200 rounded-lg px-3 py-2" required />
-              </div>
-              <div>
-                <label className="block text-sage-700 mb-1">Email</label>
-                <input type="email" className="w-full border border-sage-200 rounded-lg px-3 py-2" required />
-              </div>
-              <div>
-                <label className="block text-sage-700 mb-1">Date souhaitée</label>
-                <input type="date" className="w-full border border-sage-200 rounded-lg px-3 py-2" required />
-              </div>
-              <div>
-                <label className="block text-sage-700 mb-1">Message</label>
-                <textarea className="w-full border border-sage-200 rounded-lg px-3 py-2" rows={2} required />
-              </div>
-              <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-                <Button type="submit" className="w-full bg-poppy-500 hover:bg-poppy-600 text-white font-bold py-3 px-6 rounded-full shadow transition mt-2">
-                  Envoyer la demande
-                </Button>
-              </motion.div>
-            </form>
+        <form className="flex flex-col gap-4">
+          <div>
+            <label className="block text-sage-700 mb-1">Nom complet</label>
+            <input type="text" className="w-full border border-sage-200 rounded-lg px-3 py-2" required />
+          </div>
+          <div>
+            <label className="block text-sage-700 mb-1">Téléphone</label>
+            <input type="tel" className="w-full border border-sage-200 rounded-lg px-3 py-2" required />
+          </div>
+          <div>
+            <label className="block text-sage-700 mb-1">Email</label>
+            <input type="email" className="w-full border border-sage-200 rounded-lg px-3 py-2" required />
+          </div>
+          <div>
+            <label className="block text-sage-700 mb-1">Date souhaitée</label>
+            <input type="date" className="w-full border border-sage-200 rounded-lg px-3 py-2" required />
+          </div>
+          <div>
+            <label className="block text-sage-700 mb-1">Message</label>
+            <textarea className="w-full border border-sage-200 rounded-lg px-3 py-2" rows={2} required />
+          </div>
+          <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+            <Button type="submit" className="w-full bg-poppy-500 hover:bg-poppy-600 text-white font-bold py-3 px-6 rounded-full shadow transition mt-2">
+              Envoyer la demande
+            </Button>
+          </motion.div>
+        </form>
       </AnimatedModal>
     </Layout>
   );

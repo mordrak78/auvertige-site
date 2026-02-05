@@ -6,8 +6,8 @@ const MentionsLegales = () => {
   return (
     <Layout>
       <Seo
-        title="Mentions Légales - Au Vertige"
-        description="Mentions légales, politique de confidentialité et RGPD d'Au Vertige, fleuriste à Nantes."
+        title="Mentions Légales - au ver'tige"
+        description="Mentions légales, politique de confidentialité et RGPD d'au ver'tige, fleuriste à Nantes."
         type="website"
         breadcrumbs={[
           { name: "Accueil", url: "/" },
@@ -22,7 +22,7 @@ const MentionsLegales = () => {
           <section className="mb-12 bg-white rounded-lg p-8 shadow-lg">
             <h2 className="text-2xl font-semibold text-sage-700 mb-4">Éditeur du site</h2>
             <div className="space-y-2 text-sage-600">
-              <p><strong>Raison sociale :</strong> Au Vertige – Artisan Fleuriste</p>
+              <p><strong>Raison sociale :</strong> au ver'tige – Artisan Fleuriste</p>
               <p><strong>Adresse :</strong> 38, boulevard Joliot Curie<br />44200 Nantes – France</p>
               <p><strong>Téléphone :</strong> 02 40 54 10 02</p>
               <p><strong>Email :</strong> guillaume.fleurs@orange.fr</p>
@@ -48,10 +48,10 @@ const MentionsLegales = () => {
             <h2 className="text-2xl font-semibold text-sage-700 mb-4">Propriété intellectuelle</h2>
             <div className="space-y-4 text-sage-600">
               <p>
-                L'ensemble des éléments (textes, images, logos, graphismes, vidéos, icônes, sons, etc.) du site www.auvertige.fr est la propriété exclusive de Au Vertige, sauf mention contraire.
+                L'ensemble des éléments (textes, images, logos, graphismes, vidéos, icônes, sons, etc.) du site www.auvertige.fr est la propriété exclusive de au ver'tige, sauf mention contraire.
               </p>
               <p>
-                Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite sans l'autorisation écrite préalable de Au Vertige.
+                Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite sans l'autorisation écrite préalable de au ver'tige.
               </p>
             </div>
           </section>
@@ -59,7 +59,7 @@ const MentionsLegales = () => {
           {/* Section 4: Données personnelles et RGPD */}
           <section className="mb-12 bg-white rounded-lg p-8 shadow-lg">
             <h2 className="text-2xl font-semibold text-sage-700 mb-4">Données personnelles et Protection des données (RGPD)</h2>
-            
+
             <div className="space-y-6 text-sage-600">
               <div>
                 <h3 className="text-xl font-semibold text-sage-700 mb-3">1. Collecte des données</h3>
@@ -81,7 +81,7 @@ const MentionsLegales = () => {
                   <li>Vous envoyer des informations sur nos services</li>
                 </ul>
                 <p className="mt-4">
-                  Conformément au Règlement Général sur la Protection des Données (RGPD), les informations recueillies via les formulaires du site sont destinées exclusivement à Au Vertige pour le traitement des demandes clients ou commandes.
+                  Conformément au Règlement Général sur la Protection des Données (RGPD), les informations recueillies via les formulaires du site sont destinées exclusivement à au ver'tige pour le traitement des demandes clients ou commandes.
                 </p>
                 <p className="mt-2">Aucune donnée personnelle n'est cédée à des tiers.</p>
               </div>
@@ -140,7 +140,7 @@ const MentionsLegales = () => {
             <div className="space-y-2 text-sage-600">
               <p>Pour toute question concernant vos données personnelles ou ce site, contactez-nous :</p>
               <p>
-                <strong>Au Vertige – Artisan Fleuriste</strong><br />
+                <strong>au ver'tige – Artisan Fleuriste</strong><br />
                 38, boulevard Joliot Curie<br />
                 44200 Nantes – France<br />
                 Tél. : 02 40 54 10 02<br />

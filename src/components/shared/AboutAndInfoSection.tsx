@@ -57,14 +57,14 @@ const AboutAndInfoSection = () => {
                 whileHover={{ rotate: [0, -10, 10, -10, 0] }}
                 transition={{ duration: 0.5 }}
                 src="/images/logo/logo4.webp"
-                alt="Logo Au Vertige - Artisan fleuriste Nantes"
+                alt="Fleuriste au ver'tige - Artisan passionné à Nantes"
                 className="h-16 w-16 object-contain rounded-full shadow-lg mr-4"
               />
               <h2 className="text-3xl md:text-4xl font-dancing text-sage-700 mb-0">
-                À propos d'Au Vertige
+                À propos d'au ver'tige
               </h2>
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -73,13 +73,13 @@ const AboutAndInfoSection = () => {
               className="prose prose-lg text-sage-600 space-y-4"
             >
               <p className="leading-relaxed">
-                Fleuriste Nantes : Au Vertige, artisan fleuriste passionné par l'art floral, nous créons des compositions uniques 
-                pour toutes les occasions. Notre boutique est située au cœur de Nantes Sud, quartier Saint-Jacques, où nous accueillons 
+                Fleuriste Nantes : au ver'tige, artisan fleuriste passionné par l'art floral, nous créons des compositions uniques
+                pour toutes les occasions. Notre boutique est située au cœur de Nantes Sud, quartier Saint-Jacques, où nous accueillons
                 nos clients avec chaleur et professionnalisme.
               </p>
               <p className="leading-relaxed">
-                Nous sélectionnons avec soin nos fleurs et plantes pour vous offrir des créations 
-                fraîches et durables. Notre équipe d'artisans fleuristes met tout son savoir-faire 
+                Nous sélectionnons avec soin nos fleurs et plantes pour vous offrir des créations
+                fraîches et durables. Notre équipe d'artisans fleuristes met tout son savoir-faire
                 au service de vos projets.
               </p>
             </motion.div>
@@ -98,7 +98,7 @@ const AboutAndInfoSection = () => {
               >
                 <ScrollToTopLink
                   to="/creations-florales"
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-poppy-500 to-poppy-600 hover:from-poppy-600 hover:to-poppy-700 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 shadow-md hover:shadow-lg"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-sage-600 to-sage-700 hover:from-sage-700 hover:to-sage-800 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 shadow-md hover:shadow-lg"
                 >
                   Découvrir nos créations
                   <motion.div
@@ -109,7 +109,7 @@ const AboutAndInfoSection = () => {
                   </motion.div>
                 </ScrollToTopLink>
               </motion.div>
-              
+
               {/* Badge Artisans Fleuristes de France */}
               <motion.a
                 href="https://www.artisansfleuristesdefrance.fr/au-vertige"
@@ -144,7 +144,7 @@ const AboutAndInfoSection = () => {
             >
               Contact & Boutique
             </motion.h3>
-            
+
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {/* Informations pratiques */}
               <motion.div
@@ -161,9 +161,9 @@ const AboutAndInfoSection = () => {
                   <motion.div
                     whileHover={{ rotate: [0, -10, 10, 0] }}
                     transition={{ duration: 0.5 }}
-                    className="w-12 h-12 bg-poppy-100 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-poppy-200 transition-colors"
+                    className="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-sage-200 transition-colors"
                   >
-                    <MapPin className="w-6 h-6 text-poppy-600" />
+                    <MapPin className="w-6 h-6 text-sage-600" />
                   </motion.div>
                   <div>
                     <h4 className="font-semibold text-sage-700 mb-1">Adresse</h4>
@@ -181,17 +181,15 @@ const AboutAndInfoSection = () => {
                   <motion.div
                     whileHover={{ rotate: [0, -10, 10, 0] }}
                     transition={{ duration: 0.5 }}
-                    className="w-12 h-12 bg-poppy-100 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-poppy-200 transition-colors"
+                    className="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-sage-200 transition-colors"
                   >
-                    <Clock className="w-6 h-6 text-poppy-600" />
+                    <Clock className="w-6 h-6 text-sage-600" />
                   </motion.div>
                   <div>
                     <h4 className="font-semibold text-sage-700 mb-1">Horaires d'ouverture</h4>
                     <p className="text-sage-600 leading-relaxed">
-                      Lundi - Vendredi : 9h - 19h<br />
-                      Samedi : 9h - 18h<br />
-                      Dimanche : 9h - 13h<br />
-                      <span className="text-poppy-600 font-medium">Dimanche et jours fériés</span>
+                      Lundi - Samedi : 9h - 19h<br />
+                      Dimanche et jours fériés : 9h - 13h
                     </p>
                   </div>
                 </motion.div>
@@ -203,9 +201,9 @@ const AboutAndInfoSection = () => {
                   <motion.div
                     whileHover={{ rotate: [0, -10, 10, 0] }}
                     transition={{ duration: 0.5 }}
-                    className="w-12 h-12 bg-poppy-100 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-poppy-200 transition-colors"
+                    className="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-sage-200 transition-colors"
                   >
-                    <Phone className="w-6 h-6 text-poppy-600" />
+                    <Phone className="w-6 h-6 text-sage-600" />
                   </motion.div>
                   <div>
                     <h4 className="font-semibold text-sage-700 mb-1">Téléphone</h4>
@@ -213,7 +211,7 @@ const AboutAndInfoSection = () => {
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                       onClick={handleCall}
-                      className="text-poppy-600 hover:text-poppy-800 transition-colors font-medium"
+                      className="text-sage-600 hover:text-sage-800 transition-colors font-medium"
                     >
                       Nous appeler
                     </motion.button>
@@ -227,16 +225,16 @@ const AboutAndInfoSection = () => {
                   <motion.div
                     whileHover={{ rotate: [0, -10, 10, 0] }}
                     transition={{ duration: 0.5 }}
-                    className="w-12 h-12 bg-poppy-100 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-poppy-200 transition-colors"
+                    className="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-sage-200 transition-colors"
                   >
-                    <Mail className="w-6 h-6 text-poppy-600" />
+                    <Mail className="w-6 h-6 text-sage-600" />
                   </motion.div>
                   <div>
                     <h4 className="font-semibold text-sage-700 mb-1">Email</h4>
                     <motion.a
                       whileHover={{ scale: 1.05 }}
                       href="mailto:contact@auvertige-nantes.fr"
-                      className="text-poppy-600 hover:text-poppy-800 transition-colors font-medium"
+                      className="text-sage-600 hover:text-sage-800 transition-colors font-medium"
                     >
                       contact@auvertige-nantes.fr
                     </motion.a>

@@ -75,7 +75,7 @@ export const FeaturedProducts: React.FC = () => {
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <OptimizedImage
                     src={product.image}
-                    alt={`${product.title} - Fleuriste Nantes, Au Vertige - ${product.description}`}
+                    alt={`${product.title} - Fleuriste Nantes, au ver'tige - ${product.description}`}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     width={400}
                     height={300}

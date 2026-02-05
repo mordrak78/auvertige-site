@@ -30,8 +30,8 @@ const ContactPage = () => {
   return (
     <Layout>
       <Seo
-        title="Contact fleuriste Nantes Sud Saint-Jacques | Au Vertige"
-        description="Contactez votre fleuriste Au Vertige à Nantes Sud (quartier Saint-Jacques, près de Pirmil, Rezé, Saint-Sébastien-sur-Loire). Adresse, horaires, téléphone, réseaux sociaux, plan d'accès et formulaire de contact. Questions fréquentes."
+        title="Contact & Accès | au ver'tige - Fleuriste Nantes Sud"
+        description="Contactez au ver'tige, votre fleuriste à Nantes Sud (Saint-Jacques). Adresse, horaires, téléphone et formulaire de contact pour vos commandes."
         type="website"
         breadcrumbs={[
           { name: "Accueil", url: "/" },
@@ -124,6 +124,7 @@ const ContactPage = () => {
           transition={{ duration: 0.6 }}
           className="mt-16 mb-16 max-w-3xl mx-auto text-center"
         >
+          <h3 className="font-semibold text-sage-800 mb-1">au ver&apos;tige</h3>
           <p className="text-sage-600 mb-4 text-lg">
             Vous avez d'autres questions ?
           </p>
