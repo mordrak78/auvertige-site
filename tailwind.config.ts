@@ -46,17 +46,18 @@ export default {
 					800: '#807765',  // Texte très foncé
 					900: '#696155',  // Texte maximum
 				},
+				// Poppy colors reserved for the flower brand element only
 				poppy: {
-					50: '#fef2f2',   // Fond très clair
-					100: '#fee2e2',  // Fond clair
-					200: '#fecaca',  // Bordure claire
-					300: '#fca5a5',  // Texte secondaire clair
-					400: '#f87171',  // Texte secondaire
-					500: '#dc2626',  // Couleur principale
-					600: '#b91c1c',  // Couleur foncée
-					700: '#991b1b',  // Couleur très foncée
-					800: '#7f1d1d',  // Couleur maximum
-					900: '#450a0a',  // Couleur extrême
+					50: '#fef2f2',
+					100: '#fee2e2',
+					200: '#fecaca',
+					300: '#fca5a5',
+					400: '#f87171',
+					500: '#dc2626',
+					600: '#b91c1c',
+					700: '#991b1b',
+					800: '#7f1d1d',
+					900: '#450a0a',
 				},
 				// Nouvelles couleurs d'accent pour enrichir la palette
 				rose: {
@@ -223,7 +224,7 @@ export default {
 	},
 	plugins: [
 		animatePlugin,
-		plugin(function({ addUtilities, theme, e }) {
+		plugin(function ({ addUtilities, theme, e }) {
 			const textShadowUtilities = Object.entries(theme('textShadow') || {}).map(([key, value]) => ({
 				[`.${e(`shadow-text-${key === 'DEFAULT' ? '' : key}`)}`]: { 'text-shadow': value },
 			}));

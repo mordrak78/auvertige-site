@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
+import { BrandName } from '@/components/shared/BrandName';
 
 const MobileHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,12 +19,12 @@ const MobileHeader = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center">
-            <img 
+            <img
               src="/images/logo/logo9.webp"
-              alt="Au Vertige - Fleuriste Nantes" 
+              alt="Au Vertige - Fleuriste Nantes"
               className="h-16 w-16 object-contain"
             />
-            <span className="ml-2 text-lg font-dancing text-sage-700 hidden sm:block">Au Vertige</span>
+            <BrandName className="ml-2 text-lg text-sage-700 hidden sm:flex" />
           </div>
 
           {/* Navigation rapide desktop */}
@@ -50,12 +51,12 @@ const MobileHeader = () => {
           <div className="flex items-center space-x-2">
             <button
               onClick={handleCall}
-              className="bg-poppy-500 hover:bg-poppy-600 text-white px-4 py-2 rounded-full flex items-center space-x-2 font-medium transition-all duration-300"
+              className="bg-sage-600 hover:bg-sage-700 text-white px-4 py-2 rounded-full flex items-center space-x-2 font-medium transition-all duration-300"
             >
               <Phone size={16} />
               <span className="hidden sm:inline">Appeler</span>
             </button>
-            
+
             {/* Menu Mobile */}
             <button
               onClick={toggleMenu}

@@ -141,7 +141,7 @@ const ReviewsSection = () => {
     <section id="avis" className="py-20 bg-gradient-to-b from-cream-50 to-white relative overflow-hidden">
       {/* Effet de fond décoratif */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-poppy-500 rounded-full blur-3xl" />
+        <div className="absolute top-0 left-0 w-96 h-96 bg-sage-400 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-sage-500 rounded-full blur-3xl" />
       </div>
 
@@ -160,7 +160,7 @@ const ReviewsSection = () => {
             transition={{ type: "spring", delay: 0.2 }}
             className="inline-block mb-4"
           >
-            <Quote className="h-10 w-10 text-poppy-500" fill="currentColor" />
+            <Quote className="h-10 w-10 text-sage-500" fill="currentColor" />
           </motion.div>
           <h2 className="text-4xl md:text-5xl font-dancing text-sage-700 mb-6">
             Ce que nos clients disent de nous
@@ -198,7 +198,7 @@ const ReviewsSection = () => {
               href="#commander"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-gradient-to-r from-poppy-500 to-poppy-600 hover:from-poppy-600 hover:to-poppy-700 text-white px-8 py-3 rounded-full font-medium text-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="bg-gradient-to-r from-sage-600 to-sage-700 hover:from-sage-700 hover:to-sage-800 text-white px-8 py-3 rounded-full font-medium text-lg transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Commander maintenant
             </motion.a>
@@ -232,7 +232,7 @@ const ReviewsSection = () => {
                           <div className="absolute top-4 right-4 opacity-10 group-hover:opacity-20 transition-opacity">
                             <Quote className="h-16 w-16 text-sage-400" fill="currentColor" />
                           </div>
-                          
+
                           <div className="relative z-10">
                             <div className="flex items-start justify-between mb-4">
                               <div className="flex-1">
@@ -243,7 +243,7 @@ const ReviewsSection = () => {
                                     whileInView={{ scale: 1 }}
                                     viewport={{ once: true }}
                                     transition={{ delay: index * 0.1 + 0.2 }}
-                                    className="text-xs bg-gradient-to-r from-poppy-100 to-poppy-50 text-poppy-700 px-3 py-1 rounded-full font-medium border border-poppy-200"
+                                    className="text-xs bg-gradient-to-r from-sage-100 to-sage-50 text-sage-700 px-3 py-1 rounded-full font-medium border border-sage-200"
                                   >
                                     {review.occasion}
                                   </motion.span>

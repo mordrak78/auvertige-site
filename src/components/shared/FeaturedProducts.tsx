@@ -81,7 +81,7 @@ export const FeaturedProducts: React.FC = () => {
                     height={300}
                   />
                   <div className="absolute top-4 right-4">
-                    <span className="bg-poppy-500 text-white px-3 py-1 rounded-full text-xs font-medium shadow-lg">
+                    <span className="bg-sage-600 text-white px-3 py-1 rounded-full text-xs font-medium shadow-lg">
                       {product.category}
                     </span>
                   </div>

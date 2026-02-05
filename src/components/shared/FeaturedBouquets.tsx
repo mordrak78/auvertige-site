@@ -79,7 +79,7 @@ export const FeaturedBouquets: React.FC = () => {
                     </p>
                   )}
                   <div className="flex items-center justify-between mt-auto">
-                    <span className="text-2xl font-bold text-poppy-600">
+                    <span className="text-2xl font-bold text-sage-700">
                       {bouquet.price.toFixed(2)} €
                     </span>
                     <Button

@@ -100,7 +100,7 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-lg text-sage-600 max-w-2xl mx-auto"
           >
-            Une envie, un projet, une question ? N'hésitez pas à nous contacter. 
+            Une envie, un projet, une question ? N'hésitez pas à nous contacter.
             Nous serons ravis de vous accompagner dans vos créations florales.
           </motion.p>
         </motion.div>
@@ -121,7 +121,7 @@ const Contact = () => {
               <Card className="border-0 shadow-lg bg-white">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-dancing text-sage-700 mb-6">Informations Pratiques</h3>
-                  
+
                   <div className="space-y-6">
                     <motion.div
                       initial={{ opacity: 0, x: -20 }}
@@ -142,7 +142,7 @@ const Contact = () => {
                           Au cœur de Nantes<br />
                           Loire-Atlantique, 44200
                         </p>
-                        <a href="https://maps.google.com/?q=Au+Vertige+Fleuriste+Nantes" target="_blank" rel="noopener noreferrer" className="text-poppy-600 hover:underline text-sm mt-1 inline-block">Voir sur Google Maps</a>
+                        <a href="https://maps.google.com/?q=Au+Vertige+Fleuriste+Nantes" target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:underline text-sm mt-1 inline-block">Voir sur Google Maps</a>
                       </div>
                     </motion.div>
 
@@ -155,15 +155,15 @@ const Contact = () => {
                     >
                       <motion.div
                         whileHover={{ scale: 1.1, rotate: 5 }}
-                        className="flex-shrink-0 w-12 h-12 bg-poppy-100 rounded-full flex items-center justify-center"
+                        className="flex-shrink-0 w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center"
                       >
-                        <Phone className="text-poppy-600" size={22} />
+                        <Phone className="text-sage-600" size={22} />
                       </motion.div>
                       <div>
                         <h4 className="font-semibold text-sage-700 mb-2">Téléphone</h4>
-                        <a 
+                        <a
                           href="tel:0240541002"
-                          className="text-poppy-600 hover:text-poppy-800 font-bold text-lg transition-colors underline"
+                          className="text-sage-600 hover:text-sage-800 font-bold text-lg transition-colors underline"
                         >
                           02 40 54 10 02
                         </a>
@@ -212,30 +212,30 @@ const Contact = () => {
                         </div>
                       </div>
                     </motion.div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <motion.div
-              whileHover={{ y: -4 }}
-              transition={{ duration: 0.3 }}
-            >
-              <Card className="border-0 shadow-lg bg-white">
-                <CardContent className="p-8">
-                  <h3 className="text-xl font-semibold text-sage-700 mb-4">Commandes Spéciales</h3>
-                  <p className="text-sage-600 mb-4">
-                    Pour vos événements importants, nous recommandons de passer commande 
-                    au moins 48h à l'avance pour garantir la disponibilité des fleurs.
-                  </p>
-                  <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                    <Button className="bg-sage-600 hover:bg-sage-700 text-white rounded-full" onClick={() => setShowRdvModal(true)}>
-                      Prendre rendez-vous
-                    </Button>
-                  </motion.div>
+                  </div>
                 </CardContent>
               </Card>
+
+              <motion.div
+                whileHover={{ y: -4 }}
+                transition={{ duration: 0.3 }}
+              >
+                <Card className="border-0 shadow-lg bg-white">
+                  <CardContent className="p-8">
+                    <h3 className="text-xl font-semibold text-sage-700 mb-4">Commandes Spéciales</h3>
+                    <p className="text-sage-600 mb-4">
+                      Pour vos événements importants, nous recommandons de passer commande
+                      au moins 48h à l'avance pour garantir la disponibilité des fleurs.
+                    </p>
+                    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                      <Button className="bg-sage-600 hover:bg-sage-700 text-white rounded-full" onClick={() => setShowRdvModal(true)}>
+                        Prendre rendez-vous
+                      </Button>
+                    </motion.div>
+                  </CardContent>
+                </Card>
+              </motion.div>
             </motion.div>
-          </motion.div>
 
             {/* Réseaux sociaux */}
             <motion.div
@@ -276,98 +276,98 @@ const Contact = () => {
               <Card className="border-0 shadow-lg bg-white">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-dancing text-sage-700 mb-6">Envoyez-nous un message</h3>
-              
-              <form onSubmit={handleContactSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sage-700 font-medium mb-2">Prénom *</label>
-                    <input 
-                      type="text" 
-                      name="firstName"
-                      value={contactFormData.firstName}
-                      onChange={handleContactInputChange}
-                      className="w-full px-4 py-3 border border-sage-200 rounded-lg focus:ring-2 focus:ring-sage-300 focus:border-transparent transition-colors"
-                      placeholder="Votre prénom"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sage-700 font-medium mb-2">Nom *</label>
-                    <input 
-                      type="text" 
-                      name="lastName"
-                      value={contactFormData.lastName}
-                      onChange={handleContactInputChange}
-                      className="w-full px-4 py-3 border border-sage-200 rounded-lg focus:ring-2 focus:ring-sage-300 focus:border-transparent transition-colors"
-                      placeholder="Votre nom"
-                      required
-                    />
-                  </div>
-                </div>
 
-                <div>
-                  <label className="block text-sage-700 font-medium mb-2">Email *</label>
-                  <input 
-                    type="email" 
-                    name="email"
-                    value={contactFormData.email}
-                    onChange={handleContactInputChange}
-                    className="w-full px-4 py-3 border border-sage-200 rounded-lg focus:ring-2 focus:ring-sage-300 focus:border-transparent transition-colors"
-                    placeholder="votre@email.com"
-                    required
-                  />
-                </div>
+                  <form onSubmit={handleContactSubmit} className="space-y-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div>
+                        <label className="block text-sage-700 font-medium mb-2">Prénom *</label>
+                        <input
+                          type="text"
+                          name="firstName"
+                          value={contactFormData.firstName}
+                          onChange={handleContactInputChange}
+                          className="w-full px-4 py-3 border border-sage-200 rounded-lg focus:ring-2 focus:ring-sage-300 focus:border-transparent transition-colors"
+                          placeholder="Votre prénom"
+                          required
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-sage-700 font-medium mb-2">Nom *</label>
+                        <input
+                          type="text"
+                          name="lastName"
+                          value={contactFormData.lastName}
+                          onChange={handleContactInputChange}
+                          className="w-full px-4 py-3 border border-sage-200 rounded-lg focus:ring-2 focus:ring-sage-300 focus:border-transparent transition-colors"
+                          placeholder="Votre nom"
+                          required
+                        />
+                      </div>
+                    </div>
 
-                <div>
-                  <label className="block text-sage-700 font-medium mb-2">Téléphone</label>
-                  <input 
-                    type="tel" 
-                    name="phone"
-                    value={contactFormData.phone}
-                    onChange={handleContactInputChange}
-                    className="w-full px-4 py-3 border border-sage-200 rounded-lg focus:ring-2 focus:ring-sage-300 focus:border-transparent transition-colors"
-                    placeholder="06 XX XX XX XX"
-                  />
-                </div>
+                    <div>
+                      <label className="block text-sage-700 font-medium mb-2">Email *</label>
+                      <input
+                        type="email"
+                        name="email"
+                        value={contactFormData.email}
+                        onChange={handleContactInputChange}
+                        className="w-full px-4 py-3 border border-sage-200 rounded-lg focus:ring-2 focus:ring-sage-300 focus:border-transparent transition-colors"
+                        placeholder="votre@email.com"
+                        required
+                      />
+                    </div>
 
-                <div>
-                  <label className="block text-sage-700 font-medium mb-2">Type de demande</label>
-                  <select 
-                    name="requestType"
-                    value={contactFormData.requestType}
-                    onChange={handleContactInputChange}
-                    className="w-full px-4 py-3 border border-sage-200 rounded-lg focus:ring-2 focus:ring-sage-300 focus:border-transparent transition-colors"
-                  >
-                    <option value="">Choisir une option</option>
-                    <option value="Mariage">Mariage</option>
-                    <option value="Événement">Événement</option>
-                    <option value="Bouquet">Bouquet</option>
-                    <option value="Composition">Composition</option>
-                    <option value="Autre">Autre</option>
-                  </select>
-                </div>
+                    <div>
+                      <label className="block text-sage-700 font-medium mb-2">Téléphone</label>
+                      <input
+                        type="tel"
+                        name="phone"
+                        value={contactFormData.phone}
+                        onChange={handleContactInputChange}
+                        className="w-full px-4 py-3 border border-sage-200 rounded-lg focus:ring-2 focus:ring-sage-300 focus:border-transparent transition-colors"
+                        placeholder="06 XX XX XX XX"
+                      />
+                    </div>
 
-                <div>
-                  <label className="block text-sage-700 font-medium mb-2">Message *</label>
-                  <textarea 
-                    name="message"
-                    value={contactFormData.message}
-                    onChange={handleContactInputChange}
-                    rows={5}
-                    className="w-full px-4 py-3 border border-sage-200 rounded-lg focus:ring-2 focus:ring-sage-300 focus:border-transparent transition-colors resize-none"
-                    placeholder="Décrivez-nous votre projet ou votre demande..."
-                    required
-                  ></textarea>
-                </div>
+                    <div>
+                      <label className="block text-sage-700 font-medium mb-2">Type de demande</label>
+                      <select
+                        name="requestType"
+                        value={contactFormData.requestType}
+                        onChange={handleContactInputChange}
+                        className="w-full px-4 py-3 border border-sage-200 rounded-lg focus:ring-2 focus:ring-sage-300 focus:border-transparent transition-colors"
+                      >
+                        <option value="">Choisir une option</option>
+                        <option value="Mariage">Mariage</option>
+                        <option value="Événement">Événement</option>
+                        <option value="Bouquet">Bouquet</option>
+                        <option value="Composition">Composition</option>
+                        <option value="Autre">Autre</option>
+                      </select>
+                    </div>
 
-                  <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-                    <Button type="submit" className="w-full bg-sage-600 hover:bg-sage-700 text-white py-3 rounded-lg font-medium transition-all duration-300">
-                      Envoyer le message
-                    </Button>
-                  </motion.div>
-                </form>
-              </CardContent>
-            </Card>
+                    <div>
+                      <label className="block text-sage-700 font-medium mb-2">Message *</label>
+                      <textarea
+                        name="message"
+                        value={contactFormData.message}
+                        onChange={handleContactInputChange}
+                        rows={5}
+                        className="w-full px-4 py-3 border border-sage-200 rounded-lg focus:ring-2 focus:ring-sage-300 focus:border-transparent transition-colors resize-none"
+                        placeholder="Décrivez-nous votre projet ou votre demande..."
+                        required
+                      ></textarea>
+                    </div>
+
+                    <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+                      <Button type="submit" className="w-full bg-sage-600 hover:bg-sage-700 text-white py-3 rounded-lg font-medium transition-all duration-300">
+                        Envoyer le message
+                      </Button>
+                    </motion.div>
+                  </form>
+                </CardContent>
+              </Card>
             </motion.div>
           </motion.div>
         </div>
@@ -379,79 +379,79 @@ const Contact = () => {
         title="Prendre rendez-vous pour une commande spéciale"
         size="md"
       >
-            <form onSubmit={handleRdvSubmit} className="flex flex-col gap-4">
-              <div>
-                <label className="block text-sage-700 mb-1">Nom complet</label>
-                <input 
-                  type="text" 
-                  name="name"
-                  value={rdvFormData.name}
-                  onChange={handleRdvInputChange}
-                  className="w-full border border-sage-200 rounded-lg px-3 py-2" 
-                  required 
-                />
-              </div>
-              <div>
-                <label className="block text-sage-700 mb-1">Téléphone</label>
-                <input 
-                  type="tel" 
-                  name="phone"
-                  value={rdvFormData.phone}
-                  onChange={handleRdvInputChange}
-                  className="w-full border border-sage-200 rounded-lg px-3 py-2" 
-                  required 
-                />
-              </div>
-              <div>
-                <label className="block text-sage-700 mb-1">Email</label>
-                <input 
-                  type="email" 
-                  name="email"
-                  value={rdvFormData.email}
-                  onChange={handleRdvInputChange}
-                  className="w-full border border-sage-200 rounded-lg px-3 py-2" 
-                  required 
-                />
-              </div>
-              <div>
-                <label className="block text-sage-700 mb-1">Date souhaitée du rendez-vous</label>
-                <input 
-                  type="date" 
-                  name="date"
-                  value={rdvFormData.date}
-                  onChange={handleRdvInputChange}
-                  className="w-full border border-sage-200 rounded-lg px-3 py-2" 
-                  required 
-                />
-              </div>
-              <div>
-                <label className="block text-sage-700 mb-1">Heure souhaitée</label>
-                <input 
-                  type="time" 
-                  name="time"
-                  value={rdvFormData.time}
-                  onChange={handleRdvInputChange}
-                  className="w-full border border-sage-200 rounded-lg px-3 py-2" 
-                  required 
-                />
-              </div>
-              <div>
-                <label className="block text-sage-700 mb-1">Message</label>
-                <textarea 
-                  name="message"
-                  value={rdvFormData.message}
-                  onChange={handleRdvInputChange}
-                  className="w-full border border-sage-200 rounded-lg px-3 py-2" 
-                  rows={2} 
-                  required 
-                />
-              </div>
-              <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-                <Button type="submit" className="w-full bg-sage-600 hover:bg-sage-700 text-white font-bold py-3 px-6 rounded-full shadow transition mt-2">
-                  Valider le rendez-vous
-                </Button>
-              </motion.div>
-            </form>
+        <form onSubmit={handleRdvSubmit} className="flex flex-col gap-4">
+          <div>
+            <label className="block text-sage-700 mb-1">Nom complet</label>
+            <input
+              type="text"
+              name="name"
+              value={rdvFormData.name}
+              onChange={handleRdvInputChange}
+              className="w-full border border-sage-200 rounded-lg px-3 py-2"
+              required
+            />
+          </div>
+          <div>
+            <label className="block text-sage-700 mb-1">Téléphone</label>
+            <input
+              type="tel"
+              name="phone"
+              value={rdvFormData.phone}
+              onChange={handleRdvInputChange}
+              className="w-full border border-sage-200 rounded-lg px-3 py-2"
+              required
+            />
+          </div>
+          <div>
+            <label className="block text-sage-700 mb-1">Email</label>
+            <input
+              type="email"
+              name="email"
+              value={rdvFormData.email}
+              onChange={handleRdvInputChange}
+              className="w-full border border-sage-200 rounded-lg px-3 py-2"
+              required
+            />
+          </div>
+          <div>
+            <label className="block text-sage-700 mb-1">Date souhaitée du rendez-vous</label>
+            <input
+              type="date"
+              name="date"
+              value={rdvFormData.date}
+              onChange={handleRdvInputChange}
+              className="w-full border border-sage-200 rounded-lg px-3 py-2"
+              required
+            />
+          </div>
+          <div>
+            <label className="block text-sage-700 mb-1">Heure souhaitée</label>
+            <input
+              type="time"
+              name="time"
+              value={rdvFormData.time}
+              onChange={handleRdvInputChange}
+              className="w-full border border-sage-200 rounded-lg px-3 py-2"
+              required
+            />
+          </div>
+          <div>
+            <label className="block text-sage-700 mb-1">Message</label>
+            <textarea
+              name="message"
+              value={rdvFormData.message}
+              onChange={handleRdvInputChange}
+              className="w-full border border-sage-200 rounded-lg px-3 py-2"
+              rows={2}
+              required
+            />
+          </div>
+          <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+            <Button type="submit" className="w-full bg-sage-600 hover:bg-sage-700 text-white font-bold py-3 px-6 rounded-full shadow transition mt-2">
+              Valider le rendez-vous
+            </Button>
+          </motion.div>
+        </form>
       </AnimatedModal>
     </section>
   );

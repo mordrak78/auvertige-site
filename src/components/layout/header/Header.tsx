@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Phone, Menu, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { BrandName } from '@/components/shared/BrandName';
 import {
   Sheet,
   SheetContent,
@@ -55,7 +56,7 @@ const Header = () => {
       className={cn(
         'fixed top-0 w-full z-50 transition-all duration-300',
         opacity > 0.8 && 'shadow-lg'
-      )} 
+      )}
       style={{
         backgroundColor: `rgba(255, 255, 255, ${opacity})`,
         backdropFilter: 'blur(8px)',
@@ -114,12 +115,12 @@ const Header = () => {
                             >
                               {item.label}
                               {item.icon && (
-                                <item.icon size={16} className="text-poppy-500" />
+                                <item.icon size={16} className="text-sage-600" />
                               )}
                               {isActive && (
                                 <motion.div
                                   layoutId="activeNav"
-                                  className="absolute bottom-0 left-0 right-0 h-0.5 bg-poppy-500"
+                                  className="absolute bottom-0 left-0 right-0 h-0.5 bg-sage-600"
                                   initial={false}
                                   transition={{ type: "spring", stiffness: 380, damping: 30 }}
                                 />
@@ -148,7 +149,7 @@ const Header = () => {
             >
               <Button
                 onClick={handleCall}
-                className="bg-poppy-500 hover:bg-poppy-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:shadow-lg transition-all duration-300 min-h-[44px]"
+                className="bg-sage-600 hover:bg-sage-700 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:shadow-lg transition-all duration-300 min-h-[44px]"
                 aria-label="Appeler Au Vertige au 02 40 54 10 02"
               >
                 <Phone size={20} className="mr-2" />
@@ -202,13 +203,13 @@ const Header = () => {
                         >
                           {item.label}
                           {item.icon && (
-                            <item.icon size={16} className="text-poppy-500" />
+                            <item.icon size={16} className="text-sage-600" />
                           )}
                         </NavLink>
                       </motion.div>
                     ))}
                   </AnimatePresence>
-                  
+
                   {/* Bouton téléphone mobile avec animation */}
                   <motion.div
                     initial={{ opacity: 0, y: 10 }}
@@ -222,7 +223,7 @@ const Header = () => {
                         handleCall();
                         handleMenuClose();
                       }}
-                      className="bg-poppy-500 hover:bg-poppy-600 text-white px-4 py-3 rounded-full font-semibold transition-all duration-300 mt-4 shadow-md min-h-[44px] w-full"
+                      className="bg-sage-600 hover:bg-sage-700 text-white px-4 py-3 rounded-full font-semibold transition-all duration-300 mt-4 shadow-md min-h-[44px] w-full"
                       aria-label="Appeler Au Vertige au 02 40 54 10 02"
                     >
                       <Phone size={18} className="mr-2" />

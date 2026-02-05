@@ -52,13 +52,13 @@ const OrderForm = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulation d'envoi
     await new Promise(resolve => setTimeout(resolve, 1000));
-    
+
     console.log('Commande envoyée:', formData);
     alert('Votre commande a été envoyée ! Nous vous recontactons rapidement.');
-    
+
     setIsSubmitting(false);
     // Reset form
     setFormData({
@@ -111,11 +111,10 @@ const OrderForm = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className={`relative px-6 py-3 rounded-full font-medium transition-all duration-300 ${
-                activeTab === 'formulaire'
+              className={`relative px-6 py-3 rounded-full font-medium transition-all duration-300 ${activeTab === 'formulaire'
                   ? 'bg-gradient-to-r from-sage-600 to-sage-700 text-white shadow-md'
                   : 'text-sage-700 hover:bg-sage-50'
-              }`}
+                }`}
               onClick={() => setActiveTab('formulaire')}
             >
               {activeTab === 'formulaire' && (
@@ -133,11 +132,10 @@ const OrderForm = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className={`relative px-6 py-3 rounded-full font-medium transition-all duration-300 ${
-                activeTab === 'boutique'
+              className={`relative px-6 py-3 rounded-full font-medium transition-all duration-300 ${activeTab === 'boutique'
                   ? 'bg-gradient-to-r from-sage-600 to-sage-700 text-white shadow-md'
                   : 'text-sage-700 hover:bg-sage-50'
-              }`}
+                }`}
               onClick={() => setActiveTab('boutique')}
             >
               {activeTab === 'boutique' && (
@@ -205,11 +203,10 @@ const OrderForm = () => {
                     <motion.label
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
-                      className={`flex items-center bg-cream-100 rounded-full px-4 py-3 cursor-pointer border-2 transition-all duration-200 ${
-                        formData.deliveryType === 'retrait'
-                          ? 'border-poppy-500 bg-poppy-50'
+                      className={`flex items-center bg-cream-100 rounded-full px-4 py-3 cursor-pointer border-2 transition-all duration-200 ${formData.deliveryType === 'retrait'
+                          ? 'border-sage-500 bg-sage-50'
                           : 'border-sage-200 hover:border-sage-300'
-                      }`}
+                        }`}
                     >
                       <input
                         type="radio"
@@ -217,7 +214,7 @@ const OrderForm = () => {
                         value="retrait"
                         checked={formData.deliveryType === 'retrait'}
                         onChange={handleInputChange}
-                        className="mr-2 accent-poppy-600"
+                        className="mr-2 accent-sage-600"
                       />
                       <span className="text-sage-700 font-medium">Retrait en boutique (gratuit)</span>
                     </motion.label>
@@ -432,7 +429,7 @@ const OrderForm = () => {
                               loading="lazy"
                             />
                             <h4 className="text-lg font-semibold text-sage-700 mb-2 text-center">{produit.nom}</h4>
-                            <p className="text-poppy-600 font-bold mb-4">{produit.prix}</p>
+                            <p className="text-sage-600 font-bold mb-4">{produit.prix}</p>
                             <motion.a
                               href="https://www.artisansfleuristesdefrance.com/"
                               target="_blank"

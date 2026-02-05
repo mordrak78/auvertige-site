@@ -10,17 +10,17 @@ interface CTAButtonProps {
   onClick?: () => void;
 }
 
-export const CTAButton = ({ 
-  to, 
-  children, 
+export const CTAButton = ({
+  to,
+  children,
   variant = 'primary',
   className,
-  onClick 
+  onClick
 }: CTAButtonProps) => {
   const baseClasses = 'font-bold py-3 px-6 rounded-full shadow transition text-lg min-h-[44px] flex items-center justify-center';
-  
+
   const variantClasses = {
-    primary: 'bg-poppy-500 hover:bg-poppy-600 text-white',
+    primary: 'bg-sage-600 hover:bg-sage-700 text-white',
     secondary: 'bg-sage-600 hover:bg-sage-700 text-white',
     outline: 'bg-white border border-sage-200 text-sage-700 hover:bg-sage-50',
   };

@@ -13,7 +13,7 @@ const zonesDesservies = ["Pirmil", "Saint-Sébastien-sur-Loire", "Rezé"];
 const Hero = () => {
   const [showDetails, setShowDetails] = React.useState(false);
   const { shouldAnimate } = useReducedMotion();
-  
+
   // Récupérer le contenu éditable depuis localStorage
   const pageContent = usePageContentDisplay('index', {
     title: 'Au Vertige - Votre artisan fleuriste à Nantes Sud',
@@ -22,7 +22,7 @@ const Hero = () => {
       'Des émotions florales uniques avec des fleurs fraîches et un accueil chaleureux. Parce que l\'on a aussi le droit de se faire plaisir !'
     ],
   });
-  
+
   const heroTitle = pageContent?.title || 'Au Vertige - Votre artisan fleuriste à Nantes Sud';
   const heroDescription = pageContent?.paragraphs?.join('\n') || 'Découvrez nos créations florales près de chez vous !\nDes émotions florales uniques avec des fleurs fraîches et un accueil chaleureux. Parce que l\'on a aussi le droit de se faire plaisir !';
 
@@ -35,7 +35,7 @@ const Hero = () => {
   };
 
   return (
-    <section 
+    <section
       className="relative w-full min-h-[60vh] md:min-h-[70vh] flex flex-col items-center justify-center pt-32 md:pt-36 pb-8 md:pb-12 bg-cover bg-center bg-no-repeat overflow-hidden"
       style={{
         backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url('${images.pages.facade1}')`,
@@ -51,7 +51,7 @@ const Hero = () => {
         width={1920}
         height={1080}
       />
-      
+
       <div className="container mx-auto px-4 text-center relative z-10 flex flex-col items-center flex-grow">
         <div className="max-w-4xl mt-auto mb-8 md:mb-12">
           {/* Overlay sombre pour améliorer la lisibilité */}
@@ -68,12 +68,12 @@ const Hero = () => {
               ))}
             </p>
           </Card>
-          
+
           {/* CTA Buttons - Animations simplifiées */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
             <Button
               asChild
-              className="bg-poppy-500 hover:bg-poppy-600 text-white px-8 py-6 rounded-full font-medium text-lg shadow-lg hover:shadow-xl transition-all duration-300 min-h-[44px]"
+              className="bg-sage-600 hover:bg-sage-700 text-white px-8 py-6 rounded-full font-medium text-lg shadow-lg hover:shadow-xl transition-all duration-300 min-h-[44px]"
             >
               <ScrollToTopLink to="/creations-florales">
                 Voir nos créations
@@ -113,7 +113,7 @@ const Hero = () => {
                         {idx < zonesDesservies.length - 1 && ", "}
                       </React.Fragment>
                     ))}.
-                    Venez choisir des compositions florales pensées pour vous, que ce soit pour une visite à l'hôpital 
+                    Venez choisir des compositions florales pensées pour vous, que ce soit pour une visite à l'hôpital
                     Saint-Jacques, un hommage au cimetière Saint-Jacques, ou simplement pour le plaisir d'offrir.
                   </p>
                 </Card>

@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 import { Instagram, Facebook, Mail, Phone, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { BrandName } from '@/components/shared/BrandName';
 import { Separator } from '@/components/ui/separator';
 import { images } from '@/data/images';
 import { OptimizedImage } from '@/components/shared/OptimizedImage';
@@ -24,7 +25,7 @@ const Footer = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
             <Button
               onClick={handleCall}
-              className="bg-poppy-500 hover:bg-poppy-600 text-white px-6 py-3 rounded-full font-medium transition-all duration-300"
+              className="bg-sage-600 hover:bg-sage-700 text-white px-6 py-3 rounded-full font-medium transition-all duration-300"
             >
               <Phone size={18} className="mr-2" />
               <span>Appeler</span>
@@ -45,7 +46,7 @@ const Footer = () => {
       <div className="py-12">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-            
+
             {/* Logo et description */}
             <div className="text-center md:text-left">
               <div className="flex flex-col items-center md:items-start mb-4 space-y-2">
@@ -57,7 +58,7 @@ const Footer = () => {
                     width={56}
                     height={56}
                   />
-                  <span className="text-2xl font-dancing">Au Vertige</span>
+                  <BrandName className="text-2xl" />
                 </div>
               </div>
               <p className="text-sage-200 text-sm leading-relaxed mb-4">
@@ -95,7 +96,7 @@ const Footer = () => {
             {/* Nouvelle section : Notre boutique partenaire */}
             <div className="text-center">
               <h3 className="text-lg font-semibold mb-4">Notre boutique partenaire</h3>
-              <a 
+              <a
                 href="https://www.artisansfleuristesdefrance.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -115,7 +116,7 @@ const Footer = () => {
               <p className="text-xs text-sage-300 mb-4">
                 Livraison de fleurs partout en France par des artisans locaux.
               </p>
-              
+
               {/* Section Nos thématiques */}
               <div className="mt-4 pt-4 border-t border-sage-700">
                 <h4 className="text-sm font-semibold mb-3 text-sage-200">Nos thématiques</h4>
@@ -149,8 +150,8 @@ const Footer = () => {
             <div className="text-center">
               <h3 className="text-lg font-semibold mb-4">Suivez-nous</h3>
               <div className="flex justify-center space-x-4 mb-6">
-                <a 
-                  href="https://www.instagram.com/auvertigefleuriste_nantes/" 
+                <a
+                  href="https://www.instagram.com/auvertigefleuriste_nantes/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-sage-700 rounded-full flex items-center justify-center hover:bg-sage-600 transition-colors"
@@ -158,8 +159,8 @@ const Footer = () => {
                 >
                   <Instagram size={18} />
                 </a>
-                <a 
-                  href="https://www.facebook.com/auvertigenantes/?locale=fr_FR" 
+                <a
+                  href="https://www.facebook.com/auvertigenantes/?locale=fr_FR"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-sage-700 rounded-full flex items-center justify-center hover:bg-sage-600 transition-colors"
@@ -167,27 +168,27 @@ const Footer = () => {
                 >
                   <Facebook size={18} />
                 </a>
-                <a 
-                  href="mailto:contact@auvertige-nantes.fr" 
+                <a
+                  href="mailto:contact@auvertige-nantes.fr"
                   className="w-10 h-10 bg-sage-700 rounded-full flex items-center justify-center hover:bg-sage-600 transition-colors"
                   aria-label="Email Au Vertige"
                 >
                   <Mail size={18} />
                 </a>
               </div>
-              
+
               {/* Navigation rapide - Tous les liens pour le SEO */}
               <div className="space-y-4">
-            <h4 className="text-sm font-semibold mb-3 text-sage-200">Navigation</h4>
-            <nav className="grid grid-cols-1 gap-2 text-sm">
-              <Link to="/services" className="block hover:text-white transition-colors">Nos services</Link>
-              <Link to="/creations-florales" className="block hover:text-white transition-colors">Créations florales</Link>
-              <Link to="/fleuriste-saint-jacques" className="block hover:text-white transition-colors">Fleuriste Saint-Jacques</Link>
-              <Link to="/fleuriste-ouvert-dimanche-nantes" className="block hover:text-white transition-colors">Ouvert dimanche</Link>
-              <Link to="/evenements" className="block hover:text-white transition-colors">Événements</Link>
-              <Link to="/a-propos" className="block hover:text-white transition-colors">À propos</Link>
-              <Link to="/contact" className="block hover:text-white transition-colors">Contact</Link>
-            </nav>
+                <h4 className="text-sm font-semibold mb-3 text-sage-200">Navigation</h4>
+                <nav className="grid grid-cols-1 gap-2 text-sm">
+                  <Link to="/services" className="block hover:text-white transition-colors">Nos services</Link>
+                  <Link to="/creations-florales" className="block hover:text-white transition-colors">Créations florales</Link>
+                  <Link to="/fleuriste-saint-jacques" className="block hover:text-white transition-colors">Fleuriste Saint-Jacques</Link>
+                  <Link to="/fleuriste-ouvert-dimanche-nantes" className="block hover:text-white transition-colors">Ouvert dimanche</Link>
+                  <Link to="/evenements" className="block hover:text-white transition-colors">Événements</Link>
+                  <Link to="/a-propos" className="block hover:text-white transition-colors">À propos</Link>
+                  <Link to="/contact" className="block hover:text-white transition-colors">Contact</Link>
+                </nav>
               </div>
             </div>
           </div>
@@ -204,7 +205,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <span className="text-[#d9d9d9]">Propulsé par</span>
-                <a 
+                <a
                   href="https://proximind.fr"
                   target="_blank"
                   rel="noopener noreferrer"

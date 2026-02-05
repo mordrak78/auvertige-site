@@ -34,7 +34,7 @@ const AboutSection = () => {
                 </div>
                 <div className="text-center">
                   <div className="w-14 h-14 bg-sage-100 rounded-2xl flex items-center justify-center mx-auto mb-2 shadow-md">
-                    <Heart className="text-poppy-500" size={28} />
+                    <Heart className="text-sage-500" size={28} />
                   </div>
                   <p className="text-base text-sage-700 font-medium">Fait avec passion</p>
                 </div>
