@@ -140,7 +140,7 @@ const Seo: React.FC<SeoProps> = ({
 
       {/* Balises de sécurité */}
       <meta httpEquiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; frame-src 'self' https://www.google.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.gpteng.co; img-src 'self' data: https:; connect-src 'self' https:;" />
-      <meta name="robots" content="index, follow" />
+      <meta name="robots" content="noindex, nofollow" />
     </Helmet>
   );
 };
